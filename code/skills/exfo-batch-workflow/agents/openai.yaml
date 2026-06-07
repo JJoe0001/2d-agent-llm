@@ -1,0 +1,4 @@
+interface:
+  display_name: "Exfo Batch Workflow"
+  short_description: "Run Exfo batch flow as a skill"
+  default_prompt: "Use $exfo-batch-workflow to call the MCP tools exposed by exfo_agent in the correct order for extraction, deduplication, ML validation, and status checks."

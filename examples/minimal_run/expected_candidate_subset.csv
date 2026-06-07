@@ -1,0 +1,5 @@
+candidate_file,parent_id,source,route_topological,route_layered,route_hybrid,formation_energy_eV,is_relaxed,num_atoms,validation_status,process_time,candidate_formula,dedup_status,is_duplicate_in_initial_merge,candidate_cif_exists,is_thermo_stable_no_mech
+mp-1001_5348.cif,mp-1001,GALOCS + XCP/BONDDEL hybrid (this work),0,0,1,-6.0573,True,6,Thermo Stable (No Mech),8.401259422302246,BaN2,unique,False,True,True
+mp-10009_2DMatPedia.cif,mp-10009,Top-down approach (Zhou et al.),0,1,0,-2.8082,True,4,Thermo Stable (No Mech),2.4727702140808105,GaTe,unique,False,True,True
+mp-1001_5350.cif,mp-1001,GALOCS + XCP/BONDDEL hybrid (this work),0,0,1,-5.719,True,6,Thermo Stable (No Mech),1.319753646850586,BaN2,unique,False,True,True
+mp-1001022_2D_ortho.cif,mp-1001022,Computational exfoliation (Mounet et al.),1,0,0,-4.0362,True,6,Thermo Stable (No Mech),8.109097480773926,PPd2,unique,False,True,True

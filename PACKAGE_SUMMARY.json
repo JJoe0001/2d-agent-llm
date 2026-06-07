@@ -1,0 +1,21 @@
+{
+  "package": "cpc_submission_package_20260604",
+  "n_files": 53,
+  "total_size_bytes": 8550518,
+  "top_level_directories": [
+    "checks",
+    "code",
+    "data",
+    "docs",
+    "examples",
+    "mcp_config"
+  ],
+  "main_entrypoint": "code/exfo_agent/server.py",
+  "main_readme": "README.md",
+  "data_scope": [
+    "parent-level metadata and MP quantities",
+    "final deduplicated 2D candidate labels and CHGNet results",
+    "computed parent-level exfoliability labels and dataset summary"
+  ],
+  "repository": "https://github.com/JJoe0001/2d-agent-llm"
+}

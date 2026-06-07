@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "exfoliation-agent": {
+      "command": "python",
+      "args": [
+        "${PACKAGE_ROOT}/code/exfo_agent/server.py"
+      ]
+    }
+  }
+}

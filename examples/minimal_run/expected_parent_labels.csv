@@ -1,0 +1,6 @@
+parent_id,has_2d,route_topological,route_layered,route_hybrid,candidate_count,quality_score
+mp-10009,1,0,1,0,1,1.0
+mp-1001,1,0,0,1,2,1.0
+mp-1001022,1,1,0,0,1,1.0
+mp-10018,0,0,0,0,0,
+mp-1183057,0,0,0,0,0,

@@ -1,0 +1,32 @@
+{
+  "n_candidate_rows": 73105,
+  "n_unique_candidate_files": 73105,
+  "n_parent_rows": 143259,
+  "n_positive_parents": 47617,
+  "n_negative_parents": 95642,
+  "candidate_cif_missing": 0,
+  "parent_cif_missing": 0,
+  "route_positive_parent_counts": {
+    "route_topological": 29613,
+    "route_layered": 6046,
+    "route_hybrid": 22049
+  },
+  "source_signature_counts": {
+    "NaN": 95642,
+    "Computational exfoliation (Mounet et al.)": 20884,
+    "GALOCS + XCP/BONDDEL hybrid (this work)": 13025,
+    "Computational exfoliation (Mounet et al.) || GALOCS + XCP/BONDDEL hybrid (this work)": 7662,
+    "Top-down approach (Zhou et al.)": 3904,
+    "GALOCS + XCP/BONDDEL hybrid (this work) || Top-down approach (Zhou et al.)": 1075,
+    "Computational exfoliation (Mounet et al.) || Top-down approach (Zhou et al.)": 780,
+    "Computational exfoliation (Mounet et al.) || GALOCS + XCP/BONDDEL hybrid (this work) || Top-down approach (Zhou et al.)": 287
+  },
+  "outputs": {
+    "parent_metadata": "data/parents/parent_level_metadata.csv.gz",
+    "final_2d_candidates": "data/final_2d_candidates/final_2d_candidates.csv.gz",
+    "parent_exfoliability_results": "data/computed_results/parent_exfoliability_labels.csv.gz",
+    "parent_cifs": "data/external_large_files/parent_cifs_not_included",
+    "final_2d_cifs": "data/external_large_files/unique_2d_candidates_not_included",
+    "relaxed_candidate_cifs": "data/external_large_files/relaxed_candidates_not_included"
+  }
+}
