@@ -1,0 +1,31 @@
+{
+  "dataset": "MC2D",
+  "reference_file": "MC2D_2022_optimized.zip",
+  "reference_sha256": "52cb3517e443328e55789514984619db470a62d9b7146e63583276e3d0f0edea",
+  "candidate_archive_sha256": "bdec78cd3ca976e894f8a906f0291aad72ce71eb9d8bac7968397c72a63a0960",
+  "reference_records_parsed": 2742,
+  "reference_parse_errors": [],
+  "selected_candidate_filenames": 4305,
+  "candidate_records_parsed": 4305,
+  "candidate_parse_errors": [],
+  "match_counts": {
+    "no_formula_match": 1032,
+    "formula_only_match": 1097,
+    "structure_match": 341,
+    "formula_and_geometry_match": 272
+  },
+  "matcher": {
+    "formula": "pymatgen reduced_formula",
+    "vacuum_axis": "longest lattice vector",
+    "canonical_vacuum_angstrom": 25.0,
+    "area_per_formula_unit_relative_tolerance": 0.1,
+    "thickness_relative_tolerance": 0.3,
+    "maximum_geometry_close_candidates_tested": 50,
+    "ltol": 0.2,
+    "stol": 0.3,
+    "angle_tol_degrees": 5,
+    "primitive_cell": true,
+    "attempt_supercell": false
+  },
+  "reference_source": "https://doi.org/10.24435/materialscloud:36-nd"
+}

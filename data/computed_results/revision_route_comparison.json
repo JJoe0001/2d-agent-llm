@@ -1,0 +1,53 @@
+{
+  "definitions": {
+    "route_exclusive_chemical_system": "Element set present in exactly one route's candidate records within this screened dataset; not a claim of database novelty or physical stability.",
+    "relaxed_2d": "is_relaxed == True and dim_type == 2D in the unpassivated post-ML dimensionality table; not DFT stability.",
+    "route_assignment": "Single provenance flag assigned to each post-deduplication candidate record.",
+    "archived_initial_slab_layergroup": "spglib layer-group label on archived post-deduplication CIFs; longest lattice vector chosen as aperiodic direction and symprec 1e-5. These labels are symmetry descriptors, not distinct prototypes or validated phases."
+  },
+  "n_input_parents": 143259,
+  "parent_route_combinations": {
+    "none": 95642,
+    "topological+hybrid": 7662,
+    "topological": 20884,
+    "hybrid": 13025,
+    "topological+layered": 780,
+    "layered": 3904,
+    "layered+hybrid": 1075,
+    "topological+layered+hybrid": 287
+  },
+  "n_unique_candidates": 73105,
+  "n_chemical_systems_total": 16124,
+  "routes": {
+    "topological": {
+      "n_parent_ids": 29613,
+      "n_unique_candidates": 29614,
+      "n_chemical_systems": 10303,
+      "n_route_exclusive_chemical_systems": 5085,
+      "n_candidates_without_formula": 0,
+      "n_archived_initial_slab_layergroups": 76,
+      "n_relaxed_2d": 28359,
+      "relaxed_2d_fraction_of_route_candidates": 0.957621
+    },
+    "layered": {
+      "n_parent_ids": 6046,
+      "n_unique_candidates": 6046,
+      "n_chemical_systems": 3651,
+      "n_route_exclusive_chemical_systems": 1234,
+      "n_candidates_without_formula": 0,
+      "n_archived_initial_slab_layergroups": 67,
+      "n_relaxed_2d": 5977,
+      "relaxed_2d_fraction_of_route_candidates": 0.988587
+    },
+    "hybrid": {
+      "n_parent_ids": 22049,
+      "n_unique_candidates": 37445,
+      "n_chemical_systems": 9249,
+      "n_route_exclusive_chemical_systems": 4077,
+      "n_candidates_without_formula": 2,
+      "n_archived_initial_slab_layergroups": 73,
+      "n_relaxed_2d": 33753,
+      "relaxed_2d_fraction_of_route_candidates": 0.901402
+    }
+  }
+}

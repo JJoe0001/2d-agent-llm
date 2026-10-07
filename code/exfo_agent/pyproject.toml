@@ -6,6 +6,7 @@ dependencies = [
     "mcp",
     "fastmcp",
     "pymatgen",
+    "spglib>=2.0",
     "numpy",
     "pandas",
     "scipy",

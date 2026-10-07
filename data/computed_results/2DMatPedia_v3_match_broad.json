@@ -1,0 +1,31 @@
+{
+  "dataset": "2DMatPedia",
+  "reference_file": "2Dmatpedia_v3.json",
+  "reference_sha256": "9f50c37356e11e4afc27119cd3f5c71a49ef4b8092be270e404c709135fd1ead",
+  "candidate_archive_sha256": "bdec78cd3ca976e894f8a906f0291aad72ce71eb9d8bac7968397c72a63a0960",
+  "reference_records_parsed": 6351,
+  "reference_parse_errors": [],
+  "selected_candidate_filenames": 9066,
+  "candidate_records_parsed": 9066,
+  "candidate_parse_errors": [],
+  "match_counts": {
+    "no_formula_match": 2517,
+    "formula_only_match": 2510,
+    "structure_match": 639,
+    "formula_and_geometry_match": 685
+  },
+  "matcher": {
+    "formula": "pymatgen reduced_formula",
+    "vacuum_axis": "longest lattice vector",
+    "canonical_vacuum_angstrom": 25.0,
+    "area_per_formula_unit_relative_tolerance": 0.1,
+    "thickness_relative_tolerance": 0.3,
+    "maximum_geometry_close_candidates_tested": 50,
+    "ltol": 0.2,
+    "stol": 0.3,
+    "angle_tol_degrees": 5,
+    "primitive_cell": true,
+    "attempt_supercell": false
+  },
+  "reference_source": "https://doi.org/10.6084/m9.figshare.7699910.v3"
+}
