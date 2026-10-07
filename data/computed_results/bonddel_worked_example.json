@@ -1,0 +1,39 @@
+{
+  "parent_id": "mp-1376393",
+  "parent_cif_sha256": "3c89c30381259bbbaf1ae44afee8951f8b945367f55923c98abf6b25a0bacf46",
+  "parent_formula": "Zn2Cr2O5",
+  "n_parent_atoms": 18,
+  "potential_sha256": "213e68e6dc87dad20c5b65053f25df6c63c423137e307b0914b5a7d86eb7dc91",
+  "bond_energy_cluster_tolerance_eV": 0.03,
+  "weak_bond_scan_floor_eV": -2.0,
+  "n_weighted_graph_edges": 434,
+  "first_successful_threshold_eV": -1.5574990262438235,
+  "n_edges_with_energy_at_or_above_threshold": 419,
+  "threshold_step_index": 14,
+  "two_dimensional_components": [
+    {
+      "atom_indices_zero_based": [
+        4,
+        5,
+        8,
+        10,
+        11,
+        15,
+        17
+      ],
+      "n_atoms": 7,
+      "formula": "Cr2O5"
+    },
+    {
+      "atom_indices_zero_based": [
+        7,
+        13,
+        14,
+        16
+      ],
+      "n_atoms": 4,
+      "formula": "CrO3"
+    }
+  ],
+  "interpretation": "graph-search example only; no cleavage energy or DFT stability inferred"
+}

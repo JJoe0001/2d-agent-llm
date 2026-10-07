@@ -1,0 +1,51 @@
+{
+  "parent_id": "mp-2222863",
+  "parent_cif_sha256": "beb52aa25b2e242a39986e88ca7cbc060a414d9839d703a8af9afaef5e61a8ec",
+  "formula": "BaYMgCuAgO5",
+  "detected_parent_dimensionality": 2,
+  "branch": "Geometric Slicing",
+  "layers": [
+    {
+      "hkl": [
+        -1,
+        1,
+        0
+      ],
+      "score": 0.20863890361172607,
+      "used_delta": 1.2,
+      "n_sites": 10,
+      "formula": "BaYMgCuAgO5",
+      "matches_archived_candidate": [
+        "mp-2222863_4606.cif"
+      ]
+    },
+    {
+      "hkl": [
+        -1,
+        -1,
+        0
+      ],
+      "score": 0.2086322837662333,
+      "used_delta": 1.2,
+      "n_sites": 10,
+      "formula": "BaYMgCuAgO5",
+      "matches_archived_candidate": [
+        "mp-2222863_4606.cif"
+      ]
+    },
+    {
+      "hkl": [
+        -1,
+        0,
+        0
+      ],
+      "score": 0.09666296398864334,
+      "used_delta": 1.2,
+      "n_sites": 10,
+      "formula": "BaYMgCuAgO5",
+      "matches_archived_candidate": [
+        "mp-2222863_4607.cif"
+      ]
+    }
+  ]
+}

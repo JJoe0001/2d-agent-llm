@@ -80,6 +80,7 @@ For first-principles validation, see the [VASP protocol](docs/VASP_VALIDATION_PR
 For implemented thresholds and the sensitivity rerun design, see [parameter audit](docs/PARAMETER_AUDIT.md).
 For source-backed failure handling and the limits of the available agent logs, see [orchestration audit](docs/AGENT_FAILURE_AUDIT.md).
 For the planned versioned 2DMatPedia, MC2D, and C2DB recovery benchmark, see [database benchmark protocol](docs/DATABASE_BENCHMARK_PROTOCOL.md).
+For an executed 48-parent planar-gap sensitivity check and two reproducible hybrid-route examples, see [sensitivity results](docs/PLANAR_SENSITIVITY_RESULTS.md) and [worked examples](docs/HYBRID_WORKED_EXAMPLES.md).
 
 ## License
 

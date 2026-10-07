@@ -42,6 +42,8 @@ data/computed_results/revision_screening_summary.json
 
 The route manifest gives filename-level provenance for all 76,852 pre-deduplication candidates. The two dimensionality tables give post-CHGNet morphology labels for all 73,105 unique candidates. `scripts/revision_audit.py` recomputes and checks the summary; see `docs/REVISION_FINDINGS.md` for definitions and data caveats. A small VASP input selection of 16 derived CIFs is available in `examples/dft_validation/`; this is not the complete candidate archive and contains no DFT outputs.
 
+The repository also includes a 48-parent planar-gap sensitivity panel with 336 run records and two rerun worked-example summaries in `data/computed_results/`. Those examples reference MP parent CIFs by ID and SHA-256; the parent CIFs themselves are not redistributed here.
+
 ## Large files not embedded
 
 The complete parent CIF library, route-specific and deduplicated candidate CIF libraries, and relaxed CIF library are not available through this repository. No external archive URL or DOI has been assigned yet. The planned organization is documented in:

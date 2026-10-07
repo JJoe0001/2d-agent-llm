@@ -1,6 +1,10 @@
 # Orchestration and failure-mode audit
 
-The repository implements MCP tool endpoints in `code/exfo_agent/server.py`. Current evidence supports the following statements about the code, but does **not** quantify the behavior of the historical production LLM session. No production model identifier, prompt transcript, tool-call trace, token/context-window usage, or retry log is packaged.
+The repository implements MCP tool endpoints in `code/exfo_agent/server.py`. Current evidence supports the following statements about the code, but does **not** quantify the behavior of the historical production LLM session. No production API model identifier or snapshot, prompt transcript, tool-call trace, token/context-window usage, or retry log is packaged.
+
+## Actual role of the language model
+
+The researchers prewrote the screening scripts, fixed their processing order, and specified numerical parameters. The authors recall using GPT-5.4 to invoke those scripts sequentially through MCP; no original API log survives to verify its model ID or snapshot. The route algorithms, plane scores, bond-deletion thresholds, deduplication, relaxation, and geometry checks are code operations. The model was a conversational tool-invocation interface, not an autonomous materials-design policy. Direct script execution is the reproducible baseline; this study contains no controlled evidence that GPT improved yield, accuracy, runtime, or robustness relative to it. The model-version statement is author recollection, not an inference from which GPT model was newest around the run date.
 
 | Layer | Failure condition | Implemented behavior | Evidence limit |
 | --- | --- | --- | --- |
