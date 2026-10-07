@@ -13,7 +13,7 @@
 - `data/dimensionality/no_pass_dimensionality_post_ml.csv.gz`、`passivated_dimensionality_post_ml.csv.gz`：73,105 个唯一候选的 CHGNet 后形貌判定。
 - `data/computed_results/revision_screening_summary.json`：由 `scripts/revision_audit.py` 重算，定义见 `docs/REVISION_FINDINGS.md`。
 - `examples/dft_validation/`：8 对初始／松弛结构，共 16 个衍生 CIF；不是全库，不含 DFT 输出。
-- `data/computed_results/`：48 母体、336 条平面间隙敏感性记录及两个混合路线复算实例。母体 CIF 仅以 MP ID 和 SHA-256 引用，未在此再分发。
+- `data/computed_results/`：200 父体的初始判维与几何切片敏感性、48 父体高斯宽度复算、9 父体断键阳性富集检查、500 候选去重容差压力测试、500 原子上限审计及两个混合路线实例。母体 CIF 仅以 MP ID 和 SHA-256 引用，未在此再分发。
 - `data/external_large_files/`：73,105 个去重初始候选 CIF、69,624 个未钝化 CHGNet 松弛 CIF、64,297 个钝化 CHGNet 松弛 CIF 的三个压缩归档，分别附逐成员 SHA-256 清单和归档摘要。下载、核验和来源限制见同目录 `README.md`。
 
 ## 尚缺数据与归档

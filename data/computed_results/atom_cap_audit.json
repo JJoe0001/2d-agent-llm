@@ -1,0 +1,38 @@
+{
+  "interpretation": "Recorded eligibility and statuses only; raising the cap cannot predict CHGNet outcomes for previously skipped structures.",
+  "table_sha256": "552ea016b4e09753a89f051ba63e5093db6e099d39a18607085dc70ba5ae654a",
+  "n_records": 73105,
+  "bins": {
+    "at_most_400": {
+      "n_candidates": 72868,
+      "n_relaxed_flag": 69586,
+      "status_counts": {
+        "Thermo Stable (No Mech)": 72514,
+        "Skipped (Unstable)": 103,
+        "Error/Explosion": 251
+      }
+    },
+    "401_to_500": {
+      "n_candidates": 68,
+      "n_relaxed_flag": 38,
+      "status_counts": {
+        "Thermo Stable (No Mech)": 63,
+        "Error/Explosion": 5
+      }
+    },
+    "501_to_600": {
+      "n_candidates": 32,
+      "n_relaxed_flag": 0,
+      "status_counts": {
+        "Skipped (Too Large)": 32
+      }
+    },
+    "over_600": {
+      "n_candidates": 137,
+      "n_relaxed_flag": 0,
+      "status_counts": {
+        "Skipped (Too Large)": 137
+      }
+    }
+  }
+}

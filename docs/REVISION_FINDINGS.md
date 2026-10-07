@@ -35,8 +35,8 @@
 - 代表结构的 slab／母体 DFT 松弛与能量、面内变胞比较、声子。输入及方案见 `examples/dft_validation/` 和 `docs/VASP_VALIDATION_PROTOCOL.md`；目前没有 DFT 结果。
 - 8 个 DFT 例子中，Na₇TiNb₂Si₄P₂O₂₅F slab 相比 MP 母体缺氧。定义剥离／解理能前须写质量守恒反应或化学势参考。
 - 2DMatPedia、MC2D、C2DB 找回率需要有版本的参考结构和明确匹配容差。原稿“无直接匹配”尚未经完整验证，不得据此称发现新相。方案见 `docs/DATABASE_BENCHMARK_PROTOCOL.md`；旧 2DMatPedia 试算不足以替代三库比较。
-- 阈值敏感性需要冻结母体子集与精确代码／配置版本后重算。现已公开当前参数，历史大规模输入输出日志仍不完整。
-- 已完成 48 母体、7 设置的平面间隙敏感性复算及两组混合路线实例，见 `docs/PLANAR_SENSITIVITY_RESULTS.md`、`docs/HYBRID_WORKED_EXAMPLES.md`；二者均不证明物理稳定性。
+- 已完成固定面板的扩展参数复算，见 docs/参数敏感性_扩展复算_中文.md；初始判维、几何切片、断键分量及去重均观察到参数作用。历史生产配置仍无完整日志，完整三路线联动及 CHGNet 后二维保留尚未重跑。
+- 先前 48 母体、7 设置仅比较首选晶面；本次新增 200 父体的实际切片集合、48 父体高斯宽度、9 个断键阳性富集父体、500 候选去重压力测试和原子上限审计。均非 DFT 稳定性检验。
 - `docs/PARAMETER_AUDIT.md` 记录两处稿件／代码差异：智能路线还试了 delta=1.1；当前 BONDDEL 600 原子上限不同于 CHGNet 500 原子上限。
 - 作者回忆使用 GPT-5.4，但现存文件无法重建生产 API 模型快照、提示词、调用轨迹、重试率、token 用量及上下文故障。回复中要明示证据缺口，不编造运行统计；见 `docs/LLM_CODE_MAP.md`。
 - 全量衍生候选 CIF 与绘图输入应归档并取得 DOI，在 Data Availability Statement 中填写版本 DOI 与概念／最新版 DOI。发布母体 CIF 前核查 Materials Project 数据再分发条款。

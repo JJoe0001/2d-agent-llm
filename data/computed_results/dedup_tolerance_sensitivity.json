@@ -1,0 +1,2628 @@
+{
+  "interpretation": "Fixed stress panel sampled from already-deduplicated candidate CIF archive; not sensitivity of the original 76,852-to-73,105 deduplication.",
+  "pymatgen_version": "2026.9.24",
+  "seed": 20261007,
+  "source_table_sha256": "552ea016b4e09753a89f051ba63e5093db6e099d39a18607085dc70ba5ae654a",
+  "source_archive_sha256": "bdec78cd3ca976e894f8a906f0291aad72ce71eb9d8bac7968397c72a63a0960",
+  "n_formula_groups": 50,
+  "sampled_per_group": 10,
+  "n_candidates": 500,
+  "panel": [
+    {
+      "candidate_file": "mp-1100734_33054.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "45206883293600ac139b113d972c8fbdeb7411a1df093aaf38bb194e24c8c7c0"
+    },
+    {
+      "candidate_file": "mp-1176117_31677.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "307402a3c582d95e5b678ab8afc096fcf2aab0ebceb473ad2d73f8fa40df87ad"
+    },
+    {
+      "candidate_file": "mp-1176141_2D_ortho.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "56bb9d05172fa3d17eb4d9fd4ca9110aea19b2d3f5708fb4719ff5e0e48e6f90"
+    },
+    {
+      "candidate_file": "mp-1175637_31401.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "23eec94b904dd28984e9d6ce9e18f15cfce76b880b53a749aa1d473dd6d9a001"
+    },
+    {
+      "candidate_file": "mp-1100623_32922.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "a36f077aa92e9029ac92b506c9059737a8d13c431cd666eed8c80d59bb8a1158"
+    },
+    {
+      "candidate_file": "mp-1175494_31348.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "30c57f34e02c30c51b4d121443c3ef0fe947c98cc1e494edcc7a300a797d7717"
+    },
+    {
+      "candidate_file": "mp-1175905_31572.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "b2017ffc767fa1da8f9a218cdda3928fa90ca4232493ea8ee00808f0cf3ef131"
+    },
+    {
+      "candidate_file": "mp-1175917_31578.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "472c317217eedd4c0e8d5ae3bf565c8b0e3edd046e0111f2b93400956c758c7a"
+    },
+    {
+      "candidate_file": "mp-1176001_31615.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "e81afaa9a7e5326803e1e35c72b00fa2c44ff3f9d84b0b479d8bfadeb6fa2591"
+    },
+    {
+      "candidate_file": "mp-1175844_31542.cif",
+      "candidate_formula": "Li9Mn2Co5O16",
+      "cif_sha256": "1be4d3e0d60f0d49ef5597d0da5869a38f26878f4e3a13367f5a1b53ff7a1786"
+    },
+    {
+      "candidate_file": "mp-1189414_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "57cc429b1a74bb4a1ce59a8f2294ed93da711c1d97305feaaff2816c5d3e7577"
+    },
+    {
+      "candidate_file": "mp-1073366_40288.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "06d0bd01e2ca1707b38a177f773fa659ea6f2ceb3f7ce8fd3928af516b13d579"
+    },
+    {
+      "candidate_file": "mp-1074174_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "90a4da0b42cb1fab088f8a28632c41aa02ac63e64ca9f79ebc712e666f00d570"
+    },
+    {
+      "candidate_file": "mp-1268191_52354.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "9e5a6b7480196f841332dad3ed838eaf563abb248d172f14cbb9e6377fe17ee5"
+    },
+    {
+      "candidate_file": "mp-1073405_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "a44cd2f3fef42b084ee11296c1f60bbd9bb7973353b0cd6f0520ddec843bd499"
+    },
+    {
+      "candidate_file": "mp-1075286_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "599ce0590285bc4e6465dad3e20e9c1929740c715c00a4bb8b49c138bace39d5"
+    },
+    {
+      "candidate_file": "mp-1075399_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "32d798a7305849693c26868b8a87df178b3cccb22bf16cf163161622b63cc8e5"
+    },
+    {
+      "candidate_file": "mp-31404_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "92958d6bd7a9037ff7268b14bb5d313d9acc380ac87a156d6dd50df618fdccb9"
+    },
+    {
+      "candidate_file": "mp-1205346_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "3d885bd802344bbb0cb628581c0fb8ced2127e326b8a8ffb255df0aa7778c42f"
+    },
+    {
+      "candidate_file": "mp-1073367_2D_ortho.cif",
+      "candidate_formula": "Si",
+      "cif_sha256": "5e438aa52c172f6d77f7e25691a3e8e3f452498b47b76512ba0b8dc9c547c7f4"
+    },
+    {
+      "candidate_file": "mp-759736_41419.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "f6a6b4f3a8a4f7b8e883ad07a0c4573dd8f5e5ce5252bf29c6014082ac961556"
+    },
+    {
+      "candidate_file": "mp-1040921_2D_ortho.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "ba3701792d72baa5f7cab2726c1306a28fe361823b5e35387981e349dcb513ba"
+    },
+    {
+      "candidate_file": "mp-1374186_39621.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "e7c552704b6d9ac111846dde6ac74979a1a54160d1451302a4ab91c6da969fda"
+    },
+    {
+      "candidate_file": "mp-764021_45944.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "5c22a1fdba93120f12857a96ff35d9a7c620f81cfc3291c28f0726e6f183549b"
+    },
+    {
+      "candidate_file": "mp-1002568_2D_ortho.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "251109bbb52f52ad978ff98c116866d9da90f08253349a51e160ff93de6f3c29"
+    },
+    {
+      "candidate_file": "mp-2229397_39728.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "37c8f8d92383174e4344b3010b0e3c24eb4aec6468ac94774411142341122426"
+    },
+    {
+      "candidate_file": "mp-1104282_41558.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "7f0bf739c174ac224ace6e4158c7938e40877fb59514d56dcd49ff93eb2d122a"
+    },
+    {
+      "candidate_file": "mp-771073_28604.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "f9bdcdbc3c602b26c603e0e34fcc5e17b4666150d5dedcaf5ea6dcd3f6ba21af"
+    },
+    {
+      "candidate_file": "mp-752536_2D_ortho.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "33d20a58a9999c7ac2024343de15bf3573785ce3272387ba1170c85a080c90b4"
+    },
+    {
+      "candidate_file": "mp-1041329_8108.cif",
+      "candidate_formula": "MnO2",
+      "cif_sha256": "f8e0f0456535095a61847d9d39101258e0692061b8fd09adb07387beb876a93a"
+    },
+    {
+      "candidate_file": "mp-1175051_2D_ortho.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "f422af723f9aa6f8a62975bc6da663507e87e6e43a786df2b68b5ad80fa530f4"
+    },
+    {
+      "candidate_file": "mp-1174863_30322.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "74e91f755a02ae6ad2bf2c09a5f9b618573db65295a342bc07e53b5be20658bc"
+    },
+    {
+      "candidate_file": "mp-1174863_30324.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "a6b4f0bdec1de8613a27a70f4cbcd08c5ce03928a4d646f428f559050f7d10cf"
+    },
+    {
+      "candidate_file": "mp-1174545_30302.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "c53c4673bde77c451ff2e2a9be602b2e0633ef84603f9e7cf15230d83559d27a"
+    },
+    {
+      "candidate_file": "mp-1174910_30379.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "c21a38e99f2f959f82d1031577547aebd40d4cfe25ebb98106752b658904f63e"
+    },
+    {
+      "candidate_file": "mp-1175096_2D_ortho.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "d7b8a9f81f19503fea911a9e4a3c1031eedc54c8a60efb9257df1568fbe1e847"
+    },
+    {
+      "candidate_file": "mp-1174865_2DMatPedia.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "fc0c1c2f8fc8e2cc9258768e2c0316cdb827b778eb300b0ed441022902077f27"
+    },
+    {
+      "candidate_file": "mp-1174920_30395.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "8f8eaf4d1334155a46310bc6f85c90af08be0bf07a3a71e927e9178269d590a7"
+    },
+    {
+      "candidate_file": "mp-1175065_30460.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "5b0ca285633f7cc6af8ad5569d2db66b7a77e7015617a2425c69b93045248fc4"
+    },
+    {
+      "candidate_file": "mp-1175033_30422.cif",
+      "candidate_formula": "Li7Mn2(CoO4)3",
+      "cif_sha256": "90095d409508c403eaafb81881dc8e596e36a5953f4f6557ae34f9c6f04e1a55"
+    },
+    {
+      "candidate_file": "mp-1175713_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "73e58eec7f1b57ff3b962c1028044fe9cb979b6470c22503e397251d220a8b1c"
+    },
+    {
+      "candidate_file": "mp-1100684_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "755eed226a89755210b76af87cead0c0fb680701a9631b3ad07d1413ff7fbc4e"
+    },
+    {
+      "candidate_file": "mp-1176229_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "ae58052054b7c439ade8b7032ea7c4ae4c2ab3b0fba09a8c6ec98d6689c67f52"
+    },
+    {
+      "candidate_file": "mp-1175783_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "1389075cac5f6880de336ff69aee48802c7f801eb616dfd61221fe52e00b7b72"
+    },
+    {
+      "candidate_file": "mp-1175716_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "feafd1ff51497812bbb60a90581ca9549eff0ff1a1fee76710678ffeaa989c04"
+    },
+    {
+      "candidate_file": "mp-1176151_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "7a6aa6955ac3afe8661bfadbe570b63bba57c66c2cb51d7545c54a040f4e133e"
+    },
+    {
+      "candidate_file": "mp-1176291_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "335737066f1685dcce1c5ceb5c6b201f62092b474d7a19474ec2cf267aef3130"
+    },
+    {
+      "candidate_file": "mp-1175404_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "c5ae50f958c82b230849c33f1c6622caa8d631dea727fd08c8b1b6619bf5c802"
+    },
+    {
+      "candidate_file": "mp-1175672_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "98fd5377d20f1d727c701cafdfd9261e76c86dd6c24844da858a9ae999dc153d"
+    },
+    {
+      "candidate_file": "mp-1175417_2D_ortho.cif",
+      "candidate_formula": "Mn2Co5O16",
+      "cif_sha256": "74b22453f7fff69f269a1b4c922f7b86af9ae9b737af6c059b187613ab43ccb0"
+    },
+    {
+      "candidate_file": "mp-1048346_3239.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "742cd4a895ce50f464aa76fe9606c2e9100719df4f56f0eb9925ba145262287e"
+    },
+    {
+      "candidate_file": "mp-1178820_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "ea8fce580007c7833fe5f8a276d25bbd84dfc25a231fb94164af5968c9af4c86"
+    },
+    {
+      "candidate_file": "mp-1047709_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "48c2daeeff769133e6a00e0dddff58225204be7b284142ec7499df50cb4143a2"
+    },
+    {
+      "candidate_file": "mp-1041583_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "c72c11cbcdf3533abb1b4c10dd03def33ba3e19a0fdbd90cccaba7ce2e833b39"
+    },
+    {
+      "candidate_file": "mp-1045494_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "04ae7ca61e2ae931a0e4f8246b092eae3b15295833347f04be2f86e090afc3d4"
+    },
+    {
+      "candidate_file": "mp-758647_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "bd52be325b55f7f19cd9285d9740ceb532e8c8590a538e5d2300ed93a068a825"
+    },
+    {
+      "candidate_file": "mp-1044331_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "191e64edf34200178ca8a1b894873464e21f26396c71bf9b1f81616153c480c3"
+    },
+    {
+      "candidate_file": "mp-33705_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "01bc8e13958fa90631acfa3a184bc7efdd929431d31d306ff4448b8a4f30d3ae"
+    },
+    {
+      "candidate_file": "mp-1217837_56216.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "8e29607526c664cd3dabe4dad59effeb7faae443c416a9763023ae5c3b775862"
+    },
+    {
+      "candidate_file": "mp-771611_2D_ortho.cif",
+      "candidate_formula": "VO2",
+      "cif_sha256": "a9bdefd8b6c7fe76ed9c5df95008a83d0485e2a279b040a1b3757b13c203bc7b"
+    },
+    {
+      "candidate_file": "mp-1175812_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "aaeb65f3243840e06ad2c026c89e065cf9ee14fb850184a15b541d940d32d0ad"
+    },
+    {
+      "candidate_file": "mp-1100731_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "3d60f98f5dafda59f5687f913514ef71b3f34b943961f667319389a097cc1ddd"
+    },
+    {
+      "candidate_file": "mp-1175845_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "c872a151675a2eefcfb83e324af20c75a2da96e8456621ff3754b631fca3f904"
+    },
+    {
+      "candidate_file": "mp-1176248_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "65d68e74043ca5427aae55d4f3d30d1c88cbde8ea786d2e4a9d97124867e4645"
+    },
+    {
+      "candidate_file": "mp-1176301_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "a4278a13febc898a5bdc177a65956a242d2804253550fb90b10700336cb5f834"
+    },
+    {
+      "candidate_file": "mp-1176231_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "00977d6a9edfc0ad97d3d519b49526cb3bed146c2985c1b7d785f157b3302618"
+    },
+    {
+      "candidate_file": "mp-1176049_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "5b0820d880573ccc5cd36d2b5cc8e9f67e1f53022cbba969b44064bb5d1c7c67"
+    },
+    {
+      "candidate_file": "mp-1175726_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "fd81e6c1674639f68b45ac18355ed4528272c8fc315e6f5e1ca0b9df16b492f6"
+    },
+    {
+      "candidate_file": "mp-1176132_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "f22e3d510c3115a0606254e447ad2c27d958a537517c1e526a4e2ad131ed39dc"
+    },
+    {
+      "candidate_file": "mp-1175933_2D_ortho.cif",
+      "candidate_formula": "Li3Mn2Co5O16",
+      "cif_sha256": "31c8dc0d231cb51429e3d0edf58a3eb4c32415f19aa52c1a33a30c1e532094ea"
+    },
+    {
+      "candidate_file": "mp-755353_54729.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "361f229e2d21f3f9caf176cc35bba6b8d92ecd41deaab4a51bb2aaf47167b532"
+    },
+    {
+      "candidate_file": "mp-38468_2D_ortho.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "b0ea93ff5c06d764dce6d88d080bbd9e3eec7145dae35c1d0e5036b6489ef358"
+    },
+    {
+      "candidate_file": "mp-1341203_58211.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "4c3be227582e8a653aa068d8aa03e4799d9bab9c2b73e4c9ab29e711503e01ba"
+    },
+    {
+      "candidate_file": "mp-18005_46759.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "e8e9e329a7a563e45a0ee92b457938efcd7e3793966128cef0cbcf3c2bafa1c4"
+    },
+    {
+      "candidate_file": "mp-759812_29310.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "ca206f9b88a54bb14b0fd091303519af8d8333cd41b8008dab99b351e923cc31"
+    },
+    {
+      "candidate_file": "mp-771243_57754.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "50f1620f7610114c3eb29660767cdffa3320e148fdf58634fe34e0a71cefaa41"
+    },
+    {
+      "candidate_file": "mp-2901430_58217.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "a2a3f1dd4605401aef618c31c2ee66caca79c4149698593779bd116c8fc79b7e"
+    },
+    {
+      "candidate_file": "mp-1367343_2D_ortho.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "fbbbbed44c41ca54bb55c511cde1076de818effd68b87d30a9a51548bfa0a857"
+    },
+    {
+      "candidate_file": "mp-1218575_55404.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "0a49981c30cc2dfde08147e16d600f9a368c585c42f3902731ae2f9d18f84410"
+    },
+    {
+      "candidate_file": "mp-977334_35543.cif",
+      "candidate_formula": "TiO2",
+      "cif_sha256": "9eefed6a370eb423edf5638aab7ead8f493297dc733fb5a4663ee0c94389c95c"
+    },
+    {
+      "candidate_file": "mp-1176272_31798.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "71e640e5f173d498ebd6d54f364c9f42b865151d14d2492115ba2fcdae82178f"
+    },
+    {
+      "candidate_file": "mp-1176068_31656.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "329980c9bba990537dbb07443ae8ca77e5b11bb8913d019bb07ab99e1a20edd3"
+    },
+    {
+      "candidate_file": "mp-1100578_32871.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "bb6d4cd9eccf6d7e6d7e60a604ea1472073e54afa8ee4340ea6770b4dd984f8a"
+    },
+    {
+      "candidate_file": "mp-1176154_31700.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "621bf8e30ad43137bb9f87885f5fdb47fbe0ce66589c2e5ca9183e70fdd63f6a"
+    },
+    {
+      "candidate_file": "mp-1175963_31596.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "5854daf59614d9b67d50c5d29b0584b2ef7c7ff57a3a8370b9c10de61de413eb"
+    },
+    {
+      "candidate_file": "mp-1176046_31645.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "e644fdf4f7af245635866e8ca0266841772ba834ec3f534197eb3baedf1abae1"
+    },
+    {
+      "candidate_file": "mp-1176133_31685.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "ddb175f0dc39a20b000deb18a06c4db7659bc6da79c4979bd40159ceb05d1c36"
+    },
+    {
+      "candidate_file": "mp-1100625_32923.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "38a987e24d5ffa2c3d0248f0cb7a7f87cb6f41b492e3dfea454b3d7dcfc318f1"
+    },
+    {
+      "candidate_file": "mp-1176117_31679.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "e08b56602df524a5957e59121c530b76df5c2213a4fd14d934d8869b42b1909c"
+    },
+    {
+      "candidate_file": "mp-1232442_31852.cif",
+      "candidate_formula": "Li8Mn2Co5O16",
+      "cif_sha256": "3f8884acd00cfc806cdd3a58d2f969371863253085357d5c51dd7af15ebe413f"
+    },
+    {
+      "candidate_file": "mp-1644852_2D_ortho.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "a040df24f34d20258d19daa449e504dd28495ed30b1cb8f53e0bf0aec1598e7f"
+    },
+    {
+      "candidate_file": "mp-1272749_2DMatPedia.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "255eaa4cf0d14e096b96bd2902772e83cd13e4f421d2fdf3e23f671ff02c7a1e"
+    },
+    {
+      "candidate_file": "mp-550781_2D_ortho.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "8324af4324e9117a41cdd094503b29a9bb322b9a78cefa6dacf12ae84f3276b5"
+    },
+    {
+      "candidate_file": "mp-645208_2D_ortho.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "3de050c433beb013fc1fd350a6a7c112b09ac8a758984d76b477584413e38fcc"
+    },
+    {
+      "candidate_file": "mp-1178064_2D_ortho.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "4816e70cb3659a8354a1e29e8cd02e6c4dc25c20ce32851e8bdaa539e8ab369d"
+    },
+    {
+      "candidate_file": "mp-1305882_2D_ortho.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "e6a8f770655c32c32002105cab5c5e927c3772d0a6d17dd5dfd9b84956b8923e"
+    },
+    {
+      "candidate_file": "mp-2230615_38798.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "ef5886d44b82e3895869ca43449a80b85c6eb991f924dccb5418e235e7ef31dd"
+    },
+    {
+      "candidate_file": "mp-2233763_2D_ortho.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "72e14c9aaaca2aabbde0f42bd9932867f9171828949590af89e55ed5f9e5222d"
+    },
+    {
+      "candidate_file": "mp-1100579_32875.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "bbfc9ab6c560eead0786b03c819dfe018167cd973735ce58cddabd5084683a78"
+    },
+    {
+      "candidate_file": "mp-25731_1247.cif",
+      "candidate_formula": "CoO2",
+      "cif_sha256": "3df0cd1b3de97c572ff4cc2bf12728e422e1da8fadc296f314a52cd6a41c3d9a"
+    },
+    {
+      "candidate_file": "mp-1178867_2DMatPedia.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "c583576b5ae0b00c3a8272233281a4381582f5e6e139e6d4f61ad30a1c729844"
+    },
+    {
+      "candidate_file": "mp-1045698_59878.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "10d652eb1adddee1636efcd105679a5a087e9c60f530551822c978e9538613e9"
+    },
+    {
+      "candidate_file": "mp-1216516_60058.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "90d6a4d058b843c98542dbcb443f3de27c0873f0d8d4b2a2a4d2ca66fde06738"
+    },
+    {
+      "candidate_file": "mp-2232666_40977.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "3c4599f59e25c1cf8cd6c8bb94d60cf1b835cc34500c3bba702d2f9a0ed9fc4d"
+    },
+    {
+      "candidate_file": "mp-775524_25795.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "6f80e44e5e37c6745709a36aa61dce13eb5a67f6fe96e3691ba0b74040add03c"
+    },
+    {
+      "candidate_file": "mp-1199641_11698.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "b6daf0efa0f61ef68bb8b2c870f95d2a1b19bfbe93365563c66fa86d7eba0933"
+    },
+    {
+      "candidate_file": "mp-763200_2D_ortho.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "42be3c1eae8b023dc5479ad8aa49365aa43597743e60f58b415877af7ae3f395"
+    },
+    {
+      "candidate_file": "mp-850103_2D_ortho.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "5abe1ac363c31b54e083b13de12f64bc435ca82a22746dc7a0d36d5007bf4d61"
+    },
+    {
+      "candidate_file": "mp-1207792_2DMatPedia.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "fed14eabdbe9708815f75b952d13142e8c494d8d09d931424b3fad7d0e8978f2"
+    },
+    {
+      "candidate_file": "mp-1274975_59913.cif",
+      "candidate_formula": "VO3",
+      "cif_sha256": "48d30acaf20f56c4295aec7126659eb9a4aacdf88cdb545fb8c5e997a34a54b0"
+    },
+    {
+      "candidate_file": "mp-1376718_2D_ortho.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "666c5fc2b20f6ecad8034b20a3fcfcabfe6c191bb7e37447ad7d2651efc918d0"
+    },
+    {
+      "candidate_file": "mp-34569_37002.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "56ca8b045d3e83e09fb7e1a616de27891563e19981d0ad3189ca6857935f50cd"
+    },
+    {
+      "candidate_file": "mp-1043265_62861.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "9b6519c45ec357842952d7779699117e6b040120882c8fbc5847ee0e459910ab"
+    },
+    {
+      "candidate_file": "mp-757258_14752.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "406135d3a75f2c2b447c0ae4f09b3bee4b21079124cc6aab148e0aa22a045ccd"
+    },
+    {
+      "candidate_file": "mp-1355579_2DMatPedia.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "00aefaf318bdc4ceb89520f5a6fad7716385a1032e55528d5afe454687504e73"
+    },
+    {
+      "candidate_file": "mp-1406798_2D_ortho.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "37f1d6280b937bce3c7bcc72fcf162442a92609896b37496ce3e80f6b98a5fd5"
+    },
+    {
+      "candidate_file": "mp-1099890_53577.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "76add2f77ceab5544c317965ab059d0062ff8bb00c3d9bc0e5e43e7ca4fec552"
+    },
+    {
+      "candidate_file": "mp-1218653_2D_ortho.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "04d1336281e652e5be14e88682a531eeb5d142952282c8a16e62481d8a4fa13f"
+    },
+    {
+      "candidate_file": "mp-1200902_53509.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "fc22a4497a7de40c4ddda51924eb0685d65fa88a1c174877cd2eb32c4f1e3434"
+    },
+    {
+      "candidate_file": "mp-757287_2D_ortho.cif",
+      "candidate_formula": "FeO2",
+      "cif_sha256": "b82e6101d1acbd497b70248324fd443e22c78a095ecd92a1ada33a474dd843ee"
+    },
+    {
+      "candidate_file": "mp-1518956_45439.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "5e64677caa475a9bd394264795cd7959b2cda47a20001b7edd76beee4868c19d"
+    },
+    {
+      "candidate_file": "mp-2228843_41042.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "c8f8c457ff788b9a03d6c11f70ae9a0ee402094d66c9bdde7d219e2221067d16"
+    },
+    {
+      "candidate_file": "mp-772957_56218.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "ff6e5a6c720e898c6bdc7afa032ecba59fb1091bb9dd6e25717fadea1a79ed92"
+    },
+    {
+      "candidate_file": "mp-720166_59804.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "9652803aa011b381c1f63bee6d4d88abce1db2a446360d610b131ab2aa102a9a"
+    },
+    {
+      "candidate_file": "mp-755630_2D_ortho.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "8dcbe76fa8c4b859f4efda184960b7f14e2a6828337bd711997cb6726a72eb59"
+    },
+    {
+      "candidate_file": "mp-754670_59808.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "efd8f764a249531f5636933e39ccceda2c09ad49c6fe5b140b3f5c3225c8edf6"
+    },
+    {
+      "candidate_file": "mp-753267_2D_ortho.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "5e72a7094b4c44f3d96f52357c27055cff878e2cc640b8ac179ec6f8fc0fc253"
+    },
+    {
+      "candidate_file": "mp-1101006_2D_ortho.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "e79db30ce54b6422a4b98018dee985117a30045129bf2e4a0bcad6314767ad45"
+    },
+    {
+      "candidate_file": "mp-18842_58642.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "c04c0405704ab1a21c0ffbc3c1547cae4cf6352a27443a0c9ee4f3439ae3bfd6"
+    },
+    {
+      "candidate_file": "mp-1207886_60090.cif",
+      "candidate_formula": "V2O5",
+      "cif_sha256": "8f2f580de96132a9bcec2df1311e9c51f0fcdf4f1bab21d156302639f0b76ceb"
+    },
+    {
+      "candidate_file": "mp-765017_29720.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "cf82661a354876c7f2b5185433cda15fe9d1060a96e2944df6fa2094bf9e6c4f"
+    },
+    {
+      "candidate_file": "mp-1176857_2D_ortho.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "e855bd2d7532875ca85aa9ee98c869c98dbedd0bdd46305051b24b1e67bdcc2e"
+    },
+    {
+      "candidate_file": "mp-1176900_2D_ortho.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "24fa106ec91c4bdfbe63521543f2077e93fbf17ffa93ca752bb20cf0ca600d25"
+    },
+    {
+      "candidate_file": "mp-1177211_29689.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "24ae2f61d84ded2c23034b4e2101127a612cd8ce42c3a468f92b11a71963cda8"
+    },
+    {
+      "candidate_file": "mp-851254_2D_ortho.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "045b9c0cb3ab504dabab258c4b77dff9289ee45e670c04f7c5bc9907b2c13088"
+    },
+    {
+      "candidate_file": "mp-757654_2D_ortho.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "903e9ddd88594f039232accdc3ab46fe75efd8a067fc9badbbc48553e0a9d49f"
+    },
+    {
+      "candidate_file": "mp-1177192_29676.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "8c810d7773531f92b4c466629d8c1b0e126dbe4678da72c39c118e8fa080f9a1"
+    },
+    {
+      "candidate_file": "mp-1177130_2D_ortho.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "d1edba4c2e44af0383f9af6a6ecb1d0a89f3154a67019d89da7518066cffbf02"
+    },
+    {
+      "candidate_file": "mp-765080_2D_ortho.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "e5475e9d308fbebdab5cab686c6062ca9f98e0871eb1bcd38b396991992c9641"
+    },
+    {
+      "candidate_file": "mp-851253_29743.cif",
+      "candidate_formula": "Li4V3P8O29",
+      "cif_sha256": "74b1abbff3e76b572b8c594b93b87666798f786e072cea24b5a1605500d4d928"
+    },
+    {
+      "candidate_file": "mp-1042577_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "fc7b1453fbc5146cadfceaf1e01340cf56741e75ee6c364d7532a29685cf8202"
+    },
+    {
+      "candidate_file": "mp-766892_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "42ff8fd836f7ff1f69885bcf061c011856dce58d0acf825175918e2d335d45c6"
+    },
+    {
+      "candidate_file": "mp-1386995_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "70232425e026788cab5c2214427d95726fd6e3324e07e4a02b08ee0251e20b71"
+    },
+    {
+      "candidate_file": "mp-1045572_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "418fce1d892cd540f27e26bd3fd6b893a9f79ffd9214ded4cb52a6f2bed100c3"
+    },
+    {
+      "candidate_file": "mp-1343472_37083.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "57e6526b4613d235a23601d4c8b58cbb20d7dd07c916398d3cc888a6e9fc231c"
+    },
+    {
+      "candidate_file": "mp-764934_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "005747f8cdecbdda9b72244407b8d87c594964b466387639936a5615e47f8f53"
+    },
+    {
+      "candidate_file": "mp-2219808_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "218f322a62bdba922d518ab5cfbc3389f910571e7230ade45a740106de210a2d"
+    },
+    {
+      "candidate_file": "mp-769526_30257.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "fc9e7d2613afe607f53b7d1d3705bcfaf291ded88e034970d027cc03f4bc4d9e"
+    },
+    {
+      "candidate_file": "mp-755045_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "8767513defe3c9079ad06a1dfc92394063fe54294c188c86591e7c41878e22e6"
+    },
+    {
+      "candidate_file": "mp-690528_2D_ortho.cif",
+      "candidate_formula": "NiO2",
+      "cif_sha256": "9aa730844bb4d45bcf71188b0417e545373ac1ec45bc6fbac6f6d23453df2309"
+    },
+    {
+      "candidate_file": "mp-756540_27613.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "3a9c86faad9c01095438415f9d13e0ef46687ef862dee968ca0aa7b0520b24a9"
+    },
+    {
+      "candidate_file": "mp-1218872_53582.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "1faf5023a343a998d7e2fe759f7a2882f3cd9e16f3e0056d6f1083a20eba3a50"
+    },
+    {
+      "candidate_file": "mp-530797_2D_ortho.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "b6a7473b6798dc7ca0e99d53ca5b3ba9734dd69f812be9aea05f704db2b9cd0d"
+    },
+    {
+      "candidate_file": "mp-1221004_45803.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "86de0843017804879a1edbf8dc57c33a58dc3b6d8685ffb7b9c0d18328a93e3e"
+    },
+    {
+      "candidate_file": "mp-39699_19685.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "a0eb417b160df64a7170844f0245a34c029494ef389d3305e15917077c56587f"
+    },
+    {
+      "candidate_file": "mp-1104533_47366.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "ec1565a96dad41d92d18d8462babfc3035d5cd480907acf815f3ffe0ce45d052"
+    },
+    {
+      "candidate_file": "mp-767497_31947.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "936ac060b9e0c24de8a31f7b972ffd9c3da1c34151e6ecd3fa201790aa58ff01"
+    },
+    {
+      "candidate_file": "mp-2217827_40483.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "ca9d1d72d44e45ee44ca6a34be323220a9efc1f1d75d224336519d2394ddaf1a"
+    },
+    {
+      "candidate_file": "mp-1181883_2D_ortho.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "21931aed02e03a9a11544e565e1f815ca46504f699710b4860eb274e63aca134"
+    },
+    {
+      "candidate_file": "mp-1228482_2400.cif",
+      "candidate_formula": "TiO3",
+      "cif_sha256": "825a26d38314b02ef4fb6f7a8e261b378a32e628c3d9ff7a0f088ff3e090386f"
+    },
+    {
+      "candidate_file": "mp-1175785_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "42b812b64404456f753da5aeb39cf64deeecf2fceb02bc827b0ccb89a2667819"
+    },
+    {
+      "candidate_file": "mp-1175624_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "9190ffe9e526dc85866aa162f0cbc27ba8961e3d67188f0221f7bfa00a5924a0"
+    },
+    {
+      "candidate_file": "mp-1175685_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "a5652f052e32c68afb63f2c4f74eee249704326a0885675b0145522ceb6c0b20"
+    },
+    {
+      "candidate_file": "mp-1175424_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "ce672b278bbc063ad626b6bc6cc29a2070c67cf5651ab18aa2cb74e0be8b44f8"
+    },
+    {
+      "candidate_file": "mp-1175848_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "491b949327f4b868520ab05ad81d479d2917fda7b88640950b80666bdb7173a4"
+    },
+    {
+      "candidate_file": "mp-1175877_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "f6c49bc168889fe632e177ab19a0d77cd2162a6acc96a42f6c4cd0185f64e690"
+    },
+    {
+      "candidate_file": "mp-1175699_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "0206443fb75031aa20fededd32311862e5ac7ec22ac0d6c9bbac6789b5423ecd"
+    },
+    {
+      "candidate_file": "mp-1175891_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "907a6c75223502aa6b021113cd84445e56767865168a1224a18980e82cf1a375"
+    },
+    {
+      "candidate_file": "mp-1176174_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "b59ff418b5de58d97f0c77242632cbb4aa391152a9dee5328818221805d7d1f2"
+    },
+    {
+      "candidate_file": "mp-1176021_2D_ortho.cif",
+      "candidate_formula": "Li2Mn2Co5O16",
+      "cif_sha256": "8cd6110ddaf4827ad1053c1188132cb2d849dc5ea86c3ebcd2ddcaa5f55ce7fc"
+    },
+    {
+      "candidate_file": "mp-1175561_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "376cd614041290d461a498b9d83bc72a33a7bdd630667e75518fcde3493f9b4a"
+    },
+    {
+      "candidate_file": "mp-1176003_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "240f1c11d2702ef512a7e5b8fb21e559076c2cf44e0616826f38dfd395cf20c1"
+    },
+    {
+      "candidate_file": "mp-1176011_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "a466bec7847f6dcadd282fa4184dff7a2971d20663b03edcf5489619aaf46c3c"
+    },
+    {
+      "candidate_file": "mp-1176112_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "39b3b8e575343a49e88b62a81ef58bc9f4e29c3bc544c2ce96443eafd7c08aed"
+    },
+    {
+      "candidate_file": "mp-1175644_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "381a6464304a27dac302b3b5109de09249f57ec8185277c892b96b398e692fb1"
+    },
+    {
+      "candidate_file": "mp-1176173_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "5f9e98388b97d905eb422f3b3d6cb87a2a573e19289db379082718ffee13225f"
+    },
+    {
+      "candidate_file": "mp-1176178_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "886d865d60e549d66be3ad6d6d5f970579abcedfeb766b1914380e061e88dbc2"
+    },
+    {
+      "candidate_file": "mp-1175766_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "00f34c967f582cb2ab1b7d9677c901190b69496a31a2db22666842946e3814e8"
+    },
+    {
+      "candidate_file": "mp-1175609_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "dc3091d80d34a093e8461352ed7cb2018f912917f7108439855b9b68b2a2d259"
+    },
+    {
+      "candidate_file": "mp-1176034_2D_ortho.cif",
+      "candidate_formula": "Li4Mn2Co5O16",
+      "cif_sha256": "dbb2df27da2e4b9cab8ee0fc1af923f8d47be9d222db50df819f45f762c0ba99"
+    },
+    {
+      "candidate_file": "mp-1175348_32231.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "abd5a98fff70b0b80a1d3dd7c843937e83f5211bad1c56ed10096ea4dbec0fca"
+    },
+    {
+      "candidate_file": "mp-1175290_32198.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "6d62ed6e6147970ada98fcd5cce6ce544beb9525d08233b6013d5d9c66b33141"
+    },
+    {
+      "candidate_file": "mp-1175225_32138.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "797b2fe95c5f6fedaf681b0e5c07cd2ba4f0836eaad34f9857f1ba7b0eb524cb"
+    },
+    {
+      "candidate_file": "mp-1175125_32111.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "a14ecb30b784860611108da98f614e0377598fe59a57317f2fc2d40f0674ccdf"
+    },
+    {
+      "candidate_file": "mp-1175268_32163.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "059a8e9b0b8d855af52556611ea4cf6e6b60c2aaf1c6825914e943db70368644"
+    },
+    {
+      "candidate_file": "mp-1175162_2D_ortho.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "3e771546077205a16e0e60c18e4ccc27b0aad6d0ddf828db7eee6ba8b149b93b"
+    },
+    {
+      "candidate_file": "mp-1175348_2D_ortho.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "0bee000e04b82948cc1f385491b771e3ec3e113830dea58381593644a0fba3fd"
+    },
+    {
+      "candidate_file": "mp-1977420_32282.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "ad5639483a4ba11048625d96a344a7a3becdcc6bac9d9bd458e54d53997f553e"
+    },
+    {
+      "candidate_file": "mp-1175125_32109.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "77809fa1e3a6cc845a1d3a9451a0564c99ceffde8c1fb2bd81dcf7a589a7156f"
+    },
+    {
+      "candidate_file": "mp-1175206_32132.cif",
+      "candidate_formula": "Li7Mn4CoO12",
+      "cif_sha256": "9dadd68da3bd174deb23a2b1791f7df60d26c94999a4ab4186fbe07ad90d095a"
+    },
+    {
+      "candidate_file": "mp-1177191_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "ff28bcceb6ced9d8521924492cafece9bacae5c69514e6eb3a81cd968cb82ea6"
+    },
+    {
+      "candidate_file": "mp-772196_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "e3fd3d1851b2df5b731c1d8271577d198fd29cf303705a1504440ca6e8e48098"
+    },
+    {
+      "candidate_file": "mp-1177540_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "7e705b25b63d79dba9713ca93d4a718e597750dafa945f0d29c57da4fc1f9f7d"
+    },
+    {
+      "candidate_file": "mp-765371_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "fb2309fec06b8bfa60583b5bd264f5d26743d841690b016c56efb5453dd6cd74"
+    },
+    {
+      "candidate_file": "mp-851114_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "98059f43e67ff8a30e20537434e56a6d967aa8d9ad11c91295a33489c89dd65e"
+    },
+    {
+      "candidate_file": "mp-760278_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "766815f959da563e3c9e513e9d32a02849c1c482a14b30e08ba86ae9acb30fec"
+    },
+    {
+      "candidate_file": "mp-761000_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "7e877bf1e75f7944a8b8b31d06163741eb1290ecfaa8721e6c6c787338651bbc"
+    },
+    {
+      "candidate_file": "mp-1177238_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "0e95475a569e5f0c1f851403db55b3d343b22cd885bbbf5403e5912cf7aabbc5"
+    },
+    {
+      "candidate_file": "mp-759298_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "0a1646bb66b896f3d71818b1a0c02838b76b0d89b6c3a53a5d48dfd7e43bb3ab"
+    },
+    {
+      "candidate_file": "mp-765407_2D_ortho.cif",
+      "candidate_formula": "Li2V3P8O29",
+      "cif_sha256": "4f9a78dd8a7184b528fa88b243114328aa44abcda3f99b17bdb839f8ede88121"
+    },
+    {
+      "candidate_file": "mp-758406_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "990fc71de9592c6cbb4ce365a588a07e0fc30c87ac06dd78a28769e5b0a17bda"
+    },
+    {
+      "candidate_file": "mp-757184_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "290fdb46a7b707ba393f6b960e876d791971341042611ec8cf7490f5322c39c6"
+    },
+    {
+      "candidate_file": "mp-504367_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "36fa808656fce9fa2e5bc3a87736d28c2ad9f4d2e8382a0ad2d5d7bbedef778b"
+    },
+    {
+      "candidate_file": "mp-1177035_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "9ce353258b2615d403f07c9e93eed1831808cf0133a1ef323e235ad816ab98ff"
+    },
+    {
+      "candidate_file": "mp-850022_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "269848fa78031ee01a8b8f9255009e4292499d2c2d81801aa4447b462891f843"
+    },
+    {
+      "candidate_file": "mp-1177189_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "a995381fa45ba50646d2045594ff879a011cd98b5a73025b2b008e097a2d21d7"
+    },
+    {
+      "candidate_file": "mp-760818_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "802e712542f4e218c9f1d8056d3b2baea0463dee176e24fec051ab3878ea055a"
+    },
+    {
+      "candidate_file": "mp-765045_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "a8e62fd7a3d40766d4e7252f83047e573fdb6889c4884f8df489406739d044e9"
+    },
+    {
+      "candidate_file": "mp-759762_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "e1c2373946434dcd590e59a27e9af0ceaa33d496ef9f5750f079fdf108fdb79c"
+    },
+    {
+      "candidate_file": "mp-771835_2D_ortho.cif",
+      "candidate_formula": "Li3V3P8O29",
+      "cif_sha256": "b2ea4895a0607c631c0de7153ab61dda00a5bd3ddfd9cb418a4567d5d1c68b8d"
+    },
+    {
+      "candidate_file": "mp-757140_19778.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "6be869511cfc2503b5d8b34ca65471260e239a26a92d4c462302689c74f270c6"
+    },
+    {
+      "candidate_file": "mp-1228205_3608.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "ad8e66b2e8781fa515c7a4433894cac67d12ebb2a3819235ea60ffc1f2b6b2fc"
+    },
+    {
+      "candidate_file": "mp-1100654_32974.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "d6e5bac366bfbbf0f68fdbab9da9a30411219cb834e16f74619b9fd27460edc2"
+    },
+    {
+      "candidate_file": "mp-758510_24799.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "ca7ce673731cfdf339c77b36b5eb8adf78126b841de90d8135814ab48a0bd0de"
+    },
+    {
+      "candidate_file": "mp-1173968_27061.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "f12f99e23d9a63c9e79c7458852946541ebe73dceb275f0cb5b3e0fb0b80c2f5"
+    },
+    {
+      "candidate_file": "mp-2224810_3421.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "bcded1cfb4984b0ef300fe80356c64360ccf1f0d0eff8bcebdf643f0933ca897"
+    },
+    {
+      "candidate_file": "mp-1204982_2D_ortho.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "d089a82a6d4b387b0bf248dd74a322c75cb18c15bab24af72f5ded8c22a2d78a"
+    },
+    {
+      "candidate_file": "mp-1343591_61298.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "e805010b213a5186340755aa8575b57503178a5a8c3a49b50638097dc80bc89b"
+    },
+    {
+      "candidate_file": "mp-18988_2D_ortho.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "0f44cc32a6e6c746cd92e0e522e46b1082c8b148dbf7ae5c75072561e28ca1d6"
+    },
+    {
+      "candidate_file": "mp-1174540_30999.cif",
+      "candidate_formula": "MnO3",
+      "cif_sha256": "0ba0d1cad9ae9a5fb93a642d9e3da0afc104ef0e78781e8f7f2570e7fc1fe0f1"
+    },
+    {
+      "candidate_file": "mp-1197369_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "c00c6b39d29136a02a4512c8e3fca88c3f6e80be8dd19cb6e24a15e1fb330431"
+    },
+    {
+      "candidate_file": "mp-695998_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "06980f92a52eb58fc5e1db9f5beeeaf55f9f79226cc232995bd328c7d5aeebe2"
+    },
+    {
+      "candidate_file": "mp-568644_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "bd8713a42644d55b2ee5621b52cf228713a80b460aaf1855b8829c0c749f7e36"
+    },
+    {
+      "candidate_file": "mp-608014_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "126d61f1c9cb47d3ce401e68fe67d3614990b941779213a883b218d939b4285a"
+    },
+    {
+      "candidate_file": "mp-31486_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "07ce7e4a1c9135b9abb78885a049c2f69f62548380ef183321858258ca46aadc"
+    },
+    {
+      "candidate_file": "mp-1079679_18808.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "0b29b77d9c5ae8ed3cb63bf98a77f11d3db8a6996ce4f76bc8f6b746c41ad2c9"
+    },
+    {
+      "candidate_file": "mp-39699_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "b2c8f4100ad9e627d0f494e967d48169a9e2d0f56bd6a33a3d36a27057c5081b"
+    },
+    {
+      "candidate_file": "mp-1120752_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "5cc3ed652dfaef7d11458064751fedf11efcce805dd51e1951ffc0281d2bb799"
+    },
+    {
+      "candidate_file": "mp-571461_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "465bfd1fd734f3c612b0b0910615698d4a461fa272a841d75f74f6016f740166"
+    },
+    {
+      "candidate_file": "mp-1194826_2D_ortho.cif",
+      "candidate_formula": "K",
+      "cif_sha256": "3f468ccaecc1b0aa1e02ad6550c7c35d7ca35d230e6b9fa4e565da2055006a06"
+    },
+    {
+      "candidate_file": "mp-1073122_2D_ortho.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "f25363eb7b0fed69df7a93ab0a185b2a4d0fc8a35922e31217f6aecf5defd995"
+    },
+    {
+      "candidate_file": "mp-1074279_37885.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "7cf62328ff031105e0e6e8a71daa763915f6fc59213ff28db6dcababbf634264"
+    },
+    {
+      "candidate_file": "mp-1073735_2D_ortho.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "ad732bc2ab09693d8a24b0bf3c6d440a3a8b7288434d1c83045be0564f48dc2d"
+    },
+    {
+      "candidate_file": "mp-1073695_2D_ortho.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "e478b17cbd56a896118c1a177f4a43320d2b5375a3183b5d9d77d7e68459322a"
+    },
+    {
+      "candidate_file": "mp-1073484_2DMatPedia.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "c01ea7faf1211a783cfccd45835d06a89a1dd98135938dc8baf5d4ac4c429a17"
+    },
+    {
+      "candidate_file": "mp-1074333_37898.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "1b0d20b7dead245540c4da29e9340d0c16023c2005dcc1cf5f1508dca87ebd80"
+    },
+    {
+      "candidate_file": "mp-1073644_2D_ortho.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "4a4031a813f477000368b1514c2fdaf3c35f0a134a0874c1acaae3a529ca55a9"
+    },
+    {
+      "candidate_file": "mp-1074041_38414.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "4375d591cdee6001a4b7fcb61db09e83479e2598e30ca7c7a67c307454225347"
+    },
+    {
+      "candidate_file": "mp-1073469_2D_ortho.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "f04c4d20a2300b7b6683fdc39dfb5341a8ecc1badc3891b04e902b2d8bc9a37e"
+    },
+    {
+      "candidate_file": "mp-1248532_2D_ortho.cif",
+      "candidate_formula": "MgSi2",
+      "cif_sha256": "ae8c2e32fd3d061f64f8fbff30a60c3f0c167fe5641942081c35aca2c6eb97eb"
+    },
+    {
+      "candidate_file": "mp-26612_15099.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "3e1eac04ebb8ed410aa704c95a1b5566cc136afc681b37a5cb3c9f72e88546d1"
+    },
+    {
+      "candidate_file": "mp-778734_29852.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "5d694a754268dc9ed2a144e24e3d7ed906e0c4285a18bd35b7676c0e660ca8bc"
+    },
+    {
+      "candidate_file": "mp-771006_44176.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "a5eaad1801b190eeaa208062a7d613b8ab55da02f695513fc9d64048b0b8d3f6"
+    },
+    {
+      "candidate_file": "mp-1103865_2D_ortho.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "9729ab4f2d64713fb9354aceafe9bbed92cd29bcf87012a84a5d22067b76b32b"
+    },
+    {
+      "candidate_file": "mp-772069_2D_ortho.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "07947ca3a6e4711fc510f81d355f9917f0f6924249ffb96dc197d33ee1c24457"
+    },
+    {
+      "candidate_file": "mp-26612_15101.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "ee1d0958cbbd3a55427668176f062e49a32b6170c589f8f7a364c0f69c8757cd"
+    },
+    {
+      "candidate_file": "mp-1662030_2D_ortho.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "daae77419e51f848f9ffb4d808802b56300116ed5d8d0f46053da68130bc9838"
+    },
+    {
+      "candidate_file": "mp-1104261_2D_ortho.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "2be5534106eed835de19d3289cc78bc844d4fcfc79edd58104d9cfb69bd0bc47"
+    },
+    {
+      "candidate_file": "mp-729483_11428.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "053cc0f3358529c723f68126361b3c32f08dfa1e2efec04a4e4c3822f7a092c8"
+    },
+    {
+      "candidate_file": "mp-26559_2D_ortho.cif",
+      "candidate_formula": "FePO4",
+      "cif_sha256": "2010b0ac127fe6bc1bd9f627a991fa5f76a391c4d165e1ff6b49e6945c4946b1"
+    },
+    {
+      "candidate_file": "mp-1953_2D_ortho.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "6e799eb0dffec933092d8f4bf262142f541a3a8d88310dabe41e88b33833a149"
+    },
+    {
+      "candidate_file": "mp-1217098_2D_ortho.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "7fa2312ce5089a1cc313d8c9315938d922ffd7b3884656e63b59ac6c98dfb3bd"
+    },
+    {
+      "candidate_file": "mp-72_57461.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "ebaaba1705efde04b94b6c33935659d2bc8ae47d57ee4bb5913179c0164df011"
+    },
+    {
+      "candidate_file": "mp-1217515_57512.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "12b1562ec1eedff640a681bb8de82c05504f5a2ff9721d5aa788d09bc361289b"
+    },
+    {
+      "candidate_file": "mp-1094351_2D_ortho.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "e60d3593db7422145c95fe8ebf314a66b1b48d603846ee4793b2476e8d6047b3"
+    },
+    {
+      "candidate_file": "mp-1094380_2D_ortho.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "a8eee142618225dd27789cc92c4719782499b054a9cca11f6615820edfdea6ec"
+    },
+    {
+      "candidate_file": "mp-1094346_40441.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "76e7d4078371e9456cdb5832426631acdc8839aeae950c75128be4e5e426c8eb"
+    },
+    {
+      "candidate_file": "mp-1217515_57510.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "6929fbf2b24e56134a022830ec6c29710e397805ea36e6f1a73648f25936a94e"
+    },
+    {
+      "candidate_file": "mp-1094499_2D_ortho.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "b8f0f0693e6d95df866a3b1590fbaa25716a554b30ed98ec68cda2cdb2549446"
+    },
+    {
+      "candidate_file": "mp-1094390_40448.cif",
+      "candidate_formula": "Ti",
+      "cif_sha256": "4e76071de3251a6f30659dd7f32deca501d25ad31febeff5f3c3482c154df5f3"
+    },
+    {
+      "candidate_file": "mp-755547_35846.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "efccdde7dafcc8ac6fd87a3e25e75198eb3d2f4a4eb959f5613b523b73380d7c"
+    },
+    {
+      "candidate_file": "mp-758091_2DMatPedia.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "ad8bdec1aa94e8443e94169999df38a2933f7f8fc1d3971d460ba1ff6d9a6616"
+    },
+    {
+      "candidate_file": "mp-760794_2D_ortho.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "52bb4e65dade9f2876f9d4dd49918074965b39140198b3f1ef2458ee6c1c4480"
+    },
+    {
+      "candidate_file": "mp-754337_2D_ortho.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "a5e5057be3461109c6122a66668010d6ac91b5bd95314751db426cfa852afcc2"
+    },
+    {
+      "candidate_file": "mp-753053_25903.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "bff0502a47239657d516f983543853fce494cf13bad80526f1e9d49aa8daf149"
+    },
+    {
+      "candidate_file": "mp-753568_35840.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "1cf9c176c915565573645dafa96cc96395e2647453947852c41cce32673ddd4d"
+    },
+    {
+      "candidate_file": "mp-2466847_2D_ortho.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "61cd8b23d62466c741f7250b041dbe3c5338aa89c6e210016938499fd0e5db14"
+    },
+    {
+      "candidate_file": "mp-754766_2D_ortho.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "f20c5b3898f1f335afdd88d98d31a06ed22020a8b28623b0f3132ffeb52f086a"
+    },
+    {
+      "candidate_file": "mp-780283_2D_ortho.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "86e3bc3dc87b4ae0cb70efd4dacbe71e8e8830d32e9b8d392a59e2890f6e11cb"
+    },
+    {
+      "candidate_file": "mp-767625_35871.cif",
+      "candidate_formula": "LiVF4",
+      "cif_sha256": "3cf29d7df0e0ddffd5855aee818532357862fa5528fd7f0b4ca76c1b2991d2cb"
+    },
+    {
+      "candidate_file": "mp-757315_43178.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "4cbb34491b9fe0137d8ac8d79a2b45044a60e9a9d1df9e5adb6cd3c21e9e5be6"
+    },
+    {
+      "candidate_file": "mp-2231293_55271.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "5880a6291baca69b870c33e0ac07344fb179cc54af529cb1b02d03f9abec9e05"
+    },
+    {
+      "candidate_file": "mp-764074_43202.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "22edcebd141d2c2f92e0182f05c510e7f20c73f6a77401f0bb9ed68fcb6ec68a"
+    },
+    {
+      "candidate_file": "mp-757135_26792.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "30aa2cb04274fa4901b9a1c0c0bab90c022a13050d6621a05c48ebc25523b10d"
+    },
+    {
+      "candidate_file": "mp-1305509_43195.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "8280b25422ed9bc48e49c2c47a4fce6d9e97c2e46a9d3bd198b0443a06802b28"
+    },
+    {
+      "candidate_file": "mp-2215904_41227.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "545e798a8467ffb14d6485a4fcdea62213353074194a87fc03a71e5cdc48a5c0"
+    },
+    {
+      "candidate_file": "mp-779908_43206.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "c6f7d292f953a9291c7a9b83bf1440acd4216ef8f1ada34c638cf5e386c7e09c"
+    },
+    {
+      "candidate_file": "mp-1235069_33925.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "c45965d4cf60d20f49f8a65ec7675404e926a233c942f8570c6ceadf66bf4609"
+    },
+    {
+      "candidate_file": "mp-1226173_11921.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "a546c8488db8ee105cef266c4c6114c21b28ad4c37163bf8954709455f004352"
+    },
+    {
+      "candidate_file": "mp-1305099_2D_ortho.cif",
+      "candidate_formula": "FeO3",
+      "cif_sha256": "355237168761df3e094223b5da239c634f722aef6633a00f80db9a5f9c062419"
+    },
+    {
+      "candidate_file": "mp-777357_2D_ortho.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "888a4bc85d59fcc373c851f2c3c753234aa025f1bb460a8b72f40a0d6331073d"
+    },
+    {
+      "candidate_file": "mp-850958_28713.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "68d16361e230b8afc0a02dac8eeeab521abec8a9e7586a2d57e14781fe60b15f"
+    },
+    {
+      "candidate_file": "mp-777852_28692.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "7f52e256857c1b4cfa1f899e8ff3e9973451f15ce067bf58f7df2da0c64e6017"
+    },
+    {
+      "candidate_file": "mp-774377_28686.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "d49cff63abb4f1d8360c4374712a7d69dd5c2a2204e9e930c82711c66a6a5cc4"
+    },
+    {
+      "candidate_file": "mp-755626_2D_ortho.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "5c89c3fa54e1e05daab9b4b9af5b47692eb6072d043ec5c8e7e6d7579a9363da"
+    },
+    {
+      "candidate_file": "mp-1177369_28672.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "4894c425c67f62ae57e498e864dd372a36dab2056e027b3cb7fd27df53f2016c"
+    },
+    {
+      "candidate_file": "mp-778007_28694.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "4e986f62d9a53e68a78ef332fe99b2fe59be7d2a55b401c9fcd91f9f1f53952b"
+    },
+    {
+      "candidate_file": "mp-779066_2D_ortho.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "90cb77528916bf74aa4b03968d225c253fd69bfb4d7dc81fb56a8be85a1a8c80"
+    },
+    {
+      "candidate_file": "mp-777852_28693.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "697f9b6e5a656c2c0a6232dcea1907833797334f331f207eb4c0335b7d3aeacc"
+    },
+    {
+      "candidate_file": "mp-774377_28684.cif",
+      "candidate_formula": "Li4Mn3Fe(BO3)4",
+      "cif_sha256": "600b768674444e43f0e2750916652ec0ef8eb4a8c97da68c7a9e2df32f2084d7"
+    },
+    {
+      "candidate_file": "mp-15983_2D_ortho.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "0c4054439b32653dfda0e6c9c9ba1f1ffb8bf49640b2847356e2e751b7c3ca02"
+    },
+    {
+      "candidate_file": "mp-1048563_37272.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "037325fbbca936252e094325218d9e1fb3438c84319456f963f62502705a5097"
+    },
+    {
+      "candidate_file": "mp-1217801_56189.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "66e9636cd99e88a14aa909a7b41ac93e61d07313b6b1b4a57e483135de7ea93e"
+    },
+    {
+      "candidate_file": "mp-1188528_46030.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "f7034e0efb1e711918a503ded308ffda4d2c9f4ba8a5439aeec5a82a229f730c"
+    },
+    {
+      "candidate_file": "mp-557195_2D_ortho.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "a8184bcef16c11767f7291213def0a0d0b454b3d486b6c5b8768624e46e196c7"
+    },
+    {
+      "candidate_file": "mp-1224011_19220.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "3a054f7459ae37ea822bac3397675ff5e62fcf23ef2b3b00d888976abd1fbc47"
+    },
+    {
+      "candidate_file": "mp-1228388_3535.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "e499b3f0c6016ce85a1fa8623a242054a27ea388a329d55ca78b31bf6eccdde1"
+    },
+    {
+      "candidate_file": "mp-761057_55391.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "512431ce5d7b4327faa2a8e77c907f015dfe8245328a616ae7ead72fcea30327"
+    },
+    {
+      "candidate_file": "mp-757862_20087.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "f2db529c12c7a88ec80fe0fc341f0c5cff6e4d00b70f0dc2485c3afa7db3653c"
+    },
+    {
+      "candidate_file": "mp-686160_23498.cif",
+      "candidate_formula": "NbO3",
+      "cif_sha256": "e8344b79d40a3907bb20a9812907184aea848f8a232f40037a20f4b6dbe5bd21"
+    },
+    {
+      "candidate_file": "mp-1039765_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "0850f5801f26de29719fc0f181579210bd73a46368fb7c85433a00d3ee86c7f1"
+    },
+    {
+      "candidate_file": "mp-1039259_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "bbc4de52b0df5cdeafebd614d614c6737633ae4c9a3650ab2f2154fb340ab177"
+    },
+    {
+      "candidate_file": "mp-1039574_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "6974f7d23a4191eb7b815d7cb64601fc20caf6333b80306660b756f67696773b"
+    },
+    {
+      "candidate_file": "mp-1094837_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "35ca40795dd944d93714c69a148d086dd5eae351eb817cc2f751abb24844e3d4"
+    },
+    {
+      "candidate_file": "mp-1039090_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "236d7f90fab1a3250efb3bb68f5513381144546a1a4894cf8e4de94ddbe161e7"
+    },
+    {
+      "candidate_file": "mp-1226552_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "1949b9b5d9fe31e83d6c3589a87ae7f62744f85a5c0a18ec4f8273453105e384"
+    },
+    {
+      "candidate_file": "mp-1094963_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "0403a72abfde3dfc5f19bd170dbe7a2b9bb7d62afd728633607ae1653a7041db"
+    },
+    {
+      "candidate_file": "mp-64_9085.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "a382c9fd38ff91227112ad5cc870b7a203984471818783a55bfa9d1101593666"
+    },
+    {
+      "candidate_file": "mp-1038860_2D_ortho.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "3c494d1207845d9d8a146868822cf06b109a7775039152fe9628a27bea4c9d61"
+    },
+    {
+      "candidate_file": "mp-1039659_9324.cif",
+      "candidate_formula": "Ce",
+      "cif_sha256": "a8892e5bc7f0b694fc924bb9d23bec0670f50b198805d2f101260722f939a974"
+    },
+    {
+      "candidate_file": "mp-775238_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "62e47013827c0b4bf29d85210249dde136157f99e19f3f29803d46c01f7ea72c"
+    },
+    {
+      "candidate_file": "mp-764815_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "bb007113f08e42a0e1bff0cf9602c323a1ccd2b54e575486a5b13249e3932c39"
+    },
+    {
+      "candidate_file": "mp-764587_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "d127a353979a3590624260eaca3019e47d1895526b95726cf88f9047f1d966fb"
+    },
+    {
+      "candidate_file": "mp-760254_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "ae78c9a237ddcd1cf4791ea319c9b2498527c340cea62eb88047be761fc16bc7"
+    },
+    {
+      "candidate_file": "mp-761192_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "ec1461106679671753f5ead2e6e2059a3a6a0f67ec736bf9b756731844d32720"
+    },
+    {
+      "candidate_file": "mp-849952_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "3c5d909bff0995c098f51195b5f54d2d6b37bd8133d80fdea51c41d1ad00efdb"
+    },
+    {
+      "candidate_file": "mp-766637_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "ca6e0dc750e792e3e2d625ac2e93f527b4a334a19eb8ece1e9cf31bf7469752c"
+    },
+    {
+      "candidate_file": "mp-764654_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "b4c14971b61d81467204b175a3107c1c89e00bdd80e73b2b19f4d604110d12e2"
+    },
+    {
+      "candidate_file": "mp-766960_23335.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "d59ae2b43c6b89782d97d3df6fd4584d5f344b3000811e2e09e26a7c8badb419"
+    },
+    {
+      "candidate_file": "mp-759768_2D_ortho.cif",
+      "candidate_formula": "FeBO3",
+      "cif_sha256": "4aede76f2ab18f7b56197cdc54640c1f87c8b5b52b52d37167b87f805b3d3eee"
+    },
+    {
+      "candidate_file": "mp-505595_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "75cbb4c56bc1215041cbfc0b63b1ddc00c9fe563924e5eea3e0b281c234293bc"
+    },
+    {
+      "candidate_file": "mp-625252_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "0a0a7f9987e0d7a7589f747e4b0e165570d851f0dc6a2c652a392676c2956fed"
+    },
+    {
+      "candidate_file": "mp-22635_14794.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "3ff35e829ed0c07cfb8707a75adeacc439209abf634a5a07bfa2547c42b56fff"
+    },
+    {
+      "candidate_file": "mp-754053_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "eb9830d9de8dcd78c9cd4e095f4b063ae219a220440c899ac66b225f21450b7b"
+    },
+    {
+      "candidate_file": "mp-555778_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "ba8e5fdb5726d3c1fbff4da40a43de75b5c1c1c914cdcc45c5e15ef754b13115"
+    },
+    {
+      "candidate_file": "mp-775022_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "28c639a425ade89c7dcdbd2e17d6cfe3ffbccb36e3c0915eb5dfcc10acfa471c"
+    },
+    {
+      "candidate_file": "mp-2220212_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "aee2c70247f640ae8ffb85b03279c3aa24b5bce1dd52fe3ff33d0194c4604aa0"
+    },
+    {
+      "candidate_file": "mp-27491_5889.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "c9885d47e9e44dd1906608f948c2f91012b92683670469a981f8fef6ca408d9b"
+    },
+    {
+      "candidate_file": "mp-766142_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "5a72f54e539dbfada5ca19ef589502fd6c29e3cafcac875b19c6d913c8d8117f"
+    },
+    {
+      "candidate_file": "mp-2218198_2D_ortho.cif",
+      "candidate_formula": "FeO",
+      "cif_sha256": "e90b1ef94193101628ef0647807bf62ead9661e4099fc047b26559a88a5fb117"
+    },
+    {
+      "candidate_file": "mp-1044687_2D_ortho.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "ae1defdf4e40be1501db4c20a6357375591ce89f01d5c522ff66d1db4a1f5493"
+    },
+    {
+      "candidate_file": "mp-1147633_2D_ortho.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "b7b33669a176a60bfb5a926a448473672680fc98ca0023b13a8c4231dee05855"
+    },
+    {
+      "candidate_file": "mp-1351757_61832.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "3953ca84030503ef16d5480898ae37f3c37352db27cb579fc185a77bff2d02d5"
+    },
+    {
+      "candidate_file": "mp-1444917_2D_ortho.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "f9137035c4fc87b32498b8cf67efbac6672820ef7be339481c70282b5e96989e"
+    },
+    {
+      "candidate_file": "mp-600604_12898.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "3ac8d7a2f2e39024d6ebd01ca6fa3c8b7ea82ea803dd90c10f646a483a1e86d2"
+    },
+    {
+      "candidate_file": "mp-504927_11059.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "a0346cad91a16042eca604648863213068b55f5c9e0d7445bb02c5cd210d5dd2"
+    },
+    {
+      "candidate_file": "mp-1398042_2D_ortho.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "28ecc89fee672fd8d5de6163c7d5ecdb43687f41e39d7565b400a3b3c550cee5"
+    },
+    {
+      "candidate_file": "mp-996986_33674.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "add2e6ace63425e754d5ba0e4a6615b570f4eaf70ec863bcfebe352c49365892"
+    },
+    {
+      "candidate_file": "mp-1042297_2D_ortho.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "b1c0ff07767f02d9e245121178e591eecacce598887a7adb534dba891d4a9ee2"
+    },
+    {
+      "candidate_file": "mp-2230644_2D_ortho.cif",
+      "candidate_formula": "CuO2",
+      "cif_sha256": "4820c2e558675707a185ce3d8f06622b82730182359612591e71bd08a42ec843"
+    },
+    {
+      "candidate_file": "mp-777856_25063.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "052fda89bab08d008f7334c90e1cd47ed2771dc52d9be6c3da53ab3a2d32b5ea"
+    },
+    {
+      "candidate_file": "mp-755990_25053.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "99b554406e05cea171f859396b63cd6b74fb725fb117db16f1a9529562960959"
+    },
+    {
+      "candidate_file": "mp-777570_25061.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "e56c061c0001a6539324379145ea2c9a9865be08cbd2a53ea803160b1ffddbaf"
+    },
+    {
+      "candidate_file": "mp-754863_25039.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "a06fc4d7ab483e82cddbc6582a077c963b7e2cd75118c0c88e7c4bbd0d0dcb08"
+    },
+    {
+      "candidate_file": "mp-755319_25042.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "32bf6aacd62d01c0f6cf34fd426952073b4af29bc2c5da297f424f9b60bf0245"
+    },
+    {
+      "candidate_file": "mp-779362_2D_ortho.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "9de6e214c032596f048c31916728554c94034e8d112119ff2ef07d702d29f9a5"
+    },
+    {
+      "candidate_file": "mp-777570_25060.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "3f06985dee0b71203d9df1d8f20f7fd9ee699b3c47d35fb1d905532ce523cdca"
+    },
+    {
+      "candidate_file": "mp-755710_25046.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "8e83f8658621c757b29fcdb28796ceba128766b72baf3934728f0b52f93576b4"
+    },
+    {
+      "candidate_file": "mp-755800_25050.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "f1b101091eeec0cb188e02afaf570c10738f596f181be3a06d0361de7b89528f"
+    },
+    {
+      "candidate_file": "mp-755800_25048.cif",
+      "candidate_formula": "Li2MnFe(BO3)2",
+      "cif_sha256": "c88a5265d3ddcd97aa4f54fff1671b64ef0dc38f579645b5173bbbb07efbff72"
+    },
+    {
+      "candidate_file": "mp-857348_34949.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "b4704c78ca2531367b32319c2a95a06af646c182073c2e8e6691cec6228dc8b4"
+    },
+    {
+      "candidate_file": "mp-1978995_2D_ortho.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "93c20f0266156d71ca1dc28cf13c2c7792e142d80ad78980e614aa37c591252d"
+    },
+    {
+      "candidate_file": "mp-857362_34951.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "d021a888ccb69742d9732c6ecd3d7087be40ef12eeb9bb1a12c04e9d846e0986"
+    },
+    {
+      "candidate_file": "mp-776051_24794.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "bc56eafa08a9c3b8b4122373a3f2578478ff53267a9d27ab185157d26905d4ef"
+    },
+    {
+      "candidate_file": "mp-26980_42503.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "5bd20f6c64ea2afaa6347c5cacf88a4ba8d910a485322f514554af3c19e0bc03"
+    },
+    {
+      "candidate_file": "mp-1233855_2D_ortho.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "689eae9420bc2a1c7092921f05bf405d946dd5e35eed41ff1599a4225264bae4"
+    },
+    {
+      "candidate_file": "mp-2218441_39586.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "f29349674b8042697f88cbd4f64e61c90984fea10d5f536e4712b7e152bc49b5"
+    },
+    {
+      "candidate_file": "mp-689981_2D_ortho.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "f525a736535c3932cd15ba6b808c9c19415e9202ce1aa9a9d31b03d4947f48aa"
+    },
+    {
+      "candidate_file": "mp-704492_42508.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "c470b0b006f85d9659bef5675f923f5035a87d6042ed0eb3d01c8906ec9f91ef"
+    },
+    {
+      "candidate_file": "mp-540022_2D_ortho.cif",
+      "candidate_formula": "MnPO4",
+      "cif_sha256": "1a3cfcb6b18b422e5c670cfc301cfca0caf7c8a3ae90e89429b3329dc2741a70"
+    },
+    {
+      "candidate_file": "mp-1024948_2D_ortho.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "582d7ec60f3b6a2a57a3e9361d50c5aa9a2b6509df390809e7c785b167a097b2"
+    },
+    {
+      "candidate_file": "mp-30798_2D_ortho.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "fd43083e970598628d576ff3692b3b310c04b4feda0f2fd4543c3afed54c9e3a"
+    },
+    {
+      "candidate_file": "mp-935148_37957.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "129258a368cee02cb8ee30a6d907430121940a2bd1f219df79994b6145e4d297"
+    },
+    {
+      "candidate_file": "mp-680671_37956.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "cacfadccad1ecb16b57e129a502163cb295f93f495c81e4b4e43c10b71c761e8"
+    },
+    {
+      "candidate_file": "mp-1094480_2D_ortho.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "7861e366f34b91d4bcf4edd65aae4381f386479ac05ab1cee0779ef00604b6e8"
+    },
+    {
+      "candidate_file": "mp-680671_37954.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "ea70ec852f53c68b025507cafba0627fe51369cad1700071b397de67abe4e0b7"
+    },
+    {
+      "candidate_file": "mp-7496_2D_ortho.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "e329694678f111e359631b120b2294a82895b8542fc7e96dcd44df80e2cba9c2"
+    },
+    {
+      "candidate_file": "mp-1222173_37733.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "473cab3491987c0f0e1761409505dae6fe31c7ba0e69ad003ff61763453f5349"
+    },
+    {
+      "candidate_file": "mp-680671_37955.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "912f928636ad87ebed80f597edeaa811bdc6b2c133cec2c049904dce24f4ad05"
+    },
+    {
+      "candidate_file": "mp-1016109_2D_ortho.cif",
+      "candidate_formula": "Zn",
+      "cif_sha256": "a4baf68f755b1477bf4f3864e87ea707788e6062cfa111ecc33953fcf7341ed4"
+    },
+    {
+      "candidate_file": "mp-757453_15017.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "d9213bac3af9bdc5e0c11097c4ae7f16c1e05b57a5ee37c19dff1eb4513d464f"
+    },
+    {
+      "candidate_file": "mp-2218661_2D_ortho.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "c6f8827aafd12d56d4dcd906c9748a7631a1b0a499aa104432f0b514a6ceb538"
+    },
+    {
+      "candidate_file": "mp-758461_15022.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "72d312045fca2e95b7b0ef8d99de2e1ed5e47e16bbda2cef7a2c1a73e0d3c660"
+    },
+    {
+      "candidate_file": "mp-849525_2D_ortho.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "1c3cf6577c354ebd7ad6d04595ea3559277879f933aa191876cd82f06a6cfbd8"
+    },
+    {
+      "candidate_file": "mp-752563_2D_ortho.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "61bae5925647a8b986043a12deec3d34a364bceeab0cf168e1adde9b5d51f22f"
+    },
+    {
+      "candidate_file": "mp-763436_2D_ortho.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "f037d4ba1ecf73edb54424eb624be96a197a80ce6dbea6ec96210f3c253d8cea"
+    },
+    {
+      "candidate_file": "mp-754884_2D_ortho.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "d3f69b2eebcd4b32479409d2895d050ecb9b61586bfed4f4abfe1a1b9e5e9115"
+    },
+    {
+      "candidate_file": "mp-881183_2DMatPedia.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "9b04b41c07c7461cd97f4e9098ffd123bb559c1ee0ac57db5e3c73fb6675f845"
+    },
+    {
+      "candidate_file": "mp-752995_2D_ortho.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "0735f7ca3f1ef2c43ef266d0e43dc77969203081f94ad706528473f419f21957"
+    },
+    {
+      "candidate_file": "mp-759283_2DMatPedia.cif",
+      "candidate_formula": "FeOF",
+      "cif_sha256": "56e6c03af16e32ec0284e02d0b17ab361399224d738211a633e583949beb8ffa"
+    },
+    {
+      "candidate_file": "mp-1314570_2D_ortho.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "f42d727b3e8348bb3e4baf11aa31d885a6506824991fc014086e1a5b5a230db0"
+    },
+    {
+      "candidate_file": "mp-1359404_10470.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "4db3a966150730ef27f092dd3cae34e434885dbee88b1109c307995a46569d31"
+    },
+    {
+      "candidate_file": "mp-1173890_23924.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "30406130721f36a64abebf6554ddd81320c25bb018220de0b747ac4cf9d02f98"
+    },
+    {
+      "candidate_file": "mp-2217730_2D_ortho.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "6aa63c9b397005d1d92503ce5d67164b03164a0a15a1d072f36cb33c45364bc9"
+    },
+    {
+      "candidate_file": "mp-1371368_6157.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "f1aee74397cd5d90db07dd3b83b24a9f7dbc420c9d8e5f789cbaf8bf5465eb8c"
+    },
+    {
+      "candidate_file": "mp-1100633_32949.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "30d40823b27e2b70ff93b0779cb01dcbd5f298bac2d21ae64ce3d91c727e2db2"
+    },
+    {
+      "candidate_file": "mp-2222270_2D_ortho.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "ff9e458b2258912f4fad9a80fb400cb0d62bb3fa346201eb80d47f15feb19637"
+    },
+    {
+      "candidate_file": "mp-1043169_38729.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "f07415aa5b964af9ff34cb15bf38ca828422304d7b0166326dfe45c846d6d032"
+    },
+    {
+      "candidate_file": "mp-1174137_30883.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "d6abfc84618e53f3d485218ddcd5258628cb93130ed6bd178a2706057f561ed1"
+    },
+    {
+      "candidate_file": "mp-1174033_26489.cif",
+      "candidate_formula": "CoO3",
+      "cif_sha256": "220bb40e78b4f11d59f169afe18cdd900c90df972f297d4861edcff569441bcc"
+    },
+    {
+      "candidate_file": "mp-2217299_2D_ortho.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "00a3bce3cacb5fbdf4acab5829405120f63152ed85512185de8940b9b105d607"
+    },
+    {
+      "candidate_file": "mp-1221998_39222.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "23f0e98aa46c41681e443578c9d827bc9d4c6ab840943793dea0562113d8e579"
+    },
+    {
+      "candidate_file": "mp-1178392_2D_ortho.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "2b2cc640ca85c9e86218b9c86eb20316164f974d47fbae5564bed1e293285d51"
+    },
+    {
+      "candidate_file": "mp-1309364_2D_ortho.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "4246b432e659c53147bbc0e919e79b91c74b876cc7e45031a4b8b5e78ee1417a"
+    },
+    {
+      "candidate_file": "mp-1810050_61838.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "04ced80e4e817f04c9f4735203e75caeaa2c840cd93957ec5a6274445cfafe76"
+    },
+    {
+      "candidate_file": "mp-2217299_36987.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "5cf9729edddc67df3c7aa0cd3bd687cdb39ff6b93579ca82a5e65539baf9761d"
+    },
+    {
+      "candidate_file": "mp-1278619_39226.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "f2d3593091ebac30f7059ef26afe19287166162af112cb42e03bc48ceed8a385"
+    },
+    {
+      "candidate_file": "mp-566548_2D_ortho.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "ecf93bfaafb5d8f227b6692ed6a1cca9b2ad050d6fee4ddd29821bfdd5a967c7"
+    },
+    {
+      "candidate_file": "mp-1309364_33846.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "90906b6aaa849cdee68ab137cddb648f4270374ccb00cd220fbe8323a25b3fdb"
+    },
+    {
+      "candidate_file": "mp-1228376_2D_ortho.cif",
+      "candidate_formula": "Fe2O3",
+      "cif_sha256": "b7c44c7a0778d7d005ea0f52cab2c8066e850bbba606cfcf9fcccdd6fde055da"
+    },
+    {
+      "candidate_file": "mp-753481_35195.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "56bb7f19cf2c1348f964f644178f139ec6e54144b823acd4397e02b1e1f2c108"
+    },
+    {
+      "candidate_file": "mp-1663413_35176.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "9fb7e363f806558dc6f79e6634aab5cc34d8c6b6ddb17afc5f9af6fadad834a2"
+    },
+    {
+      "candidate_file": "mp-861615_35231.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "d68982c2c5458cdba98b7bc214bc5a063d06b3f849d800929fac3e90eb4add53"
+    },
+    {
+      "candidate_file": "mp-762012_35221.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "39bc8699bc47f65ebbfe70a91bef3905858f6887d8b2cca6945ca91f9db27308"
+    },
+    {
+      "candidate_file": "mp-1663413_2D_ortho.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "3f23ff772ffffd844042f661210cc6cdb58c53105d4874f0f18a16790b0330c7"
+    },
+    {
+      "candidate_file": "mp-758390_35217.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "d0a5a68e8ed02b368a382184f8f00a386bd4794cb2ce6e05bd9c991fdef15775"
+    },
+    {
+      "candidate_file": "mp-763217_35224.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "565c69b6fa54d80ce5df6fe66b64c151a999c09fa8cfa0f668c039539b7d9146"
+    },
+    {
+      "candidate_file": "mp-25967_35187.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "52238f97b63eaa9adeb58cc589c91bea7f7460ce1c4cabbfa2a833d1094ac93f"
+    },
+    {
+      "candidate_file": "mp-25967_2D_ortho.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "2e98446fa341453e36322949c961ca6be5e2b5987ba005d7f3b9ac7900c98ead"
+    },
+    {
+      "candidate_file": "mp-765394_2D_ortho.cif",
+      "candidate_formula": "LiNiPO4",
+      "cif_sha256": "d280f3b11f9deb25b38948fc36ca4f7e449299ed044fd44bb4dcad8a9d18225f"
+    },
+    {
+      "candidate_file": "mp-2665147_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "44765d472e81fcb3645313dcf75884aceecec99dabd33d841c9c2253180506be"
+    },
+    {
+      "candidate_file": "mp-1031488_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "9997da840d626d48742b06e6068d74c48b5a30132a928d3ef30c425388213703"
+    },
+    {
+      "candidate_file": "mp-2767524_46904.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "80d80ef1d398c7c8941a22b72fd613ec1e9f4beb71c2ed79c392a8a010ae9e89"
+    },
+    {
+      "candidate_file": "mp-1033335_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "c0269de670d5a7fc20ce4089ea46b0005f3934a9f09aa10cc84e2634ea4ec66a"
+    },
+    {
+      "candidate_file": "mp-10062_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "8b3f0cfca682bf2424a242f622ab29da397a71160eecd61a5134683e5d6278bb"
+    },
+    {
+      "candidate_file": "mp-761100_29178.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "32a0c0ff3a368d602a5ab0c9553f43bff6da12f73de5037b7d232ac20aaa4118"
+    },
+    {
+      "candidate_file": "mp-1046755_37267.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "887db400366356a160fa425356bcd0b806143ddb760f450848c36fceffae4b5d"
+    },
+    {
+      "candidate_file": "mp-23413_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "4e2761395c450d8b8e26156e80f54ba8a14f78cb0e4da98a7177054b436316de"
+    },
+    {
+      "candidate_file": "mp-18274_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "5f5bc27f611182732362b34fb9db337c8fd1ce2e120688bde2ccef7fe208c803"
+    },
+    {
+      "candidate_file": "mp-1173067_2D_ortho.cif",
+      "candidate_formula": "NbO4",
+      "cif_sha256": "2095c4c84ba395875755ad1d634b8dc74e85959097351835fb1c36a425524287"
+    },
+    {
+      "candidate_file": "mp-33500_2D_ortho.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "c7d9505001b1098b9556892a6767b07ceab42577d6869937fa57f239bba866ac"
+    },
+    {
+      "candidate_file": "mp-2224714_2D_ortho.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "eb1c71bea754a1b9be646b97f263e6f903b3da773f7a90de771fe690ebbf52e8"
+    },
+    {
+      "candidate_file": "mp-1227138_8364.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "9835988463f532c39e810de02e1d229767bed96097f3c5e27d991b4b03ac7913"
+    },
+    {
+      "candidate_file": "mp-1176640_34711.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "f5f414cf02459e6bfe493640b46caafb40c5c0b333513681193ae410b597f562"
+    },
+    {
+      "candidate_file": "mp-1519508_54557.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "e445d5d36d2e4316a3c57e41f63d44fcaadc30c3b7dc82d8231f6747faddb494"
+    },
+    {
+      "candidate_file": "mp-2219898_38932.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "cb007d19bc0edeb19efa665b75c77042d30b60e0ea92e4cd900d4d195386ef0c"
+    },
+    {
+      "candidate_file": "mp-1394001_2D_ortho.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "a0a585300478a8f6fada5a5acd5eeed1457f2ee9bb3c90bcbdd0dc7c63b87bd4"
+    },
+    {
+      "candidate_file": "mp-2219494_2D_ortho.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "b3138ea73cdb62505dcbd16a7794a9dd92c18b61c022457197ad6ae3589067d3"
+    },
+    {
+      "candidate_file": "mp-1046770_53921.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "8749cbe232e25ea691ec1477ef432e5c1b837fe425ae866ab0a8dca819497838"
+    },
+    {
+      "candidate_file": "mp-1178001_24148.cif",
+      "candidate_formula": "CrO2",
+      "cif_sha256": "93681d442e3ccd5c229f47fa07b3434f802a92976778c7cfc0e4e564b23a2f1b"
+    },
+    {
+      "candidate_file": "mp-851088_31270.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "dcc9632cd94039a2e4a2e44580bfeb98ebb9bbebbdf6ca7f6ecde0ec299f11aa"
+    },
+    {
+      "candidate_file": "mp-1176947_30045.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "852803910ec80726b7a67413f152480ffb599722a42b32e1fe6b5242746b062c"
+    },
+    {
+      "candidate_file": "mp-1176912_30031.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "700c2308b530bd47d177bf5e0e0e2876313907ba60bd14e9058dcf794bec0f77"
+    },
+    {
+      "candidate_file": "mp-765137_31252.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "322fd1267992e490a3e173b16a3da5d8d8687559bbcbb2ce5be0440b79012712"
+    },
+    {
+      "candidate_file": "mp-1177352_2D_ortho.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "36c28943da687d033a57889fb0f967622565a6a6f4ae5f198848f9c374700765"
+    },
+    {
+      "candidate_file": "mp-758864_31227.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "d48c48158dc78bcb23116aed002bfa0dbf7e6d3506d2a02662af145b3d2bf168"
+    },
+    {
+      "candidate_file": "mp-851088_31268.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "fdbdf0ac5f63b50d328120bb3d81a6d268de550d43dcb6241e170cace768d254"
+    },
+    {
+      "candidate_file": "mp-1177217_31219.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "09fbcceaa3f6d05635772570b35bf9bb22743e24e64f6e95b97a38d734096d05"
+    },
+    {
+      "candidate_file": "mp-1176912_30030.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "8aef5aa84b98a0363a8add929ab9979f5c6a45a6109c344cbb4a3151bb3d4355"
+    },
+    {
+      "candidate_file": "mp-1177238_31221.cif",
+      "candidate_formula": "Li5V3P8O29",
+      "cif_sha256": "d765cfb3049ce3f4a9d9d64800c10a7bb832e08690cb669d8cf959dd4caaf4a6"
+    },
+    {
+      "candidate_file": "mp-777768_2D_ortho.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "384b1fe2a9782a743468fdd3ea8b2980495b36affbf0005d334446003a99ab6a"
+    },
+    {
+      "candidate_file": "mp-774189_32629.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "dd7e8a9b2e5302d56d863490d39e2373d7ceaa4ceee759053e21e4ac71cfab57"
+    },
+    {
+      "candidate_file": "mp-778495_2D_ortho.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "bff2402362a2654287332c8d7a49a3b4eb014487b6facc1caca0fa77a0d3303a"
+    },
+    {
+      "candidate_file": "mp-778495_32653.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "0abd8108ca8a2172accd2cc1d94bff685858c52fbd3eb0263a494444da26142f"
+    },
+    {
+      "candidate_file": "mp-778495_32655.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "5b6b372de82abdd821301cefd4357150126252cc4682e8a15027650d1fd810fc"
+    },
+    {
+      "candidate_file": "mp-778297_32651.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "0fcdaf4cd2645588f15797f8fe91f240858ae144f2009a7135a5732a37552986"
+    },
+    {
+      "candidate_file": "mp-777788_32643.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "ab1430009bdb14a510dce6244f36abb8777997f9e4852628d6e3824a2a55f409"
+    },
+    {
+      "candidate_file": "mp-775268_2D_ortho.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "95e4d020aeccb347017d8bf2450f78d437f75a1df243e3271d5d33f5a51d4384"
+    },
+    {
+      "candidate_file": "mp-777729_32640.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "40c368af5eca8dd28387add3b206b443f951b2afd6218eb8a6bf5b368b911603"
+    },
+    {
+      "candidate_file": "mp-778297_32650.cif",
+      "candidate_formula": "Li8Mn7Fe(BO3)8",
+      "cif_sha256": "282dfed8b14a815ac5e605363b101bc927eab9497c56020b877da3a7105a293b"
+    },
+    {
+      "candidate_file": "mp-752586_2D_ortho.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "22d28ad18f6039f2c891432ec26b667c68228c1b310ab01c437d4e1679e56a5d"
+    },
+    {
+      "candidate_file": "mp-776117_34795.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "21835907e2d4f147c041013223a433899764816bc36b369b7bfdc6fcc9bfc58d"
+    },
+    {
+      "candidate_file": "mp-780728_34807.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "776e64eb56df907c693ac7ec80b3d3c1adce278565408527d7dd9c3a6bb9138c"
+    },
+    {
+      "candidate_file": "mp-763100_34784.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "c3fcf55636796483129482dcf9cfc05fed3c0289ef3f81c47be153d91745083d"
+    },
+    {
+      "candidate_file": "mp-1176628_34761.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "be31eb48244e3c7affdd840399c3f6386e9f918480a595b771a5be436ae382be"
+    },
+    {
+      "candidate_file": "mp-752874_2DMatPedia.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "774a86bf08a661039c411c6f646d086215949108ddd672e667101a9646ce1ad2"
+    },
+    {
+      "candidate_file": "mp-1176629_34766.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "362e73413cff2b92110bca6d7ba277b35c9c900e4122be611dd7ff1f07807714"
+    },
+    {
+      "candidate_file": "mp-1176628_34762.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "403028d831d2526054d3b016a56bc42cef2f81ed1c50daa33e171912ea2a5bf4"
+    },
+    {
+      "candidate_file": "mp-775154_2D_ortho.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "ae9231018205be1ddb8c4e1ad7ff44334c555e88d13b8999e91fa5875f7666a8"
+    },
+    {
+      "candidate_file": "mp-1176626_2D_ortho.cif",
+      "candidate_formula": "LiMnF4",
+      "cif_sha256": "8d5d07e0d2ea81e3428711108378f50ab64e1f0ee8390938457e97b42b0980ca"
+    },
+    {
+      "candidate_file": "mp-31940_34936.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "1fac15659f29c9924b1b046726fa368f3b882b15e7e058eda58caa134ec3250f"
+    },
+    {
+      "candidate_file": "mp-755784_2DMatPedia.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "53e4ee3c7d35a02ca1431b354d2d3cd17dfe7968db1674b62b207b1a22c3c91b"
+    },
+    {
+      "candidate_file": "mp-25831_34928.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "6346168f8f367b901cb3e397a895758fa883b69052be45306e505d181b61f672"
+    },
+    {
+      "candidate_file": "mp-757185_34937.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "3970568cea436dc0be989e9db2873ee5fb06b4ed21d51759c098983a28964573"
+    },
+    {
+      "candidate_file": "mp-860958_34956.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "d0009417b86393548fa08a764639f0e486804bca2df20de4b692d708f6f2d51e"
+    },
+    {
+      "candidate_file": "mp-860970_34960.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "b0651ed2e76e92ce293fd3e8de3900b4bc2957e67af8745568b2d4fdb05d0dfd"
+    },
+    {
+      "candidate_file": "mp-753613_2DMatPedia.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "af87ff201ac4ab267c23b7a961e27cc90582ede5e11d700286d5ccf3b41c0fc5"
+    },
+    {
+      "candidate_file": "mp-757185_34938.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "efa3f435c072ce290ab7358989bdcd4b03c9ab96bb618b1fc5006d7c47fa75c0"
+    },
+    {
+      "candidate_file": "mp-780580_2D_ortho.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "e904ee279162df5a7ee2028a862d4931521abb7c02a58d57ccc4c707994b25f5"
+    },
+    {
+      "candidate_file": "mp-25971_34929.cif",
+      "candidate_formula": "LiMnPO4",
+      "cif_sha256": "86437b786465edc9fa370e150a6dfbb2fb532ef861099c756c0faaa49b35d6c9"
+    },
+    {
+      "candidate_file": "mp-1174425_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "8bda29993fe9584f299d5b7641fa9b7bff876615921345d2e79d0d6b39acb299"
+    },
+    {
+      "candidate_file": "mp-1100655_32971.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "23caaf181fcff0049be6dcf12a28d1fd238bdedf8eefd93dfadbe164e391ea31"
+    },
+    {
+      "candidate_file": "mp-1174696_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "91306bdacd30970a9630a1f883ebd7191ea27575ccc7f6caf12e43d07ce7cbca"
+    },
+    {
+      "candidate_file": "mp-1174720_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "a59815190022a66002b43c7c5cdde4dd5e0f49f9c83a06ebb026a94444efb392"
+    },
+    {
+      "candidate_file": "mp-1174672_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "6c154a19852039f0ec746b38cb68c321b9832aebf3840c1cfd747d196496a3b8"
+    },
+    {
+      "candidate_file": "mp-1174441_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "6a6a2900f7027b65e174700ce20ef31c277a2eaeadea2de23affcfa66584001b"
+    },
+    {
+      "candidate_file": "mp-1174419_28887.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "5292c91c1648f3159c6c220f0ec4a0ab523734f949ff6b4427b1db01390a9d34"
+    },
+    {
+      "candidate_file": "mp-1174686_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "382e482fcfbbba2082012fd5c2bf2ccfa898529000e8760d3b78cb76c95f7dd1"
+    },
+    {
+      "candidate_file": "mp-1174671_2D_ortho.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "70fab28d2129d302ed7160a253de968e3832b4af0d128f436c7c4eda59c56c1c"
+    },
+    {
+      "candidate_file": "mp-1174433_28892.cif",
+      "candidate_formula": "MnCo2O7",
+      "cif_sha256": "908d488760bfe9a5ea8a5127b83dad723082b952c5d0a2fc07c6142bc53108ab"
+    },
+    {
+      "candidate_file": "mp-1174166_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "73d25b4967575f19ea0e64ef4d0ea51a1a1102c10101421f9a580232c4caff9b"
+    },
+    {
+      "candidate_file": "mp-1100593_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "76668aafc15de149efcf651066722476045a6154fc9a69290cee244eeb6baceb"
+    },
+    {
+      "candidate_file": "mp-1100642_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "d88d30db10981e8748a0cae96185c5d2cff59ea984e8cf57b128559b73490ebb"
+    },
+    {
+      "candidate_file": "mp-1291754_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "15185c8cdf758adf1bc2fbe35d380eb7d691073bed6ac602cac7259b33bb9a2e"
+    },
+    {
+      "candidate_file": "mp-2219427_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "ebb5d1d40e10b5a8530d56fd3e7442f0ba545859596a9eb2d8331de82bd8c985"
+    },
+    {
+      "candidate_file": "mp-861547_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "6ccdee5de75d88699b4b2fbd9b760da00cdc1b6d3ebcf8dce44db5177a93650f"
+    },
+    {
+      "candidate_file": "mp-1174024_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "ac4665b8bba40b0651627b43e287075ddcd02b8ff15d22912b41b03996f30f1f"
+    },
+    {
+      "candidate_file": "mp-1174232_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "6465d494d85f67afc0be2f8c407e3a7ac4df46fac14617747b6613db335ffd93"
+    },
+    {
+      "candidate_file": "mp-1174090_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "3943d3d43d25277e2e558af5203781afdd18cf1f0aa5b2d6e0c344b4ba05f098"
+    },
+    {
+      "candidate_file": "mp-1313454_2D_ortho.cif",
+      "candidate_formula": "MnCo3O8",
+      "cif_sha256": "d356af48a69463d9391e95f74c8e1bde591c0bba28db1dfbef4ff6ee6cd49038"
+    },
+    {
+      "candidate_file": "mp-1033174_2D_ortho.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "4a46eeee077805729115f52641291e333ee6604d67e4d4212802177aab9b9315"
+    },
+    {
+      "candidate_file": "mp-1032752_38158.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "1010f22faa7ee463497c16aed244b99fa86dfd079b32cd6dc2e07103d52f448f"
+    },
+    {
+      "candidate_file": "mp-685488_42063.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "5293cee5121a3a99c1595d97a4fe746f428206e9513db28c1e409b42367bc6d7"
+    },
+    {
+      "candidate_file": "mp-753606_42193.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "9ac75400d23471761633c7b5ea6045c0a8b111c3c21895612bee1795ceaec976"
+    },
+    {
+      "candidate_file": "mp-1175837_31545.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "2b141ee0308151d2b805c66fcb501ec70f1ae6f40dc5df573355a73718f499f8"
+    },
+    {
+      "candidate_file": "mp-771896_31077.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "8a33cdea7a33653672e9f53f650333dc34b66d404fc489b83baa43f98f1e1d66"
+    },
+    {
+      "candidate_file": "mp-674482_42273.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "5c3ef04efee8bf2117b455f3c2ebf9b712060c8299108fb3c5c46c84de29b40c"
+    },
+    {
+      "candidate_file": "mp-19050_6310.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "029598afa7306ea593ea38aedae19ca1263b895ff6d25ca114b6b03e14f77532"
+    },
+    {
+      "candidate_file": "mp-1272925_4617.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "eb3e6122d712080cccd6958960c146719aea9bb20dc5b7da27076659f047a4f4"
+    },
+    {
+      "candidate_file": "mp-779153_27027.cif",
+      "candidate_formula": "MnO4",
+      "cif_sha256": "bb4f7bf9cb0aaa5101f1f60041b0e6f36e809b7f1bfeb7d0b53f34b391bbd154"
+    }
+  ],
+  "results": {
+    "tight": {
+      "settings": {
+        "ltol": 0.1,
+        "stol": 0.2,
+        "angle_tol": 3
+      },
+      "n_unique": 500,
+      "n_merged": 0,
+      "elapsed_seconds": 20.182,
+      "merges": []
+    },
+    "baseline": {
+      "settings": {
+        "ltol": 0.2,
+        "stol": 0.3,
+        "angle_tol": 5
+      },
+      "n_unique": 500,
+      "n_merged": 0,
+      "elapsed_seconds": 20.501,
+      "merges": []
+    },
+    "loose": {
+      "settings": {
+        "ltol": 0.3,
+        "stol": 0.4,
+        "angle_tol": 7
+      },
+      "n_unique": 484,
+      "n_merged": 16,
+      "elapsed_seconds": 20.807,
+      "merges": [
+        {
+          "formula": "Ce",
+          "merged": "mp-1094837_2D_ortho.cif",
+          "representative": "mp-1038860_2D_ortho.cif"
+        },
+        {
+          "formula": "CuO2",
+          "merged": "mp-1444917_2D_ortho.cif",
+          "representative": "mp-1042297_2D_ortho.cif"
+        },
+        {
+          "formula": "FeBO3",
+          "merged": "mp-764815_2D_ortho.cif",
+          "representative": "mp-764654_2D_ortho.cif"
+        },
+        {
+          "formula": "FeO2",
+          "merged": "mp-757258_14752.cif",
+          "representative": "mp-1218653_2D_ortho.cif"
+        },
+        {
+          "formula": "FeO3",
+          "merged": "mp-764074_43202.cif",
+          "representative": "mp-2215904_41227.cif"
+        },
+        {
+          "formula": "K",
+          "merged": "mp-695998_2D_ortho.cif",
+          "representative": "mp-1194826_2D_ortho.cif"
+        },
+        {
+          "formula": "Li2MnFe(BO3)2",
+          "merged": "mp-755800_25048.cif",
+          "representative": "mp-755319_25042.cif"
+        },
+        {
+          "formula": "LiMnPO4",
+          "merged": "mp-757185_34938.cif",
+          "representative": "mp-757185_34937.cif"
+        },
+        {
+          "formula": "LiVF4",
+          "merged": "mp-753568_35840.cif",
+          "representative": "mp-753053_25903.cif"
+        },
+        {
+          "formula": "MgSi2",
+          "merged": "mp-1073735_2D_ortho.cif",
+          "representative": "mp-1073644_2D_ortho.cif"
+        },
+        {
+          "formula": "MnO2",
+          "merged": "mp-771073_28604.cif",
+          "representative": "mp-1041329_8108.cif"
+        },
+        {
+          "formula": "MnO3",
+          "merged": "mp-1343591_61298.cif",
+          "representative": "mp-1174540_30999.cif"
+        },
+        {
+          "formula": "NbO3",
+          "merged": "mp-761057_55391.cif",
+          "representative": "mp-686160_23498.cif"
+        },
+        {
+          "formula": "NbO4",
+          "merged": "mp-23413_2D_ortho.cif",
+          "representative": "mp-1046755_37267.cif"
+        },
+        {
+          "formula": "TiO3",
+          "merged": "mp-1221004_45803.cif",
+          "representative": "mp-1218872_53582.cif"
+        },
+        {
+          "formula": "TiO3",
+          "merged": "mp-1228482_2400.cif",
+          "representative": "mp-1104533_47366.cif"
+        }
+      ]
+    }
+  }
+}

@@ -42,7 +42,7 @@ MCP 服务入口：`code/exfo_agent/server.py`。拓扑路线见 `tools/literatu
 
 DFT 准备见[VASP 方案](docs/VASP_VALIDATION_PROTOCOL.md)、`examples/dft_validation/` 中的配对 CIF、POSCAR 与 KPOINTS；尚无 DFT 结果。其余返修资料：
 
-- [参数审计](docs/PARAMETER_AUDIT.md)、[平面间隙敏感性](docs/PLANAR_SENSITIVITY_RESULTS.md)、[混合路线实例](docs/HYBRID_WORKED_EXAMPLES.md)。
+- [参数审计](docs/PARAMETER_AUDIT.md)、[扩展参数敏感性复算](docs/参数敏感性_扩展复算_中文.md)、[混合路线实例](docs/HYBRID_WORKED_EXAMPLES.md)。
 - [编排故障审计](docs/AGENT_FAILURE_AUDIT.md)与[LLM 代码及证据](docs/LLM_CODE_MAP.md)。
 - [外部数据库基准方案](docs/DATABASE_BENCHMARK_PROTOCOL.md)。
 

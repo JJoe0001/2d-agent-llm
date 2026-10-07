@@ -1,0 +1,1000 @@
+{
+  "description": "Code-stage BONDDEL rerun on the smallest-site parents per route-signature stratum of the supplied panel; not full candidate extraction or CHGNet validation.",
+  "selection": {
+    "panel_file": "bonddel_archived_positive_panel.csv",
+    "panel_sha256": "e585d65770026cbcfaa978ad5aa3e4ecae73734f3c82664ba234bc3c69eb07bb",
+    "parents_per_signature": 9
+  },
+  "n_parents": 9,
+  "n_tasks": 45,
+  "parent_cif_sha256": {
+    "mp-1209536": "5c0ef2b90e0ea74134423551e03cc81963f7a952831f1d21c977d03d2fec6ca6",
+    "mp-760400": "54242ea58f964e009ec8006f799e4dc1cab1524d0f9a99abd26e40d96fef2761",
+    "mp-28545": "b9ad19f41af6426f7adf86927bcb9beb6e9ee2c9155e85276ab37e41fcdc67ff",
+    "mp-758720": "f84cd1623439e18ab8de43adb2b58032a559ef0c779e49c0b7a8a5c8c26d4967",
+    "mp-1103816": "ecdd2a7897d09e7a8b3ab5b249099f04a56fbab3c7ccbd5188eeff2a023eb785",
+    "mp-1224227": "0c150f44593c8a12391f54657eb5a16621781e0edcf913995d28c15f303b5e69",
+    "mp-7980": "b417110800f9b41be585f25ac6478f85beea9de64f126daf03e6a2f8e995151a",
+    "mp-1104843": "91839c46c22a7d278b6058ce5ef33a8d9ca7e4a55edefa7523a378567e764107",
+    "mp-1376393": "3c89c30381259bbbaf1ae44afee8951f8b945367f55923c98abf6b25a0bacf46"
+  },
+  "potential_sha256": "213e68e6dc87dad20c5b65053f25df6c63c423137e307b0914b5a7d86eb7dc91",
+  "variants": {
+    "baseline": {
+      "settings": {
+        "cluster_tolerance_eV": 0.03,
+        "energy_scan_floor_eV": -2.0
+      },
+      "status_counts": {
+        "SUCCESS": 7,
+        "NO_2D": 2
+      },
+      "n_same_component_atom_sets_as_baseline": 9,
+      "total_elapsed_seconds": 99.133
+    },
+    "cluster_0p02": {
+      "settings": {
+        "cluster_tolerance_eV": 0.02,
+        "energy_scan_floor_eV": -2.0
+      },
+      "status_counts": {
+        "SUCCESS": 7,
+        "NO_2D": 2
+      },
+      "n_same_component_atom_sets_as_baseline": 7,
+      "total_elapsed_seconds": 121.565
+    },
+    "cluster_0p05": {
+      "settings": {
+        "cluster_tolerance_eV": 0.05,
+        "energy_scan_floor_eV": -2.0
+      },
+      "status_counts": {
+        "SUCCESS": 6,
+        "NO_2D": 3
+      },
+      "n_same_component_atom_sets_as_baseline": 8,
+      "total_elapsed_seconds": 82.497
+    },
+    "floor_m1p5": {
+      "settings": {
+        "cluster_tolerance_eV": 0.03,
+        "energy_scan_floor_eV": -1.5
+      },
+      "status_counts": {
+        "SUCCESS": 5,
+        "NO_2D": 4
+      },
+      "n_same_component_atom_sets_as_baseline": 7,
+      "total_elapsed_seconds": 99.627
+    },
+    "floor_m2p5": {
+      "settings": {
+        "cluster_tolerance_eV": 0.03,
+        "energy_scan_floor_eV": -2.5
+      },
+      "status_counts": {
+        "SUCCESS": 7,
+        "NO_2D": 2
+      },
+      "n_same_component_atom_sets_as_baseline": 9,
+      "total_elapsed_seconds": 99.347
+    }
+  },
+  "records": [
+    {
+      "parent_id": "mp-1103816",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.198453706691522,
+      "component_atom_indices": [
+        [
+          3,
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.198 eV (BFS iters: 568)",
+      "elapsed_seconds": 9.463
+    },
+    {
+      "parent_id": "mp-1103816",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.198453706691522,
+      "component_atom_indices": [
+        [
+          3,
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.198 eV (BFS iters: 568)",
+      "elapsed_seconds": 12.777
+    },
+    {
+      "parent_id": "mp-1103816",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.198453706691522,
+      "component_atom_indices": [
+        [
+          3,
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.198 eV (BFS iters: 568)",
+      "elapsed_seconds": 5.948
+    },
+    {
+      "parent_id": "mp-1103816",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.198453706691522,
+      "component_atom_indices": [
+        [
+          3,
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.198 eV (BFS iters: 568)",
+      "elapsed_seconds": 9.55
+    },
+    {
+      "parent_id": "mp-1103816",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.198453706691522,
+      "component_atom_indices": [
+        [
+          3,
+          5,
+          7,
+          9,
+          11
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.198 eV (BFS iters: 568)",
+      "elapsed_seconds": 9.439
+    },
+    {
+      "parent_id": "mp-1104843",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 16,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.0014060333715658,
+      "component_atom_indices": [
+        [
+          7,
+          9,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.001 eV (BFS iters: 273)",
+      "elapsed_seconds": 7.572
+    },
+    {
+      "parent_id": "mp-1104843",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 16,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.44995054327729567,
+      "component_atom_indices": [
+        [
+          1,
+          7,
+          9,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.450 eV (BFS iters: 317)",
+      "elapsed_seconds": 9.787
+    },
+    {
+      "parent_id": "mp-1104843",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 16,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.0014060333715658,
+      "component_atom_indices": [
+        [
+          7,
+          9,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.001 eV (BFS iters: 273)",
+      "elapsed_seconds": 6.597
+    },
+    {
+      "parent_id": "mp-1104843",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 16,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.0014060333715658,
+      "component_atom_indices": [
+        [
+          7,
+          9,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.001 eV (BFS iters: 273)",
+      "elapsed_seconds": 7.829
+    },
+    {
+      "parent_id": "mp-1104843",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 16,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.0014060333715658,
+      "component_atom_indices": [
+        [
+          7,
+          9,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.001 eV (BFS iters: 273)",
+      "elapsed_seconds": 7.703
+    },
+    {
+      "parent_id": "mp-1209536",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 10,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.7530112283073453,
+      "component_atom_indices": [
+        [
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.753 eV (BFS iters: 313)",
+      "elapsed_seconds": 10.12
+    },
+    {
+      "parent_id": "mp-1209536",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 10,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.5444086624713528,
+      "component_atom_indices": [
+        [
+          0,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.544 eV (BFS iters: 318)",
+      "elapsed_seconds": 9.95
+    },
+    {
+      "parent_id": "mp-1209536",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 10,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.7530112283073453,
+      "component_atom_indices": [
+        [
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.753 eV (BFS iters: 313)",
+      "elapsed_seconds": 7.892
+    },
+    {
+      "parent_id": "mp-1209536",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 10,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 10.181
+    },
+    {
+      "parent_id": "mp-1209536",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 10,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.7530112283073453,
+      "component_atom_indices": [
+        [
+          3,
+          4,
+          5,
+          7,
+          8,
+          9
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.753 eV (BFS iters: 313)",
+      "elapsed_seconds": 10.282
+    },
+    {
+      "parent_id": "mp-1224227",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.4000575284125337,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.400 eV (BFS iters: 779)",
+      "elapsed_seconds": 11.424
+    },
+    {
+      "parent_id": "mp-1224227",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.4000575284125337,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.400 eV (BFS iters: 779)",
+      "elapsed_seconds": 15.68
+    },
+    {
+      "parent_id": "mp-1224227",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.4000575284125337,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.400 eV (BFS iters: 779)",
+      "elapsed_seconds": 8.265
+    },
+    {
+      "parent_id": "mp-1224227",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "SUCCESS",
+      "threshold_eV": -0.4000575284125337,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.400 eV (BFS iters: 779)",
+      "elapsed_seconds": 11.3
+    },
+    {
+      "parent_id": "mp-1224227",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 14,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -0.4000575284125337,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.400 eV (BFS iters: 779)",
+      "elapsed_seconds": 11.459
+    },
+    {
+      "parent_id": "mp-1376393",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 18,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.5574990262438235,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          8,
+          10,
+          11,
+          15,
+          17
+        ],
+        [
+          7,
+          13,
+          14,
+          16
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.557 eV (BFS iters: 1305)",
+      "elapsed_seconds": 14.62
+    },
+    {
+      "parent_id": "mp-1376393",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 18,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.5574990262438235,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          8,
+          10,
+          11,
+          15,
+          17
+        ],
+        [
+          7,
+          13,
+          14,
+          16
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.557 eV (BFS iters: 1305)",
+      "elapsed_seconds": 15.515
+    },
+    {
+      "parent_id": "mp-1376393",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 18,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.5574990262438235,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          8,
+          10,
+          11,
+          15,
+          17
+        ],
+        [
+          7,
+          13,
+          14,
+          16
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.557 eV (BFS iters: 1305)",
+      "elapsed_seconds": 10.203
+    },
+    {
+      "parent_id": "mp-1376393",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 18,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 14.535
+    },
+    {
+      "parent_id": "mp-1376393",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 18,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.5574990262438235,
+      "component_atom_indices": [
+        [
+          4,
+          5,
+          8,
+          10,
+          11,
+          15,
+          17
+        ],
+        [
+          7,
+          13,
+          14,
+          16
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.557 eV (BFS iters: 1305)",
+      "elapsed_seconds": 14.04
+    },
+    {
+      "parent_id": "mp-28545",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.6068482537567175,
+      "component_atom_indices": [
+        [
+          0,
+          1,
+          5,
+          6,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.607 eV (BFS iters: 600460)",
+      "elapsed_seconds": 15.373
+    },
+    {
+      "parent_id": "mp-28545",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -0.6068482537567175,
+      "component_atom_indices": [
+        [
+          0,
+          1,
+          5,
+          6,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.607 eV (BFS iters: 600460)",
+      "elapsed_seconds": 16.548
+    },
+    {
+      "parent_id": "mp-28545",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 16.406
+    },
+    {
+      "parent_id": "mp-28545",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "SUCCESS",
+      "threshold_eV": -0.6068482537567175,
+      "component_atom_indices": [
+        [
+          0,
+          1,
+          5,
+          6,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.607 eV (BFS iters: 600460)",
+      "elapsed_seconds": 15.593
+    },
+    {
+      "parent_id": "mp-28545",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -0.6068482537567175,
+      "component_atom_indices": [
+        [
+          0,
+          1,
+          5,
+          6,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -0.607 eV (BFS iters: 600460)",
+      "elapsed_seconds": 15.483
+    },
+    {
+      "parent_id": "mp-758720",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: Structure disintegrated to 0D (BFS iters: 12)",
+      "elapsed_seconds": 6.741
+    },
+    {
+      "parent_id": "mp-758720",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: Structure disintegrated to 0D (BFS iters: 12)",
+      "elapsed_seconds": 10.468
+    },
+    {
+      "parent_id": "mp-758720",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: Structure disintegrated to 0D (BFS iters: 12)",
+      "elapsed_seconds": 5.653
+    },
+    {
+      "parent_id": "mp-758720",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: Structure disintegrated to 0D (BFS iters: 12)",
+      "elapsed_seconds": 6.735
+    },
+    {
+      "parent_id": "mp-758720",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 12,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: Structure disintegrated to 0D (BFS iters: 12)",
+      "elapsed_seconds": 6.648
+    },
+    {
+      "parent_id": "mp-760400",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 11,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.059215728604439,
+      "component_atom_indices": [
+        [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.059 eV (BFS iters: 247)",
+      "elapsed_seconds": 13.069
+    },
+    {
+      "parent_id": "mp-760400",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 11,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.059215728604439,
+      "component_atom_indices": [
+        [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.059 eV (BFS iters: 247)",
+      "elapsed_seconds": 17.749
+    },
+    {
+      "parent_id": "mp-760400",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 11,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "SUCCESS",
+      "threshold_eV": -1.059215728604439,
+      "component_atom_indices": [
+        [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.059 eV (BFS iters: 247)",
+      "elapsed_seconds": 12.106
+    },
+    {
+      "parent_id": "mp-760400",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 11,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.059215728604439,
+      "component_atom_indices": [
+        [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.059 eV (BFS iters: 247)",
+      "elapsed_seconds": 13.179
+    },
+    {
+      "parent_id": "mp-760400",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 11,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "SUCCESS",
+      "threshold_eV": -1.059215728604439,
+      "component_atom_indices": [
+        [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "message": "Success: 2D Found at cut -1.059 eV (BFS iters: 247)",
+      "elapsed_seconds": 13.519
+    },
+    {
+      "parent_id": "mp-7980",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 15,
+      "variant": "baseline",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 10.751
+    },
+    {
+      "parent_id": "mp-7980",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 15,
+      "variant": "cluster_0p02",
+      "cluster_tolerance_eV": 0.02,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 13.091
+    },
+    {
+      "parent_id": "mp-7980",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 15,
+      "variant": "cluster_0p05",
+      "cluster_tolerance_eV": 0.05,
+      "energy_scan_floor_eV": -2.0,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 9.427
+    },
+    {
+      "parent_id": "mp-7980",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 15,
+      "variant": "floor_m1p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -1.5,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: No 2D layers found after all cuts",
+      "elapsed_seconds": 10.725
+    },
+    {
+      "parent_id": "mp-7980",
+      "route_signature": "archived_bonddel",
+      "n_parent_atoms": 15,
+      "variant": "floor_m2p5",
+      "cluster_tolerance_eV": 0.03,
+      "energy_scan_floor_eV": -2.5,
+      "status": "NO_2D",
+      "threshold_eV": null,
+      "component_atom_indices": [],
+      "message": "Failed: Structure disintegrated to 0D (BFS iters: 15)",
+      "elapsed_seconds": 10.774
+    }
+  ]
+}

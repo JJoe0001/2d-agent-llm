@@ -140,6 +140,10 @@ def main() -> None:
         },
         "n_parents": len(panel),
         "n_tasks": len(tasks),
+        "parent_cif_sha256": {
+            parent_id: hashlib.sha256(Path(path).read_bytes()).hexdigest()
+            for _, _, parent_id, path in panel
+        },
         "potential_sha256": hashlib.sha256(POTENTIAL.read_bytes()).hexdigest(),
         "variants": summary,
         "records": results,

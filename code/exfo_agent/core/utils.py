@@ -290,7 +290,11 @@ def create_hkl_list(structure: Structure, dmin: float) -> Tuple[List[List[int]],
     return unique_hkl, unique_hkl # 在 P1 假设下，Full 和 Unique 是一样的
 
 
-def calculate_electron_density(structure: Structure, n_grid: Tuple[int, int, int]) -> Dict:
+def calculate_electron_density(
+    structure: Structure,
+    n_grid: Tuple[int, int, int],
+    gaussian_sigma_scale: float = 0.5,
+) -> Dict:
     """Calculate electron density grid."""
     n1, n2, n3 = n_grid
     density = np.zeros(n_grid)
@@ -307,7 +311,7 @@ def calculate_electron_density(structure: Structure, n_grid: Tuple[int, int, int
     lat = structure.lattice
     avg_len = sum(lat.abc) / 3.0
     avg_grid = sum(n_grid) / 3.0
-    sigma = 0.5 * (avg_grid / avg_len) # sigma ~ 0.5 Angstrom
+    sigma = float(gaussian_sigma_scale) * (avg_grid / avg_len)
     
     sff = ndimage.gaussian_filter(density, sigma=sigma, mode='wrap')
     
@@ -372,7 +376,8 @@ def get_planar_gap_candidates(
     gap_level: float = 0.75,
     n_grid: Tuple[int, int, int] = (32, 32, 32),
     d_smooth: float = 0.1,
-    timeout_seconds: float = 90.0  # SAFETY: Hard timeout
+    timeout_seconds: float = 90.0,  # SAFETY: Hard timeout
+    gaussian_sigma_scale: float = 0.5,
 ) -> List[Dict]:
     """
     [高层入口] 计算所有可能的解理面及其 Gap 指标。
@@ -407,7 +412,9 @@ def get_planar_gap_candidates(
             hkl_list = hkl_list[:MAX_HKL_ITERATIONS]
 
         check_timeout("electron density calculation")
-        grid = calculate_electron_density(structure, n_grid)
+        grid = calculate_electron_density(
+            structure, n_grid, gaussian_sigma_scale=gaussian_sigma_scale
+        )
 
         results = []
 

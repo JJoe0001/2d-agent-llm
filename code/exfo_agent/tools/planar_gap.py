@@ -18,6 +18,7 @@ def planar_gap_scan_impl(
     top_k: int = 5,
     fallback_to_axis_mvp: bool = True,
     source_name: str = "planar_gap_scan",
+    gaussian_sigma_scale: float = 0.5,
 ) -> Dict[str, Any]:
     """
     C2: 平面 gap 扫描（基于 Core Utils 的几何电子密度投影）
@@ -66,7 +67,8 @@ def planar_gap_scan_impl(
             dmin=float(dmin),
             gap_level=float(gap_level),
             n_grid=tuple(int(x) for x in n_grid),
-            d_smooth=float(d_smooth)
+            d_smooth=float(d_smooth),
+            gaussian_sigma_scale=float(gaussian_sigma_scale),
         )
 
         if is_debug_enabled():
@@ -113,6 +115,7 @@ def planar_gap_scan_impl(
                 "n_grid": [int(x) for x in n_grid],
                 "d_smooth": float(d_smooth),
                 "top_k": int(top_k),
+                "gaussian_sigma_scale": float(gaussian_sigma_scale),
             },
             "candidates": candidates,
             "best": best,

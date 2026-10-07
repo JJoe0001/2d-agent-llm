@@ -13,10 +13,10 @@
 | BONDDEL 能级聚类步长 | `0.03 eV` | `core/config.py` | 本项目代码设置；17 父体的代码阶段比较见 `docs/断键参数敏感性_中文.md` |
 | BONDDEL 弱键扫描下限 | 仅扫描 `>−2.0 eV` 的能级 | `core/config.py` | 本项目代码设置；改为 −1.5 eV 会漏掉阳性对照的二维分量 |
 | BONDDEL 大小／时间上限 | 当前默认 600 原子／60 秒 | `tools/bond_del.py` | 与原稿所述 **CHGNet** 500 原子上限区分 |
-| StructureMatcher | `ltol=0.2`、`stol=0.3`、`angle_tol=5°`，启用原胞 | `tools/deduplicate_utils.py` | 与当前 pymatgen `StructureMatcher` 默认值一致；这是软件默认值而不是本文验证过的最佳值，仍需去重敏感性 |
+| StructureMatcher | ltol=0.2、stol=0.3、angle_tol=5°，启用原胞 | tools/deduplicate_utils.py | 与当前 pymatgen StructureMatcher 默认值一致；500 个已去重候选的宽松容差压力测试额外合并 16 条，但仍缺去重前全集敏感性 |
 
 **势函数和参数表的来源。** Morse–Yukawa XCP 函数来自 Barnowsky、Timm、Friedrich 的原方法论文（[2025 年预印本](https://arxiv.org/abs/2512.16721)，[2026 年正式论文](https://doi.org/10.1038/s41467-026-76806-8)）。本仓库 `POTDATA_morse_yukawa_2025` 与作者发布的 [FINDSLAB v1.1 归档](https://doi.org/10.14278/rodare.4687) 中同名文件 SHA-256 一致：`213e68e6dc87dad20c5b65053f25df6c63c423137e307b0914b5a7d86eb7dc91`。原论文称 5 个元素对参数以 AFLOW-ICSD 的 DFT 力和势能数据拟合。本项目 Python 实现的 Morse 项比原论文显示的式子减去常数 `D`，使远距离势能为 0；跨元素对的绝对键能排序及固定数值阈值不应据此自动视为与 FINDSLAB 原实现相同。FINDSLAB 论文中的 BONDDEL 物理思路和 XCP 参数来源可引用，但本项目的平面密度代理、阈值及扫描顺序应单独声明为实现选择。
 
-完整敏感性设计：先固定 200–500 个母体 ID，覆盖经典层状体系、混阴离子／氧化物、多路线重叠、失败与临界样本。锁定代码提交、输入结构、CHGNet 模型和随机种子；每次只改一个参数。各设置报告生成结构数、去重后结构数、母体及候选 ID 相对基线的 Jaccard 重叠、松弛后 2D 保留数、耗时与失败类别。参数变化会改变下游路线调用时，应记录该因果链，而非只绘最终数量。
+扩展敏感性复算见 [参数敏感性_扩展复算_中文.md](参数敏感性_扩展复算_中文.md)：200 个路线标签分层父体检查初始判维 δ 扫描，并把几何网格、间隙阈值和最小面间距推进到实际 rank-2 切片与父体关联候选交并比；另以 48 个父体检验高斯宽度；另以 9 个阳性富集父体检查 BONDDEL，以 500 个已去重候选检查 StructureMatcher 容差，并审计 500 原子上限。多个参数会改变候选身份或断键输出，因此不能写成“已经证明稳健”。
 
-首轮有限平面间隙复算见 `docs/PLANAR_SENSITIVITY_RESULTS.md`：48 母体仅评估首选晶面变化，未评估最终候选保留。BONDDEL 的 17 父体代码阶段复算见 `docs/断键参数敏感性_中文.md`；去重容差和整条流水线的重跑仍待完成。在此之前不声称最终候选集参数稳健。若历史代码版本无法恢复，所有检查须标为“用当前发布实现的新复算”，不得称作历史运行重建。
+首轮仅比较首选晶面的结果仍见 docs/PLANAR_SENSITIVITY_RESULTS.md；17 父体的早期 BONDDEL 检查仍见 docs/断键参数敏感性_中文.md。本次扩展尚未完成改变参数后的三路线联动、去重前全集重跑以及 CHGNet 松弛后二维形貌的敏感性。在此之前不声称最终候选集参数稳健。所有新检查须标为“用当前发布实现的新复算”，不得称作历史运行重建。
