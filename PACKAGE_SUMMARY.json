@@ -1,7 +1,7 @@
 {
   "package": "2d-agent-llm",
-  "n_files": 51,
-  "total_size_bytes": 8545474,
+  "n_files": 107,
+  "total_size_bytes": 13783241,
   "top_level_directories": [
     "checks",
     "code",
@@ -16,7 +16,9 @@
   "data_scope": [
     "parent-level metadata and MP quantities",
     "final deduplicated 2D candidate labels and CHGNet results",
-    "computed parent-level exfoliability labels and dataset summary"
+    "pre-deduplication route manifest",
+    "post-CHGNet dimensionality labels",
+    "computed screening audit and selected DFT CIF/POSCAR inputs"
   ],
   "full_cif_archives_included": false,
   "code_doi": null,

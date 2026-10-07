@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-1223590_21201.cif",
+  "source_sha256": "d39bbb5300a106db6e9e6423476b5ff3d4ff0497c91a4eca74815bfa796f6764",
+  "n_atoms": 20,
+  "formula": "AlF2Ge3KMgMn2O10",
+  "slab_thickness_A": 2.46268,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 22.46268,
+  "starting_k_mesh": [
+    3,
+    3,
+    1
+  ],
+  "poscar_sha256": "8401f63a76a86562daa941373e968520018d662dd9637145d9c7142610a59666"
+}

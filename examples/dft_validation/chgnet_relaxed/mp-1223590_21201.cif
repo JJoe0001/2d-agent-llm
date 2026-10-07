@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_KMgMn2AlGe3(O5F)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.62013916
+_cell_length_b   12.50612193
+_cell_length_c   116.66814159
+_cell_angle_alpha   98.39968077
+_cell_angle_beta   149.92554048
+_cell_angle_gamma   67.24131897
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KMgMn2AlGe3(O5F)2
+_chemical_formula_sum   'K1 Mg1 Mn2 Al1 Ge3 O10 F2'
+_cell_volume   5920.95978023
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.61219311  0.98734192  0.48727167  1
+  Mg  Mg1  1  0.15255516  0.50854609  0.50057056  1
+  Mn  Mn2  1  0.49086841  0.49777768  0.50115835  1
+  Mn  Mn3  1  0.83654072  0.50973017  0.50118726  1
+  Al  Al4  1  0.13982909  0.76146109  0.49554066  1
+  Ge  Ge5  1  0.53955937  0.76004205  0.50216417  1
+  Ge  Ge6  1  0.78921731  0.24214091  0.50146374  1
+  Ge  Ge7  1  0.55473643  0.23041409  0.50790100  1
+  O  O8  1  0.25595674  0.82447810  0.49381222  1
+  O  O9  1  0.90630287  0.18372040  0.52334884  1
+  O  O10  1  0.04662545  0.81502100  0.50298382  1
+  O  O11  1  0.67807695  0.82970173  0.50488831  1
+  O  O12  1  0.68271490  0.16679444  0.48375112  1
+  O  O13  1  0.31518238  0.17707391  0.48654875  1
+  O  O14  1  0.16208022  0.62171074  0.49123224  1
+  O  O15  1  0.66483787  0.60075765  0.50620018  1
+  O  O16  1  0.68177319  0.39986122  0.49696542  1
+  O  O17  1  0.47450965  0.37124974  0.51060879  1
+  F  F18  1  0.25918114  0.49178273  0.52410262  1
+  F  F19  1  0.75726507  0.52039133  0.47795835  1

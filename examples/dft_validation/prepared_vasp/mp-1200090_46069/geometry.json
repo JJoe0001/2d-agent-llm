@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-1200090_46069.cif",
+  "source_sha256": "927d3af1ac8c044a726c4fe50bed604d49de45444a77a428e4233634606827c8",
+  "n_atoms": 84,
+  "formula": "F2Na14Nb4O50P4Si8Ti2",
+  "slab_thickness_A": 5.575816,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 25.575816,
+  "starting_k_mesh": [
+    4,
+    1,
+    1
+  ],
+  "poscar_sha256": "bbd3908888f9c885d4fdf6eebb55e20eef3a0caff5676a95ad97d32e86165ecd"
+}

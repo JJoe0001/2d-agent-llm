@@ -14,6 +14,8 @@ data/
   parents/                     Parent-structure metadata and parent-level MP quantities
   final_2d_candidates/         Final deduplicated 2D candidate labels and CHGNet results
   computed_results/            Parent exfoliability labels and dataset-level summary
+  dimensionality/               Post-CHGNet 2D morphology labels, with and without passivation
+  route_outputs/                Pre-deduplication filename and route manifest
   external_large_files/        Notes for large CIF archives not included in the main package
 docs/
   PROGRAM_SUMMARY.md           Program summary
@@ -28,6 +30,7 @@ checks/
   python_syntax_check.txt      Syntax-check output generated for this archive
 scripts/
   verify_package.py            Verify compact tables, checksums, and manifest
+  revision_audit.py             Recompute route, survival, and diversity counts
 ```
 
 ## Main code entry point
@@ -50,6 +53,9 @@ The three exfoliation routes are implemented as:
 - `data/final_2d_candidates/final_2d_candidates.csv.gz`: final deduplicated 2D candidate labels, parent mapping, route sources, relaxation status, and CHGNet formation-energy results.
 - `data/computed_results/parent_exfoliability_labels.csv.gz`: parent-level binary exfoliability labels and route labels for 143,259 MP parent structures.
 - `data/computed_results/dataset_summary.json`: summary of parent/candidate counts and route-label distributions.
+- `data/route_outputs/merged_candidate_manifest.csv.gz`: all 76,852 pre-deduplication candidate names and routes.
+- `data/dimensionality/*.csv.gz`: dimensionality assessments for every unique candidate.
+- `data/computed_results/revision_screening_summary.json`: reproducible revision audit. See [revision findings](docs/REVISION_FINDINGS.md).
 
 Intermediate plotting tables, route-stage temporary outputs, full CIF libraries, and production agent traces are not included in this compact repository. Do not use `candidate_cif_missing: 0` in `dataset_summary.json` as evidence that these CIFs are present here: that field was computed against the original local archive. See `docs/DATA_AVAILABILITY.md` and `data/external_large_files/README.md`.
 
@@ -69,6 +75,11 @@ examples/minimal_run/expected_candidate_subset.csv
 ```
 
 See `docs/INSTALL.md` and `docs/RUN_EXAMPLE.md` for setup and the limits of the current example. Run `python scripts/verify_package.py` to verify checksums and compact-table row counts.
+
+For first-principles validation, see the [VASP protocol](docs/VASP_VALIDATION_PROTOCOL.md), the selected paired CIFs, and prepared POSCAR/KPOINTS files in `examples/dft_validation/`. DFT results have not yet been added.
+For implemented thresholds and the sensitivity rerun design, see [parameter audit](docs/PARAMETER_AUDIT.md).
+For source-backed failure handling and the limits of the available agent logs, see [orchestration audit](docs/AGENT_FAILURE_AUDIT.md).
+For the planned versioned 2DMatPedia, MC2D, and C2DB recovery benchmark, see [database benchmark protocol](docs/DATABASE_BENCHMARK_PROTOCOL.md).
 
 ## License
 

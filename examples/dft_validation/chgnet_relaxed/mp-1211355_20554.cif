@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_KLiAl2Si4(O5F)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.23585800
+_cell_length_b   12.12205374
+_cell_length_c   112.00107744
+_cell_angle_alpha   58.58438321
+_cell_angle_beta   30.01970917
+_cell_angle_gamma   67.60729295
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KLiAl2Si4(O5F)2
+_chemical_formula_sum   'K1 Li1 Al2 Si4 O10 F2'
+_cell_volume   5280.58038308
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.03533988  -0.00373249  0.51835290  1
+  Li  Li1  1  0.51665509  0.49454397  0.49640494  1
+  Al  Al2  1  0.15066314  0.49590956  0.49787529  1
+  Al  Al3  1  0.85040354  0.49590937  0.49787532  1
+  Si  Si4  1  0.22445905  0.73312076  0.49738077  1
+  Si  Si5  1  0.79181127  0.26218044  0.49786750  1
+  Si  Si6  1  0.44314859  0.26218032  0.49786749  1
+  Si  Si7  1  0.54978178  0.73312051  0.49738081  1
+  O  O8  1  1.03953068  0.83718993  0.50845939  1
+  O  O9  1  -0.01643613  0.18429733  0.49601402  1
+  O  O10  1  0.36820515  0.18429638  0.49601394  1
+  O  O11  1  0.39799032  0.83718992  0.50845940  1
+  O  O12  1  0.23230913  0.65038984  0.48935352  1
+  O  O13  1  0.72055242  0.40543667  0.49950039  1
+  O  O14  1  0.33686009  0.40543671  0.49950044  1
+  O  O15  1  0.79323397  0.65038962  0.48935368  1
+  O  O16  1  0.44814632  0.67353384  0.49440625  1
+  O  O17  1  0.62596570  0.24354823  0.49794657  1
+  F  F18  1  0.77327036  0.46805165  0.52084600  1
+  F  F19  1  0.21810969  0.48700746  0.47757766  1

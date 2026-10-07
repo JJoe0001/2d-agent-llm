@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-1194882_5319.cif",
+  "source_sha256": "68103fbd774845a87752b0fc315ae3e557f22933d37134fedeb5506c2b4e2e34",
+  "n_atoms": 36,
+  "formula": "Ba4Cl4F4Mn4O16P4",
+  "slab_thickness_A": 5.879221,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 25.879221,
+  "starting_k_mesh": [
+    4,
+    3,
+    1
+  ],
+  "poscar_sha256": "a7c98445cda627b402605a587bf7ef6272f0af066e6ae9d18316eecd91bbbeaa"
+}

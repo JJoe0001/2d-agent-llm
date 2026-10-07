@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-1211355_20554.cif",
+  "source_sha256": "072db4eaebc028b47a58e643349babfc2aa170ec277f3f577806a7d46e6d1ce2",
+  "n_atoms": 20,
+  "formula": "Al2F2KLiO10Si4",
+  "slab_thickness_A": 2.207228,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 22.207228,
+  "starting_k_mesh": [
+    3,
+    3,
+    1
+  ],
+  "poscar_sha256": "458b6e350c455b15eba8ef341c44806cdfe5927aeadfd2218246c4b89c30813f"
+}

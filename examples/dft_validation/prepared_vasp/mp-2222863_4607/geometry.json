@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-2222863_4607.cif",
+  "source_sha256": "a3a7d98df47ef3c29169234ea2986a208cab251e626768905e6e50d67c492470",
+  "n_atoms": 10,
+  "formula": "AgBaCuMgO5Y",
+  "slab_thickness_A": 3.307046,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 23.307046,
+  "starting_k_mesh": [
+    7,
+    3,
+    1
+  ],
+  "poscar_sha256": "6257be24aacc3fb7df5209198d24d597c5c4e2ad0c15b5634183bebd4899e2b5"
+}

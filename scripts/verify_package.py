@@ -62,6 +62,9 @@ def main() -> None:
         "data/parents/parent_level_metadata.csv.gz": dataset["n_parent_rows"],
         "data/computed_results/parent_exfoliability_labels.csv.gz": dataset["n_parent_rows"],
         "data/final_2d_candidates/final_2d_candidates.csv.gz": dataset["n_candidate_rows"],
+        "data/route_outputs/merged_candidate_manifest.csv.gz": 76852,
+        "data/dimensionality/no_pass_dimensionality_post_ml.csv.gz": dataset["n_candidate_rows"],
+        "data/dimensionality/passivated_dimensionality_post_ml.csv.gz": dataset["n_candidate_rows"],
     }
     for relative_path, expected in expected_rows.items():
         actual, header = count_rows(relative_path)
@@ -70,7 +73,7 @@ def main() -> None:
         if not header:
             fail(f"{relative_path}: empty header")
 
-    print(f"Verified {len(records)} payload files and three compact tables.")
+    print(f"Verified {len(records)} payload files and {len(expected_rows)} compact tables.")
     print("Full CIF archives are not included in this verification.")
 
 

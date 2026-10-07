@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-1221200_44751.cif",
+  "source_sha256": "19fe0e79888436f20c59949b629004b47d22cda48f67d01d9f9cbc4946a5e0d2",
+  "n_atoms": 72,
+  "formula": "F8Fe6Li8Mn2Na8O32P8",
+  "slab_thickness_A": 10.534573,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 30.534573,
+  "starting_k_mesh": [
+    5,
+    3,
+    1
+  ],
+  "poscar_sha256": "3aea99d6f19a45ecf6e394c2f1c45a24b6707de513cb99243eaa7145781a1897"
+}

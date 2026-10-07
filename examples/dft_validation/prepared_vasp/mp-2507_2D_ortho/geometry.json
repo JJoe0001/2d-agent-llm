@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-2507_2D_ortho.cif",
+  "source_sha256": "102e1ae12a5b3892d8a1a6c1cf0de1cafa5d5dc1c453a4446096761560e6e355",
+  "n_atoms": 4,
+  "formula": "Ga2S2",
+  "slab_thickness_A": 4.670915,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 24.670915,
+  "starting_k_mesh": [
+    9,
+    9,
+    1
+  ],
+  "poscar_sha256": "a6f80fba6acd0a8567c2dfec544c3ef236e9bb2d4aa9e66aee60d440739f7222"
+}

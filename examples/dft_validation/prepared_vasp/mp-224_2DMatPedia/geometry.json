@@ -1,0 +1,15 @@
+{
+  "source_candidate_file": "mp-224_2DMatPedia.cif",
+  "source_sha256": "147e6417cbb680828999d333eea6b78be12773932deb9699d0450235f0b33e16",
+  "n_atoms": 3,
+  "formula": "S2W",
+  "slab_thickness_A": 3.149556,
+  "vacuum_between_outermost_atoms_A": 20.0,
+  "cell_height_A": 23.149556,
+  "starting_k_mesh": [
+    10,
+    10,
+    1
+  ],
+  "poscar_sha256": "31a7e00e68150913c08d65be1eec0b877d6a17cb9d69894b3925edd81b7fcbc3"
+}

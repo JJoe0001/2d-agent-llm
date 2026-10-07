@@ -1,0 +1,91 @@
+{
+  "definitions": {
+    "pre_deduplication": "Merged route CIF filenames before cross-route deduplication",
+    "post_deduplication": "Final candidate CSV filenames after deduplication",
+    "raw_2d_label": "dim_type == 2D, including failed or skipped relaxations",
+    "relaxed_2d": "dim_type == 2D AND is_relaxed == True",
+    "stability_caution": "CHGNet validation_status is a workflow label, not a DFT 2D convex-hull or dynamical-stability test"
+  },
+  "n_parents": 143259,
+  "n_distinct_parent_id_values_including_blank": 47618,
+  "n_mapped_parents_with_candidates": 47617,
+  "candidates_without_parent_mapping": [
+    "mvc-5327_2D_ortho.cif"
+  ],
+  "n_merged_candidates": 76852,
+  "n_unique_candidates": 73105,
+  "n_deduplicated": 3747,
+  "route_counts_pre_deduplication": {
+    "hybrid": 37710,
+    "layered": 6266,
+    "topological": 32876
+  },
+  "route_counts_post_deduplication": {
+    "hybrid": 37445,
+    "layered": 6046,
+    "topological": 29614
+  },
+  "final_validation_status": {
+    "Error/Explosion": 256,
+    "Skipped (Too Large)": 169,
+    "Skipped (Unstable)": 103,
+    "Thermo Stable (No Mech)": 72577
+  },
+  "final_is_relaxed": {
+    "False": 3481,
+    "True": 69624
+  },
+  "n_distinct_candidate_formula_strings": 39709,
+  "n_candidates_without_formula": 2,
+  "n_distinct_chemical_systems": 16124,
+  "diversity_by_route": {
+    "topological": {
+      "n_formula_strings": 20565,
+      "n_chemical_systems": 10303
+    },
+    "layered": {
+      "n_formula_strings": 4900,
+      "n_chemical_systems": 3651
+    },
+    "hybrid": {
+      "n_formula_strings": 20342,
+      "n_chemical_systems": 9249
+    }
+  },
+  "dimensionality": {
+    "no_pass": {
+      "dim_type_counts": {
+        "1D": 2,
+        "2D": 71096,
+        "Fragmented": 1582,
+        "ParseError": 425
+      },
+      "n_raw_2d": 71096,
+      "n_relaxed_2d": 68089,
+      "n_2d_without_successful_relaxation": 3007,
+      "n_relaxed": 69624,
+      "relaxed_2d_by_route": {
+        "hybrid": 33753,
+        "layered": 5977,
+        "topological": 28359
+      }
+    },
+    "passivated": {
+      "dim_type_counts": {
+        "1D": 3,
+        "2D": 70888,
+        "Fragmented": 882,
+        "ParseError": 1332
+      },
+      "n_raw_2d": 70888,
+      "n_relaxed_2d": 63464,
+      "n_2d_without_successful_relaxation": 7424,
+      "n_relaxed": 64297,
+      "relaxed_2d_by_route": {
+        "hybrid": 31346,
+        "layered": 5718,
+        "topological": 26400
+      }
+    }
+  }
+}

@@ -31,6 +31,17 @@ data/computed_results/dataset_summary.json
 
 These files provide the parent-level binary label, route-specific labels, candidate counts, and global parent/candidate count summaries.
 
+Additional revision audit inputs are now packaged:
+
+```text
+data/route_outputs/merged_candidate_manifest.csv.gz
+data/dimensionality/no_pass_dimensionality_post_ml.csv.gz
+data/dimensionality/passivated_dimensionality_post_ml.csv.gz
+data/computed_results/revision_screening_summary.json
+```
+
+The route manifest gives filename-level provenance for all 76,852 pre-deduplication candidates. The two dimensionality tables give post-CHGNet morphology labels for all 73,105 unique candidates. `scripts/revision_audit.py` recomputes and checks the summary; see `docs/REVISION_FINDINGS.md` for definitions and data caveats. A small VASP input selection of 16 derived CIFs is available in `examples/dft_validation/`; this is not the complete candidate archive and contains no DFT outputs.
+
 ## Large files not embedded
 
 The complete parent CIF library, route-specific and deduplicated candidate CIF libraries, and relaxed CIF library are not available through this repository. No external archive URL or DOI has been assigned yet. The planned organization is documented in:
@@ -43,7 +54,7 @@ The `candidate_cif_missing: 0` and `parent_cif_missing: 0` fields in `dataset_su
 
 ## Data included
 
-The data included here are limited to parent records, deduplicated candidate records, and computed screening results. Intermediate route-stage outputs, figure-generation tables and scripts, and production LLM/tool-call traces are not included. These omissions prevent independent reproduction of all manuscript figures from the repository alone.
+The data included here are limited to parent records, pre-deduplication route provenance, deduplicated candidate records, dimensionality labels, and computed screening results. Full route-stage output structures, figure-generation tables and scripts, and production LLM/tool-call traces are not included. These omissions prevent independent reproduction of all manuscript figures from the repository alone.
 
 ## Data citation
 
