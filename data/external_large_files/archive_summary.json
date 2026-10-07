@@ -1,0 +1,20 @@
+{
+  "n_cifs": 73105,
+  "archive_size_bytes": 41942126,
+  "archive_sha256": "bdec78cd3ca976e894f8a906f0291aad72ce71eb9d8bac7968397c72a63a0960",
+  "manifest_sha256": "e3a7429bc812d742cfaaa4ae4a3098c6bdeb473966eac735031e04cd0a07e96d",
+  "source": "locally generated unique candidate CIFs",
+  "publication_status": "GitHub revision branch; no persistent data DOI yet",
+  "relaxed_unpassivated_cifs": {
+    "n_cifs": 69624,
+    "archive_size_bytes": 42199136,
+    "archive_sha256": "83e881bae82bac15723398d69d07dc69595040f4ef345603a82218948f2f3e06",
+    "manifest_sha256": "6b3a9d7479d9e9242aff979d30614c29d539e2009e1f64e9e7c66fab92882916"
+  },
+  "relaxed_passivated_cifs": {
+    "n_cifs": 64297,
+    "archive_size_bytes": 44236234,
+    "archive_sha256": "d1668b99303583169ab95879fe0bc755250fc4e224e71e330937151df1987392",
+    "manifest_sha256": "ec6c938920e1388c66f656b2b715af49b1f3eb8b17e2ffcb4c7e95dc84b43fc0"
+  }
+}

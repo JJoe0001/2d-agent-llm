@@ -1,6 +1,6 @@
 # 二维材料发现的多路线高通量剥离工作流
 
-本仓库包含论文《A multi-route high-throughput workflow for 2D materials discovery》配套的代码与精简处理表，正用于向 *Digital Discovery* 提交返修。包内有 MCP 服务、三条剥离路线、工具调用说明、处理标签及五母体示例。完整结构归档与部分绘图输入尚未公开；准确范围见[数据可用性说明](docs/DATA_AVAILABILITY.md)。
+本仓库包含论文《A multi-route high-throughput workflow for 2D materials discovery》配套的代码、处理表及部分结构归档，正用于向 *Digital Discovery* 提交返修。包内有 MCP 服务、三条剥离路线、工具调用说明、处理标签、五母体示例及 73,105 个去重候选的 CIF 归档。完整历史母体、去重前分路线结构与部分绘图输入尚未公开；准确范围见[数据可用性说明](docs/DATA_AVAILABILITY.md)。
 
 ## 目录
 
@@ -12,7 +12,7 @@ data/final_2d_candidates/         去重后候选与 CHGNet 结果
 data/computed_results/            母体标签、审计及敏感性结果
 data/dimensionality/              钝化与未钝化的形貌标签
 data/route_outputs/               去重前路线来源清单
-data/external_large_files/        未嵌入的大文件说明
+data/external_large_files/        候选及松弛结构归档、逐文件校验清单
 docs/                             安装、方法审计、VASP 等中文说明
 examples/minimal_run/             五母体样本与历史预期标签
 examples/dft_validation/          8 对结构与预备 VASP 输入
@@ -32,8 +32,9 @@ MCP 服务入口：`code/exfo_agent/server.py`。拓扑路线见 `tools/literatu
 - `data/route_outputs/merged_candidate_manifest.csv.gz`：76,852 条去重前候选与路线。
 - `data/dimensionality/*.csv.gz`：所有唯一候选的形貌判定。
 - `data/computed_results/revision_screening_summary.json`：可重算的返修审计，定义见[审计结果](docs/REVISION_FINDINGS.md)。
+- `data/external_large_files/`：去重候选、未钝化及钝化 CHGNet 松弛 CIF 归档，附逐文件和整包 SHA-256；见[归档说明](data/external_large_files/README.md)。
 
-中间绘图表、路线阶段临时输出、全量 CIF 与历史模型调用轨迹不在精简包中。`dataset_summary.json` 的 `candidate_cif_missing: 0` 是在原始本地库中计算，不能证明该 CIF 已上传；见[数据范围](docs/DATA_AVAILABILITY.md)。
+完整母体、去重前分路线 CIF、中间绘图表及历史模型调用轨迹仍未提供。`dataset_summary.json` 的 `candidate_cif_missing: 0` 是在原始本地库中计算，不能代替仓库实际内容审计；见[数据范围](docs/DATA_AVAILABILITY.md)。
 
 ## 示例与核验
 
@@ -47,4 +48,4 @@ DFT 准备见[VASP 方案](docs/VASP_VALIDATION_PROTOCOL.md)、`examples/dft_val
 
 ## 许可
 
-软件许可见 `LICENSE`。第三方科学方法在论文中引用；数据来源及再分发许可须另行核查。
+软件许可见 `LICENSE`。它不自动覆盖来自 Materials Project 的结构及其衍生数据；部分 GNoME 来源记录受非商业许可约束，详见[归档说明](data/external_large_files/README.md)。势参数的原始来源及文件校验见[参数审计](docs/PARAMETER_AUDIT.md)。
