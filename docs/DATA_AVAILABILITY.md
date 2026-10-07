@@ -1,63 +1,22 @@
-# Data availability and provenance
+# 数据可用性与来源
 
-## Parent structures
+## 母体和候选结构
 
-The parent structures originate from the Materials Project database after filtering for structures with energy above hull less than or equal to 0.5 eV per atom. The compact parent table contains 143,259 parent structures:
+母体来自 Materials Project，筛选条件为能量高于凸包不超过 0.5 eV/atom。`data/parents/parent_level_metadata.csv.gz` 含 143,259 个母体的 ID、MP 物理量、路线标志、候选数量和能量汇总；没有逐个打包全部母体 CIF。`examples/minimal_run/sample_parent_input.csv` 自带 5 个母体的 CIF 文本。
 
-```text
-data/parents/parent_level_metadata.csv.gz
-```
+流程生成 76,852 个去重前候选 CIF、73,105 个去重后候选。`data/final_2d_candidates/final_2d_candidates.csv.gz` 含候选文件名、母体 ID、路线来源、CHGNet 形成能、松弛与验证状态、化学式及去重状态。
 
-The package includes parent identifiers, parent-level MP quantities, route labels, candidate counts, and aggregated energy statistics. It does not include all parent CIF files as individual files. A five-structure self-contained example with CIF text is included in `examples/minimal_run/sample_parent_input.csv`.
+## 包中已有结果
 
-## Generated 2D candidates
+- `data/computed_results/parent_exfoliability_labels.csv.gz` 与 `dataset_summary.json`：母体可剥离二元标签、路线标签、候选数和总计。
+- `data/route_outputs/merged_candidate_manifest.csv.gz`：76,852 个去重前文件名与路线来源。
+- `data/dimensionality/no_pass_dimensionality_post_ml.csv.gz`、`passivated_dimensionality_post_ml.csv.gz`：73,105 个唯一候选的 CHGNet 后形貌判定。
+- `data/computed_results/revision_screening_summary.json`：由 `scripts/revision_audit.py` 重算，定义见 `docs/REVISION_FINDINGS.md`。
+- `examples/dft_validation/`：8 对初始／松弛结构，共 16 个衍生 CIF；不是全库，不含 DFT 输出。
+- `data/computed_results/`：48 母体、336 条平面间隙敏感性记录及两个混合路线复算实例。母体 CIF 仅以 MP ID 和 SHA-256 引用，未在此再分发。
 
-The manuscript workflow generated 76,852 candidate CIFs before cross-route deduplication and 73,105 unique 2D candidate structures after deduplication. The compact processed candidate table is included as:
+## 尚缺数据与归档
 
-```text
-data/final_2d_candidates/final_2d_candidates.csv.gz
-```
+完整母体 CIF、各路线及去重后候选 CIF、松弛 CIF 均不能通过此仓库取得；目前没有公开归档 URL 或 DOI。计划目录见 `data/external_large_files/README.md`。`dataset_summary.json` 中 `candidate_cif_missing: 0` 和 `parent_cif_missing: 0` 是对原始本地环境计算，**不表示**这些 CIF 已上传 GitHub。
 
-This table contains candidate filenames, parent IDs, route source flags, CHGNet formation energies, relaxation status, validation status, candidate formula, and deduplication status.
-
-## Computed results included
-
-The parent-level exfoliability labels and dataset-level summary are included as:
-
-```text
-data/computed_results/parent_exfoliability_labels.csv.gz
-data/computed_results/dataset_summary.json
-```
-
-These files provide the parent-level binary label, route-specific labels, candidate counts, and global parent/candidate count summaries.
-
-Additional revision audit inputs are now packaged:
-
-```text
-data/route_outputs/merged_candidate_manifest.csv.gz
-data/dimensionality/no_pass_dimensionality_post_ml.csv.gz
-data/dimensionality/passivated_dimensionality_post_ml.csv.gz
-data/computed_results/revision_screening_summary.json
-```
-
-The route manifest gives filename-level provenance for all 76,852 pre-deduplication candidates. The two dimensionality tables give post-CHGNet morphology labels for all 73,105 unique candidates. `scripts/revision_audit.py` recomputes and checks the summary; see `docs/REVISION_FINDINGS.md` for definitions and data caveats. A small VASP input selection of 16 derived CIFs is available in `examples/dft_validation/`; this is not the complete candidate archive and contains no DFT outputs.
-
-The repository also includes a 48-parent planar-gap sensitivity panel with 336 run records and two rerun worked-example summaries in `data/computed_results/`. Those examples reference MP parent CIFs by ID and SHA-256; the parent CIFs themselves are not redistributed here.
-
-## Large files not embedded
-
-The complete parent CIF library, route-specific and deduplicated candidate CIF libraries, and relaxed CIF library are not available through this repository. No external archive URL or DOI has been assigned yet. The planned organization is documented in:
-
-```text
-data/external_large_files/README.md
-```
-
-The `candidate_cif_missing: 0` and `parent_cif_missing: 0` fields in `dataset_summary.json` refer to the original local processing environment. They do **not** mean the individual CIFs are included in this GitHub repository.
-
-## Data included
-
-The data included here are limited to parent records, pre-deduplication route provenance, deduplicated candidate records, dimensionality labels, and computed screening results. Full route-stage output structures, figure-generation tables and scripts, and production LLM/tool-call traces are not included. These omissions prevent independent reproduction of all manuscript figures from the repository alone.
-
-## Data citation
-
-Before submitting the revision, deposit the missing archives and figure inputs in a persistent repository, add versioned URLs and DOIs here, and put matching details in the manuscript Data Availability Statement. Do not cite this page as a substitute for a deposited dataset.
+完整分路线结构、绘图输入表与脚本、历史 LLM 工具调用轨迹尚未开放，因此无法单靠本仓库重现论文全部图。返修提交前应将缺失结构与绘图输入存入持久数据仓库，在此加入有版本的 URL／DOI，并与论文 Data Availability Statement 一致。本页不能代替已公开的数据集。

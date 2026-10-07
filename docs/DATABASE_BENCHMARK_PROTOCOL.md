@@ -1,19 +1,19 @@
-# External 2D database recovery benchmark
+# 外部 2D 数据库找回率基准方案
 
-This protocol defines the missing reference comparison requested in review. A recovery percentage must use a versioned reference denominator and the same structural matching rule for every database. The reference CIFs and version manifests are not yet packaged, so no three-database recovery claim is made here.
+本方案用于回应审稿人要求的数据库对照。找回率必须使用有版本的参考集分母，且所有数据库采用同一结构匹配规则。参考 CIF 与版本清单尚未打包，因此现在**不能**报告三库找回率。
 
-## Reference snapshots
+## 参考数据快照
 
-- **2DMatPedia:** obtain its deposited JSON and CIF snapshot, preserve source URL/DOI, retrieval date, and entry IDs. The [dataset publication](https://www.nature.com/articles/s41597-019-0097-3) describes a downloadable JSON and Figshare structural files.
-- **MC2D:** choose a single archived release and identify whether the denominator includes every candidate, only relaxed structures, or a stability-filtered subset. The [official MC2D portal](https://mc2d.materialscloud.org/) provides data DOIs and current APIs; mixing archived and live counts would make the percentage ambiguous.
-- **C2DB:** archive a specific downloadable database version, entry IDs, and structural data. Record whether prototype-generated and experimentally derived entries are both included. The [DTU C2DB portal](https://c2db.fysik.dtu.dk/) is the source for this snapshot.
+- **2DMatPedia：**获取其存档 JSON 与 CIF，保存来源 URL／DOI、下载日期和条目 ID。[数据集论文](https://www.nature.com/articles/s41597-019-0097-3)介绍可下载 JSON 与 Figshare 结构文件。
+- **MC2D：**固定一个存档版本，明确分母是全部候选、仅松弛结构还是稳定性过滤子集。[官方 MC2D 门户](https://mc2d.materialscloud.org/)提供数据 DOI 与实时 API；不可混用存档和实时计数。
+- **C2DB：**存档指定下载版本、条目 ID 和结构数据，并说明是否同时含原型生成与实验来源条目。来源见 [DTU C2DB 门户](https://c2db.fysik.dtu.dk/)。
 
-## Matching hierarchy
+## 匹配层级
 
-1. Exclude records without parseable atomic coordinates, but report the exclusion count and retain their IDs in the raw manifest.
-2. Normalize each slab's vacuum axis and center its atoms; preserve chemistry and distinguish raw versus DFT-relaxed reference structures. Match against the **68,089 successfully relaxed, unpassivated 2D-classified** candidate subset for the primary recovery rate. Repeat against all 73,105 candidate records as a coverage sensitivity result.
-3. Compare reduced chemical composition, then candidate geometry: in-plane area per formula unit within 5%, layer thickness within 20%, followed by `StructureMatcher(ltol=0.2, stol=0.3, angle_tol=5°)` on appropriately normalized cells. For suspected matches, inspect polymorph, termination, and layer count; one formula can have multiple distinct 2D structures.
-4. Classify each reference entry as `structure_match`, `formula_geometry_only`, `formula_only`, or `no_formula_match`. Also compare **chemical system** separately. Report `structure_match / reference entries parsed` and the union across databases with cross-database duplicates resolved.
-5. For selected candidates in Table 1, report three different claims explicitly: previously known composition, structurally matched known phase, and absent from the versioned databases searched. “No direct match” means only the latter when the exact datasets, matching rule, and negative search result are recorded; it is not proof of a new material.
+1. 无法解析原子坐标的参考记录先排除，但报告排除数，原始清单保留其 ID。
+2. 统一 slab 真空轴并居中原子；保持化学组成，区分原始与 DFT 松弛参考结构。主要找回率与**68,089 个松弛成功且未钝化、几何判为 2D 的候选**比较；再与全部 73,105 条候选比较作为覆盖敏感性。
+3. 先比约分化学组成，再比几何：每化学式单元面内面积差在 5% 内、层厚差在 20% 内，然后对规范化晶胞执行 `StructureMatcher(ltol=0.2, stol=0.3, angle_tol=5°)`。疑似匹配还要检查多形、表面终止与层数；相同化学式可对应不同 2D 结构。
+4. 每个参考条目标为 `structure_match`、`formula_geometry_only`、`formula_only` 或 `no_formula_match`。另行比较**化学体系**。报告 `结构匹配条目数/可解析参考条目数`，并在跨库去重后计算三库并集。
+5. 表 1 的候选分别说明“已知化学组成”“匹配已知结构相”“在所检索的版本数据库中未匹配”。“无直接匹配”仅在明确数据库版本、匹配规则与阴性检索记录后成立，不能等同于发现新材料。
 
-An older local analysis in `papers/literature_db_comparison` compared 73,105 candidates against 6,351 2DMatPedia CIFs and reported 526 structure matches (8.28%), using area/thickness prefilters and StructureMatcher. Its database snapshot, normalization quality, and relation to the new relaxed-2D denominator have not been independently verified; MC2D and C2DB were not covered together. Treat this only as a historical pilot, not the manuscript's final recall metric.
+旧的本地 `papers/literature_db_comparison` 分析用面积／厚度预筛及 StructureMatcher，将 73,105 条候选与 6,351 个 2DMatPedia CIF 比较，报告 526 个结构匹配（8.28%）。其参考快照、结构规范化质量以及与新 68,089 分母的关系尚未独立核查；MC2D 与 C2DB 也未一同覆盖。只能将其视为历史试算，不可当作论文最终找回率。

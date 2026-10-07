@@ -1,30 +1,32 @@
-# Reproduced hybrid-route examples
+# 混合路线的两个可复算实例
 
-These are **new reruns of the published implementation** with pymatgen 2026.9.24, not reconstructed production logs. The parent MP CIFs are referenced by ID and SHA-256 but are not redistributed here. Run the two `scripts/reproduce_*_example.py` scripts with the corresponding local parent CIFs to regenerate the checked JSON files in `data/computed_results/`.
+以下是使用当前发布实现与 pymatgen 2026.9.24 **重新运行**的结果，不能冒充历史生产日志。母体 MP CIF 按 ID 和 SHA-256 引用，没有在仓库重新分发。将相应本地母体 CIF 交给两个 `scripts/reproduce_*_example.py` 脚本，可复算 `data/computed_results/` 中核验过的 JSON。
 
-## Geometric branch: BaYMgCuAgO5 (`mp-2222863`)
+## 几何分支：BaYMgCuAgO₅（`mp-2222863`）
 
-The 10-site bulk parent is classified as a rank-2 connected structure by the current implementation, so the smart workflow selects its geometric slicing branch. The default 32³ density grid, gap threshold 0.75, and top-three plane search found 17 scored planes and considered these three:
+当前代码把这个 10 原子母体判为连接维度 rank 2，因此主流程进入几何切层分支。默认 32³ 密度网格、0.75 间隙阈值、前三晶面搜索得到 17 个有评分晶面，检查其中三面：
 
-| Miller plane | Gap score | First successful extraction delta | Extracted formula/sites | Matches archived candidate |
+| Miller 晶面 | 间隙分数 | 首次成功的提取 delta | 提取化学式／原子数 | 匹配已存档候选 |
 | --- | ---: | ---: | --- | --- |
-| (−1, 1, 0) | 0.208639 | 1.2 | BaYMgCuAgO5 / 10 | `mp-2222863_4606.cif` |
-| (−1, −1, 0) | 0.208632 | 1.2 | BaYMgCuAgO5 / 10 | `mp-2222863_4606.cif` |
-| (−1, 0, 0) | 0.096663 | 1.2 | BaYMgCuAgO5 / 10 | `mp-2222863_4607.cif` |
+| (−1, 1, 0) | 0.208639 | 1.2 | BaYMgCuAgO₅／10 | `mp-2222863_4606.cif` |
+| (−1, −1, 0) | 0.208632 | 1.2 | BaYMgCuAgO₅／10 | `mp-2222863_4606.cif` |
+| (−1, 0, 0) | 0.096663 | 1.2 | BaYMgCuAgO₅／10 | `mp-2222863_4607.cif` |
 
-The first two orientations resolve to the same archived candidate under `StructureMatcher(ltol=0.2, stol=0.3, angle_tol=5°)`. The third matches the highlighted candidate. These structural matches provide a concrete extraction trace, **not** DFT validation. The parent CIF SHA-256 is `beb52aa25b2e242a39986e88ca7cbc060a414d9839d703a8af9afaef5e61a8ec`.
+前两种取向在 `StructureMatcher(ltol=0.2, stol=0.3, angle_tol=5°)` 下对应同一存档候选；第三面匹配论文重点候选。这是具体的结构提取轨迹，**不是** DFT 验证。母体 CIF SHA-256：`beb52aa25b2e242a39986e88ca7cbc060a414d9839d703a8af9afaef5e61a8ec`。
 
-## Bond-deletion branch: Zn2Cr2O5 (`mp-1376393`)
+## 断键分支：Zn₂Cr₂O₅（`mp-1376393`）
 
-The current periodic-connectivity classifier gives the 18-site parent rank 3. The BONDDEL routine builds 434 weighted periodic graph edges. It obtains pair parameters from the 5×118×118 element-pair matrix `POTDATA_morse_yukawa_2025` (SHA-256 `213e68e6dc87dad20c5b65053f25df6c63c423137e307b0914b5a7d86eb7dc91`). At the first successful clustered threshold of **−1.557499 eV**, 419 graph edges have weights at or above the threshold and are removed; the graph search returns two rank-2 components, a 7-site Cr2O5 component and a 4-site CrO3 component. The source parent CIF SHA-256 is `3c89c30381259bbbaf1ae44afee8951f8b945367f55923c98abf6b25a0bacf46`.
+当前周期连接判据给 18 原子母体 rank 3。BONDDEL 建立 434 条带权周期图边，元素对参数取自 `POTDATA_morse_yukawa_2025` 的 5×118×118 矩阵（SHA-256：`213e68e6dc87dad20c5b65053f25df6c63c423137e307b0914b5a7d86eb7dc91`）。首次获得成功簇的阈值为 **−1.557499 eV**；删除权重大于等于该值的 419 条边后，图搜索返回两个 rank-2 分量：7 原子的 Cr₂O₅ 与 4 原子的 CrO₃。母体 CIF SHA-256：`3c89c30381259bbbaf1ae44afee8951f8b945367f55923c98abf6b25a0bacf46`。
 
-The edge weight is the implemented heuristic
+实现中的边权启发式为
 
-\[w_{ij}=D_{ij}(1-e^{\alpha_{ij}(r_{0,ij}-r_{ij})})^2-D_{ij}+C_{ij}e^{-\gamma_{ij}r_{ij}}/r_{ij}.\]
+\[
+w_{ij}=D_{ij}(1-e^{\alpha_{ij}(r_{0,ij}-r_{ij})})^2-D_{ij}+C_{ij}e^{-\gamma_{ij}r_{ij}}/r_{ij}.
+\]
 
-For this parent's six unordered element pairs, the loaded `(D [eV], α [Å⁻¹], r0 [Å], C, γ [Å⁻¹])` values are:
+该母体六种无序元素对的参数（`D` 单位 eV；`α`、`γ` 单位 Å⁻¹；`r0` 单位 Å）如下：
 
-| Pair | D | α | r0 | C | γ |
+| 元素对 | D | α | r0 | C | γ |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Zn–Zn | 0.277223 | 3.052243 | 1.801275 | 0.394133 | 2.328597 |
 | Zn–Cr | 0.542555 | 2.580373 | 2.609999 | 1.000000 | 0.000000 |
@@ -33,4 +35,4 @@ For this parent's six unordered element pairs, the loaded `(D [eV], α [Å⁻¹]
 | Cr–O | 2.201410 | 1.773444 | 1.519514 | 0.006056 | 1.784954 |
 | O–O | 0.509081 | 5.982612 | 1.221396 | −0.871259 | 4.918163 |
 
-The potential table is included in the repository; its original fitting/source documentation is not present. The example illustrates a **candidate graph transformation**, not a physical cleavage energy. The 4-site CrO3 formula also occurs in the final candidate table, but a structural match between this rerun output and its archived CIF was not established. Do not claim the rerun exactly reconstructs that production candidate. Removing 419 of 434 graph edges emphasizes why DFT and a chemically balanced surface model are needed before interpreting physical feasibility.
+势参数表已包含在仓库中，但未找到原始拟合或来源说明。这个例子展示的是**候选图变换**，不是物理剥离能。最终候选表也出现 4 原子 CrO₃ 化学式，但尚未证明本次复算输出与存档 CIF 结构匹配，不能说复算精确重建了该生产候选。434 条图边中移除 419 条，恰好说明物理可行性仍需 DFT 与化学计量守恒的表面模型检验。

@@ -1,20 +1,20 @@
-# Implemented screening parameters and revision checks
+# 已实现筛选参数与返修核对
 
-Values below were read from this repository's source on 7 October 2026. They describe the current code, not necessarily the configuration of the historical 143,259-parent production run. The latter needs a versioned run manifest or logs to establish exactly.
+以下数值依据 2026 年 10 月 7 日仓库源码，描述**当前代码**，不能自动等同于历史 143,259 母体生产运行的配置。要确定历史值，仍需有版本记录的运行清单或日志。
 
-| Stage | Current implemented value | Source | Revision check |
+| 阶段 | 当前实现 | 代码来源 | 返修核对 |
 | --- | --- | --- | --- |
-| Smart extraction delta scan | `[1.2, 1.3, 1.1, 1.4, 1.5]` in that order | `code/exfo_agent/tools/workflow.py` | Manuscript currently says 1.2–1.5 and omits 1.1; identify historical route script and reconcile. |
-| Planar density grid | `32×32×32` in smart workflow | `workflow.py` | Repeat 24³, 32³, 48³ on a frozen test panel. |
-| Gaussian smoothing | `sigma=0.5*(mean grid count/mean lattice length)` in grid units; comments call it ~0.5 Å | `code/exfo_agent/core/utils.py` | Check actual physical width for anisotropic cells. |
-| Normalized density gap level | `0.75` | `core/utils.py`, `tools/planar_gap.py` | Repeat 0.65, 0.75, 0.85. |
-| Minimum planar spacing | `dmin=1.8 Å`, then safe minimum at least 1.5 Å or shortest lattice vector/15 | `core/utils.py`, `tools/planar_gap.py` | Repeat 1.5, 1.8, 2.1 Å. |
-| Gap score | `width × mean(max(0, gap_level-normalized_density))`; retain positive scores, rank top `k=3` | `core/utils.py`, `workflow.py` | Do not describe a nonzero fixed score cutoff unless found in production config. |
-| BONDDEL clustered energy step | `0.03 eV` | `core/config.py` | Repeat 0.02, 0.03, 0.05 eV. |
-| BONDDEL weak-bond scan floor | only energy levels `> -2.0 eV` | `core/config.py` | Repeat −1.5, −2.0, −2.5 eV. |
-| BONDDEL size/time cap | 600 atoms / 60 seconds, current default | `tools/bond_del.py` | Distinguish from the manuscript's 500-atom **CHGNet** cap. |
-| StructureMatcher | `ltol=0.2`, `stol=0.3`, `angle_tol=5°`, primitive cell on | `tools/deduplicate_utils.py` | Repeat tighter and looser tolerance pairs on the same merged CIF panel. |
+| 智能提取 delta 扫描 | 依次 `[1.2, 1.3, 1.1, 1.4, 1.5]` | `code/exfo_agent/tools/workflow.py` | 原稿写 1.2–1.5，漏掉 1.1；核对历史脚本 |
+| 平面密度网格 | 主流程用 `32×32×32` | `workflow.py` | 在冻结样本上比较 24³、32³、48³ |
+| 高斯平滑 | 网格单位下 `sigma=0.5×(平均网格数/平均晶格长度)`；注释称约 0.5 Å | `code/exfo_agent/core/utils.py` | 检查各向异性晶胞的真实物理宽度 |
+| 归一化密度间隙阈值 | `0.75` | `core/utils.py`、`tools/planar_gap.py` | 比较 0.65、0.75、0.85 |
+| 最小晶面间距 | `dmin=1.8 Å`，另设至少 1.5 Å 或最短晶格矢量/15 的安全下限 | 同上 | 比较 1.5、1.8、2.1 Å |
+| 间隙评分 | `宽度×mean(max(0, gap_level−归一化密度))`；保留正分，取前 `k=3` | `core/utils.py`、`workflow.py` | 未找到生产配置前，不写固定非零分数截断值 |
+| BONDDEL 能级聚类步长 | `0.03 eV` | `core/config.py` | 比较 0.02、0.03、0.05 eV |
+| BONDDEL 弱键扫描下限 | 仅扫描 `>−2.0 eV` 的能级 | `core/config.py` | 比较 −1.5、−2.0、−2.5 eV |
+| BONDDEL 大小／时间上限 | 当前默认 600 原子／60 秒 | `tools/bond_del.py` | 与原稿所述 **CHGNet** 500 原子上限区分 |
+| StructureMatcher | `ltol=0.2`、`stol=0.3`、`angle_tol=5°`，启用原胞 | `tools/deduplicate_utils.py` | 在同一合并 CIF 样本上比较更严与更松的容差 |
 
-Sensitivity design: freeze 200–500 parent IDs before testing, stratified by classical layered compounds, mixed-anion/oxide compounds, multi-route parents, and failed/near-threshold cases. Preserve the same code commit, input structures, CHGNet model, and random seeds. Vary one parameter at a time. For each setting report generated structures, deduplicated structures, Jaccard overlap of parent and candidate identifiers with baseline, relaxed-2D retention, and runtime/failure categories. A change in one parameter may alter downstream route calls; record that causal path instead of just plotting final totals.
+完整敏感性设计：先固定 200–500 个母体 ID，覆盖经典层状体系、混阴离子／氧化物、多路线重叠、失败与临界样本。锁定代码提交、输入结构、CHGNet 模型和随机种子；每次只改一个参数。各设置报告生成结构数、去重后结构数、母体及候选 ID 相对基线的 Jaccard 重叠、松弛后 2D 保留数、耗时与失败类别。参数变化会改变下游路线调用时，应记录该因果链，而非只绘最终数量。
 
-The first limited planar-gap rerun is reported in `docs/PLANAR_SENSITIVITY_RESULTS.md`; it samples 48 parents and measures highest-ranked plane changes, not final candidate survival. BONDDEL and deduplication tolerance reruns remain outstanding. Do not claim whole-pipeline parameter robustness until those reruns are done. If the production code version is unavailable, report the checks as *new reruns on the published implementation* rather than reconstructions of the original production run.
+首轮有限平面间隙复算见 `docs/PLANAR_SENSITIVITY_RESULTS.md`：48 母体仅评估首选晶面变化，未评估最终候选保留。BONDDEL 与去重容差复算仍待完成；在此之前不声称整条流水线参数稳健。若历史代码版本无法恢复，所有检查须标为“用当前发布实现的新复算”，不得称作历史运行重建。

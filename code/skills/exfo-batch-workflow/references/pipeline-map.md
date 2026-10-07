@@ -1,48 +1,20 @@
-# Exfo Batch Pipeline Map
+# Exfo 批处理流程映射
 
-Project root:
-- `exfo_agent`
+项目根目录：`exfo_agent`。MCP 服务入口：`exfo_agent/server.py`。
 
-MCP server entrypoint:
-- `exfo_agent/server.py`
+## 输入 CSV 列
 
-## Input CSV columns
-Minimum required columns for extraction stage:
-- `original_file`
-- `formula`
-- `cif_content`
+提取阶段最低需要 `original_file`、`formula`、`cif_content`；可继续携带 `formation_energy`、`ehull`、`spacegroup` 等元数据。
 
-Optional metadata columns carried forward:
-- `formation_energy`
-- `ehull`
-- `spacegroup`
+## 阶段与工具
 
-## Stage mapping
-1. Single-structure main entry:
-- `smart_exfoliate_single`
+1. 单结构主入口：`smart_exfoliate_single`。
+2. 带钝化提取：`batch_process_csv`。
+3. 无钝化提取：`batch_process_csv_no_passivation`。
+4. 去重：`deduplicate_structures`。
+5. 机器学习验证：`batch_ml_validation`。
+6. 汇总状态：`check_batch_status`。
 
-2. Extraction with passivation:
-- `batch_process_csv`
+典型输出名为 `*_02_csv_extraction.csv`、`*_02_csv_summary.csv`、`*_02_candidates_unique.csv`、`*_03_ml_validation.csv`。
 
-3. Extraction without passivation:
-- `batch_process_csv_no_passivation`
-
-4. Deduplication:
-- `deduplicate_structures`
-
-5. ML validation:
-- `batch_ml_validation`
-
-6. Summary status:
-- `check_batch_status`
-
-## Typical output files
-- `*_02_csv_extraction.csv`
-- `*_02_csv_summary.csv`
-- `*_02_candidates_unique.csv`
-- `*_03_ml_validation.csv`
-
-## Notes
-- The active tool surface should be MCP tools registered in `server.py`.
-- The skill is a usage guide for those MCP tools, not a replacement runtime.
-- `server.py` defaults to stdio transport for process-based MCP clients. Use `--transport http --port 8000` when running a separately managed HTTP service.
+实际可调用工具以 `server.py` 注册的 MCP 工具为准；本指引不是替代运行时。`server.py` 对进程型 MCP 客户端默认使用 stdio；单独管理 HTTP 服务时使用 `--transport http --port 8000`。

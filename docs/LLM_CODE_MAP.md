@@ -1,31 +1,31 @@
-# Where the language model enters the workflow
+# LLM 在工作流中的代码位置与证据
 
-This document maps the released code to the manuscript's language-model claims. It describes the implementation visible in this repository; without historical client transcripts, it cannot reconstruct the exact production sequence of model requests.
+本文将发布代码与论文中的 LLM 描述逐项对应。它说明仓库中可见的实现；由于历史客户端对话未保存，无法还原生产运行的每次模型请求。
 
-| Component | Code location | What the model could do | What the code does |
+| 组件 | 代码位置 | 模型可执行的动作 | 实际计算由谁完成 |
 | --- | --- | --- | --- |
-| Client instruction | `code/skills/exfo-batch-workflow/SKILL.md`, `agents/openai.yaml` | Read a proposed order of MCP calls and choose file paths or requested options | Gives a runbook; it is not an LLM API client or a production prompt transcript. |
-| MCP interface | `code/exfo_agent/server.py` | Invoke registered tools with arguments and receive their results | `FastMCP` exposes Python functions. There is no `openai` import, model initialization, token counter, or API request in this repository. |
-| High-throughput extraction | `server.py:48-96`, `tools/batch_utils.py:505-509`, `tools/batch_utils_no_passivation.py` | Supply input/output CSV paths and `top_k` in a batch tool call | Python reads rows, runs scientific algorithms in workers, and writes CSV files. It does not call the model once per parent structure. |
-| Existing-route extraction | `server.py:107-156`, `tools/literature_methods.py` | Trigger AiiDA-style or 2DMatPedia-style batch tools | Route functions and worker pools process the CSV. |
-| Deduplication and ML | `server.py:159-178,217-237`, `tools/batch_utils.py:669-674` | Invoke deduplication, then CHGNet validation | Pymatgen matching and CHGNet determine results. The ML call is synchronous. |
-| Status | `server.py:180-211` | Ask for counts from a summary CSV | Reads existing file and counts worker states; it does not inspect GPT/API status. |
-| Single-structure tools | `server.py:40-45,243-371` | Supply a CIF or choose diagnostic calls | The Python workflow selects the geometric or bond-deletion branch by computed dimensionality; plane ranking and delta scan are also in Python. Single-structure replies can include full CIF text and could enlarge a client conversation. |
+| 客户端调用说明 | `code/skills/exfo-batch-workflow/SKILL.md`、`agents/openai.yaml` | 读取建议的 MCP 调用顺序，选择文件路径和选项 | 这是操作说明，不是 LLM API 客户端，也不是历史提示词逐字记录 |
+| MCP 接口 | `code/exfo_agent/server.py` | 带参数调用工具并接收结果 | `FastMCP` 暴露 Python 函数；仓库无 `openai` 导入、模型初始化、token 计数器或 API 请求 |
+| 高通量提取 | `server.py:48-96`、`tools/batch_utils.py:505-509`、`tools/batch_utils_no_passivation.py` | 在一次批次工具调用中给出输入／输出 CSV 路径与 `top_k` | Python 逐行读入，工作进程运行科学算法并写 CSV；不是每个父体调用一次模型 |
+| 两条文献路线 | `server.py:107-156`、`tools/literature_methods.py` | 启动 AiiDA 风格或 2DMatPedia 风格批处理 | 路线函数和工作进程处理 CSV |
+| 去重与机器学习 | `server.py:159-178,217-237`、`tools/batch_utils.py:669-674` | 先调用去重，再调用 CHGNet 验证 | Pymatgen 匹配和 CHGNet 产生结果；ML 工具为同步调用 |
+| 状态查看 | `server.py:180-211` | 请求汇总 CSV 的计数 | 读取本地文件统计 Python 工作状态，不检查 GPT／API 状态 |
+| 单结构与诊断工具 | `server.py:40-45,243-371` | 输入 CIF 或调用底层诊断工具 | Python 按维度选择几何／断键分支，晶面排序及 delta 扫描也在代码中；单结构返回可能包含完整 CIF，使对话变长 |
 
-`tools/route.py:35-76` is a fixed rule-based router, not model reasoning. The comment in `tools/parse.py:117-124` says the LLM could use a structured parse error to regenerate input, but no automatic prompt correction or retry is implemented. The published skill gives a four-call batch sequence (extraction, deduplication, ML, status), but its presence is not evidence that this exact prompt or call count was used in the historical run.
+`tools/route.py:35-76` 是固定规则路由器，不是模型推理。`tools/parse.py:117-124` 的注释写着 LLM 可利用结构化解析错误重生成输入，但没有实现自动提示词修复或重试。当前发布的 skill 写了“提取→去重→ML→状态”四步调用顺序；其存在不证明历史生产运行实际用了同一提示词或恰好四次调用。
 
-## Context length, latency, and recovery
+## 上下文、耗时和故障恢复
 
-- A batch request passes file paths, while parent CIF contents remain in local CSV processing. This design avoids one LLM request per structure. It does **not** prove that the original model session never exceeded its context window; no client-side token or context telemetry survives.
-- Repeated tool responses, especially single-structure results containing CIF text, can accumulate in a model conversation. The repository contains no context-size guard, history compaction, conversation restart policy, or model API retry/backoff code. GPT-side JSON errors, API timeouts, rate limits, and context overflows cannot be counted from the available logs.
-- `batch_process_csv` and `batch_ml_validation` call long-running Python routines synchronously. Their worker timeout and crash labels are local Python states, not API timeout recovery. A client-side tool-call timeout may interrupt a long batch; no asynchronous job ID or client reconnection mechanism is implemented here.
-- `tools/batch_utils.py:329-356` logs and returns when input CSV reading fails, while `batch_process_csv_impl` still returns a generic completed string. `server.py:159-177` likewise wraps the ML implementation's error string in a `Completed` status. Therefore the tool response alone cannot certify success; output files and summary tables must be checked.
-- The batch routine writes result and summary CSVs incrementally and skips IDs already in a summary on restart. This supports manual resumption of local work. It is not an automatic GPT/API failure recovery loop; existing `ERROR`/`TIMEOUT` rows may also be skipped by the resume logic.
+- 批次请求主要传文件路径，父体 CIF 保持在本地 CSV 和 Python 工作进程中。这种设计避免逐材料模型请求，但**不能证明**历史模型会话从未溢出上下文；客户端 token 与上下文日志没有保存。
+- 多次工具返回会累积在对话中，尤其单结构工具可返回完整 CIF。仓库没有上下文大小保护、历史压缩、对话重启策略、API 重试或退避逻辑。无法从现存日志统计 GPT 端 JSON 错误、API 超时、限流和上下文溢出。
+- `batch_process_csv` 与 `batch_ml_validation` 同步执行耗时 Python 例程。工作任务的超时和崩溃标签属于本地计算，不是 API 恢复。客户端工具调用可能等待很久；仓库未实现异步任务 ID 或客户端重连机制。
+- `tools/batch_utils.py:329-356` 在输入 CSV 读取失败时记录并返回，但 `batch_process_csv_impl` 仍可能返回笼统的“completed”；`server.py:159-177` 还会把 ML 内层的错误字符串包在 `Completed` 状态里。工具回复不能单独证明成功，必须核查输出文件和汇总表。
+- 批次程序增量写结果与汇总 CSV，并在再次启动时跳过汇总表已有 ID。这支持人工续跑，不是 GPT／API 故障自动恢复；原有 `ERROR`／`TIMEOUT` 行也可能被跳过。
 
-Original local `system.log` and batch logs document server startup, Python worker progress, and computational failures. They do not contain a model ID, prompts, API request IDs, token usage, API error codes, or per-tool-call latency. The authors recall GPT-5.4, but its exact historical API snapshot cannot be verified from these files. Neither the percentage of affected model calls nor an LLM-to-script runtime overhead can be estimated from this evidence. Report no measured efficiency benefit from the LLM layer.
+原项目的 `system.log` 和批处理日志记录服务启动、Python 进度及计算故障，没有模型 ID、提示词、API 请求 ID、token、错误码或逐次调用耗时。作者回忆使用 GPT-5.4，但无法从这些日志核验 API 快照，也不能估算模型调用受影响比例或相对脚本直接运行的额外耗时。论文不得声称实测 LLM 效率收益。
 
-## Historical evidence and its limits
+## 历史证据及限度
 
-The original project (outside this compact Git archive) contains `.mcp.json` configuring an `exfoliation-agent` MCP server and `code/exfo_agent/logs/system.log`. The first lines of the latter record an MCP server initialization at `2026-03-13 14:52:42`, followed by a no-passivation CSV batch start at `2026-03-13 15:24:17`, a 300-second worker limit, and five Python workers. The original configuration and log SHA-256 values are `ab63ae8cb84c5aca5b9a722bf9ea332442f0daff0c31016ce6196a53516e25d8` and `759862d3729c84206c88324ab414dab041600c9586929fb4f5d52effffd2adce`, respectively. These files support the fact that the MCP service and local batch program were configured and run. They **do not** identify the client that initiated the run or prove a particular GPT tool-call sequence. The assertion that GPT-5.4 was used to initiate tools is based on author recollection.
+原项目（不在精简 Git 包内）保留了配置 `.mcp.json` 和 `code/exfo_agent/logs/system.log`。日志开头记录：`2026-03-13 14:52:42` 初始化 MCP 服务；`2026-03-13 15:24:17` 启动未钝化 CSV 批处理，单任务上限 300 秒，使用 5 个 Python 工作进程。两文件 SHA-256 分别为 `ab63ae8cb84c5aca5b9a722bf9ea332442f0daff0c31016ce6196a53516e25d8` 和 `759862d3729c84206c88324ab414dab041600c9586929fb4f5d52effffd2adce`。它们佐证 MCP 服务已配置且本地批处理确实启动，**无法识别发起运行的客户端或证明具体 GPT 调用顺序**；使用 GPT-5.4 的陈述依据作者回忆。
 
-For a reviewer-facing evidence package, cite the MCP configuration, registered tool definitions, batch implementation, current workflow instruction, and dated runtime-log excerpt separately. Label the current instruction as a reproducibility guide, not a verbatim historical prompt. Do not report a historical tool-call count, context-overflow count, or runtime gain without the missing client/API record.
+面向审稿人的证据包应分别列出 MCP 配置、工具定义、批处理实现、当前调用说明和带日期的运行日志摘录。当前说明只能标为复现指南，不能冒充历史提示词。没有客户端／API 记录时，不报告历史调用次数、上下文溢出次数或运行效率增益。

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Exfo Batch Workflow"
-  short_description: "Run Exfo batch flow as a skill"
-  default_prompt: "Use $exfo-batch-workflow to call the MCP tools exposed by exfo_agent in the correct order for extraction, deduplication, ML validation, and status checks."
+  display_name: "Exfo 批处理工作流"
+  short_description: "按顺序运行 Exfo MCP 批次工具"
+  default_prompt: "使用 $exfo-batch-workflow，依照既定顺序调用 exfo_agent 暴露的 MCP 工具，完成提取、去重、机器学习验证及状态核查。"

@@ -1,14 +1,8 @@
-# External large files
+# 尚未嵌入的大型文件
 
-The following generated artifacts are not included in this repository and do not yet have a public download location:
+以下生成物目前不在 GitHub 包中，也尚无公开下载地址：完整 Materials Project 母体 CIF、分路线生成 CIF、合并后的去重前 CIF、去重后唯一 2D CIF，以及单独归档时的 CHGNet 松弛结构。
 
-- Full Materials Project parent CIF library used as workflow input.
-- Route-specific generated CIF folders.
-- Merged pre-deduplication candidate CIF library.
-- Deduplicated unique 2D CIF library.
-- CHGNet-relaxed structure outputs, if archived separately.
-
-Recommended external archive layout:
+建议的外部归档目录：
 
 ```text
 external_archive/
@@ -23,4 +17,4 @@ external_archive/
   checksums/
 ```
 
-The compact tables in `../parents/`, `../final_2d_candidates/`, and `../computed_results/` preserve identifiers and labels, but they cannot reconstruct every structure. The archive should include a manifest mapping each published candidate to its parent, route, relaxation status, and checksum. Add verified archive URLs and DOIs here after deposit.
+`../parents/`、`../final_2d_candidates/`、`../computed_results/` 中的精简表保留 ID 与标签，但无法恢复每个结构。正式归档应提供清单，把候选映射到母体、路线、松弛状态和校验和；存档后再补充核验过的 URL 与 DOI。

@@ -1,43 +1,42 @@
-# Revision data audit (7 October 2026)
+# 返修数据审计（2026 年 10 月 7 日）
 
-Run `python scripts/revision_audit.py` to regenerate `data/computed_results/revision_screening_summary.json`. The script checks unique candidate identifiers, route flags, parent mappings, dimensionality-table joins, and route classifications against filename suffixes. All counts below use the compact files packaged in this repository.
+运行 `python scripts/revision_audit.py` 可重算 `data/computed_results/revision_screening_summary.json`。脚本核查候选唯一 ID、路线标志、母体映射、维度表关联及文件名后缀与路线归属。以下计数均取自本仓库打包的精简数据。
 
-## Corrected screening counts
+## 更正后的筛选计数
 
-| Stage | Topological | Layered | Hybrid | Total |
+| 阶段 | 拓扑路线 | 层状路线 | 混合路线 | 合计 |
 | --- | ---: | ---: | ---: | ---: |
-| Route CIFs before deduplication | 32,876 | 6,266 | 37,710 | 76,852 |
-| Candidate rows after deduplication | 29,614 | 6,046 | 37,445 | 73,105 |
-| Relaxed and classified 2D, unpassivated | 28,359 | 5,977 | 33,753 | 68,089 |
+| 路线输出 CIF，去重前 | 32,876 | 6,266 | 37,710 | 76,852 |
+| 去重后候选行 | 29,614 | 6,046 | 37,445 | 73,105 |
+| 未钝化、松弛成功且判为 2D | 28,359 | 5,977 | 33,753 | 68,089 |
 
-The submitted manuscript assigns 37,710 to the topological route and 32,876 to the hybrid route. This reverses the provenance shown by the merged CIF suffixes (`_2D_ortho` for topological; numeric suffix for hybrid), the final candidate `route_*` flags, and the original route plot script. Correct the manuscript text and Figure 2 candidate-yield labels. Parent-level overlap is a different metric and must be checked independently before editing its labels. Some original local directories have misleading route names; the file-level manifest and final candidate flags are the audit sources.
+投稿原稿将拓扑写为 37,710、混合写为 32,876，两者颠倒。合并 CIF 后缀（`_2D_ortho` 对应拓扑，数字后缀对应混合）、最终候选 `route_*` 标志和原始路线绘图脚本共同支持上表。返修正文与图 2 已按文件级证据更正。母体层面的路线重叠是另一指标，修改前必须单独核查。部分旧本地目录名称可能误导路线归属；以文件清单和最终候选标志为准。
 
-The 73,105 rows map to 47,617 distinct MP parent identifiers. One additional candidate, `mvc-5327_2D_ortho.cif`, has a blank `parent_id`; retain it in the candidate denominator and disclose its missing parent link. There are 3,747 deduplicated CIFs.
+73,105 行映射到 47,617 个不同 MP 母体 ID；另有 `mvc-5327_2D_ortho.cif` 的 `parent_id` 为空，须保留在候选分母并披露缺失关联。去重移除了 3,747 个 CIF。
 
-## Screening funnel and interpretation
+## 筛选漏斗与解释
 
-| Stage (denominator 73,105 unique candidates) | Count |
+| 阶段；分母为 73,105 个唯一候选 | 数量 |
 | --- | ---: |
-| `is_relaxed=True` in the final table | 69,624 |
+| 最终表 `is_relaxed=True` | 69,624 |
 | `is_relaxed=False` | 3,481 |
-| Unpassivated `dim_type=2D` label, regardless of relaxation | 71,096 |
-| **Unpassivated relaxed and `dim_type=2D`** | **68,089** |
-| `dim_type=2D` without successful relaxation | 3,007 |
-| Unpassivated fragmented / parse error / 1D | 1,582 / 425 / 2 |
-| Passivated relaxed and `dim_type=2D` | 63,464 |
+| 未钝化 `dim_type=2D`，不限定松弛 | 71,096 |
+| **未钝化、松弛成功且 `dim_type=2D`** | **68,089** |
+| 判为 2D 但松弛未成功 | 3,007 |
+| 未钝化碎裂／解析错误／1D | 1,582／425／2 |
+| 钝化后松弛成功且 `dim_type=2D` | 63,464 |
 
-The original `validation_status="Thermo Stable (No Mech)"` appears on 72,577 rows, including unrelaxed rows. It is a pipeline label, **not** evidence of stability on a 2D convex hull, phonon stability, or experimental exfoliability. The 68,089 figure is a geometrical screening count conditioned on successful CHGNet relaxation; it does not establish 2D thermodynamic stability. Formation energies and parent MP hull energies likewise cannot substitute for a 2D hull calculation.
+原始 `validation_status="Thermo Stable (No Mech)"` 出现在 72,577 行，甚至包括未松弛行。它只是流水线标签，**不是** 2D 凸包稳定、声子稳定或实验可剥离的证据。68,089 是以 CHGNet 松弛成功为前提的几何筛选计数，不能证明孤立单层的热力学稳定性。CHGNet 形成能及 MP 母体凸包能也不能替代 2D 凸包计算。
 
-Two candidate rows have no formula string. Among the other rows there are 39,709 distinct formula strings and 16,124 distinct element sets (chemical systems). Formula strings are not normalized compositions or structure prototypes; these figures are descriptive composition metrics and should not be called unique phases. Route-specific formula/chemical-system counts are in the JSON summary; overlap means their sum exceeds the whole-set total.
+有 2 条候选缺化学式字符串。其余数据含 39,709 种不同化学式字符串、16,124 种元素集合（化学体系）。字符串不是归一化组成或结构原型，这些数字只能描述组成多样性，不得称为唯一“相”。各路线计数见 JSON；路线有重叠，因此路线之和可大于全集。
 
-## Items still requiring external calculation or source evidence
+## 仍需外部计算或来源证据的项目
 
-- DFT slab and parent bulk relaxations and energies, in-plane variable-cell comparison, and phonons on representative structures. The prepared CIFs and protocol are in `examples/dft_validation/` and `docs/VASP_VALIDATION_PROTOCOL.md`. No DFT result is claimed here.
-- Among the eight DFT examples, the Na7TiNb2Si4P2O25F cut slab is oxygen-deficient relative to its MP parent; it requires an explicit mass-balanced reaction or chemical-potential reference before an exfoliation/cleavage energy can be defined.
-- Database recovery rates for 2DMatPedia, MC2D, and C2DB require versioned reference structures and a stated structural matching tolerance. The submitted "no direct match" entries are currently unverified; do not call them newly discovered phases.
-- `docs/DATABASE_BENCHMARK_PROTOCOL.md` specifies reference snapshots, denominators, matching hierarchy, and novelty terminology; a historical 2DMatPedia pilot exists locally but does not satisfy the complete three-database benchmark.
-- Threshold sensitivity requires rerunning the route extraction with frozen parent subsets and exact code/configuration versions. The repository now exposes the implemented parameters, but historical large-scale input/output logs are incomplete.
-- A 48-parent, seven-setting planar-gap sensitivity rerun and two actual hybrid-route worked examples are now in `docs/PLANAR_SENSITIVITY_RESULTS.md` and `docs/HYBRID_WORKED_EXAMPLES.md`. Their scope and failure to establish physical stability are stated there.
-- `docs/PARAMETER_AUDIT.md` records current implementation values and flags two manuscript/code differences: the smart route includes a 1.1 delta trial, and BONDDEL's current 600-atom cap is separate from the 500-atom CHGNet cap.
-- The authors recall GPT-5.4, but the production API model ID/snapshot, prompts, tool-call traces, retry rates, token use, and context failures cannot be reconstructed from the present files. State the evidence gap in the response and do not invent operational statistics. See `docs/LLM_CODE_MAP.md`.
-- Archive the full derived candidate CIF library and figure inputs with a DOI; add both a version DOI and a concept/latest DOI to the Data Availability Statement. Verify Materials Project redistribution terms before publishing parent CIFs.
+- 代表结构的 slab／母体 DFT 松弛与能量、面内变胞比较、声子。输入及方案见 `examples/dft_validation/` 和 `docs/VASP_VALIDATION_PROTOCOL.md`；目前没有 DFT 结果。
+- 8 个 DFT 例子中，Na₇TiNb₂Si₄P₂O₂₅F slab 相比 MP 母体缺氧。定义剥离／解理能前须写质量守恒反应或化学势参考。
+- 2DMatPedia、MC2D、C2DB 找回率需要有版本的参考结构和明确匹配容差。原稿“无直接匹配”尚未经完整验证，不得据此称发现新相。方案见 `docs/DATABASE_BENCHMARK_PROTOCOL.md`；旧 2DMatPedia 试算不足以替代三库比较。
+- 阈值敏感性需要冻结母体子集与精确代码／配置版本后重算。现已公开当前参数，历史大规模输入输出日志仍不完整。
+- 已完成 48 母体、7 设置的平面间隙敏感性复算及两组混合路线实例，见 `docs/PLANAR_SENSITIVITY_RESULTS.md`、`docs/HYBRID_WORKED_EXAMPLES.md`；二者均不证明物理稳定性。
+- `docs/PARAMETER_AUDIT.md` 记录两处稿件／代码差异：智能路线还试了 delta=1.1；当前 BONDDEL 600 原子上限不同于 CHGNet 500 原子上限。
+- 作者回忆使用 GPT-5.4，但现存文件无法重建生产 API 模型快照、提示词、调用轨迹、重试率、token 用量及上下文故障。回复中要明示证据缺口，不编造运行统计；见 `docs/LLM_CODE_MAP.md`。
+- 全量衍生候选 CIF 与绘图输入应归档并取得 DOI，在 Data Availability Statement 中填写版本 DOI 与概念／最新版 DOI。发布母体 CIF 前核查 Materials Project 数据再分发条款。

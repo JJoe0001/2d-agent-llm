@@ -1,15 +1,15 @@
-# Planar-gap sensitivity: 48-parent stratified rerun
+# 平面间隙参数敏感性：48 个母体的分层抽样复算
 
-Run on 7 October 2026 with the published `code/exfo_agent` implementation, pymatgen 2026.9.24, and a fixed seed of 20261007. `scripts/planar_sensitivity.py` sampled six parent IDs from each of the eight possible topological/layered/hybrid parent-label signatures, including the `000` negative group. The exact IDs, 336 run records, and aggregate results are in `data/computed_results/planar_sensitivity_*`. The local parent CIF library used for this rerun is not in the GitHub package; refer to the parent IDs and original MP source.
+本次复算于 2026 年 10 月 7 日使用已发布的 `code/exfo_agent` 实现、pymatgen 2026.9.24 和固定随机种子 20261007。`scripts/planar_sensitivity.py` 从拓扑／层状／混合三路线的 8 种母体标签组合中各抽取 6 个 ID，包括三路线均为阴性的 `000` 组。准确 ID、336 条运行记录和汇总见 `data/computed_results/planar_sensitivity_*`。复算使用的本地母体 CIF 库不在 GitHub 包中；须用母体 ID 和 MP 原始来源定位。
 
-| Setting changed from baseline | Parents yielding ≥1 scored plane | Same highest-ranked Miller plane as baseline |
+| 相对基线改变的设置 | 至少得到 1 个有分晶面的母体 | 最高排名 Miller 面与基线一致 |
 | --- | ---: | ---: |
-| Baseline: gap 0.75, dmin 1.8 Å, grid 32³ | 48/48 | 48/48 |
-| Gap threshold 0.65 | 47/48 | 38/48 |
-| Gap threshold 0.85 | 48/48 | 42/48 |
-| Minimum plane spacing 1.5 Å | 48/48 | 36/48 |
-| Minimum plane spacing 2.1 Å | 48/48 | 43/48 |
-| Density grid 24³ | 48/48 | 36/48 |
-| Density grid 48³ | 48/48 | 38/48 |
+| 基线：间隙阈值 0.75、dmin 1.8 Å、网格 32³ | 48/48 | 48/48 |
+| 间隙阈值 0.65 | 47/48 | 38/48 |
+| 间隙阈值 0.85 | 48/48 | 42/48 |
+| 最小晶面间距 1.5 Å | 48/48 | 36/48 |
+| 最小晶面间距 2.1 Å | 48/48 | 43/48 |
+| 密度网格 24³ | 48/48 | 36/48 |
+| 密度网格 48³ | 48/48 | 38/48 |
 
-Every run completed without a Python exception. The best plane changes for 5–12 of 48 parents under the tested settings, which shows that the ranking has material parameter sensitivity. This check ends **before** layer extraction, deduplication, CHGNet, or 2D retention, so the table must not be read as a final candidate-yield or stability sensitivity result. Even the `000` group yields geometric planes: a positive gap score alone is not a recovered 2D material. A full sensitivity claim still requires downstream reruns and BONDDEL/StructureMatcher variation.
+336 次扫描都没有 Python 异常。测试设置下，48 个母体中有 5–12 个的首选晶面改变，说明晶面排序对参数有实质敏感性。测试到此为止，**尚未进入**层提取、去重、CHGNet 或最终 2D 保留阶段，因此不能把上表当作最终候选产率或稳定性敏感性。`000` 组也能得到几何晶面，正的间隙分数不等于发现 2D 材料。完整敏感性结论仍需下游复算以及 BONDDEL 和 StructureMatcher 参数变化。

@@ -1,8 +1,6 @@
-# Installation
+# 安装与环境配置
 
-## Recommended environment
-
-Use Python 3.11 for the closest match to the original MCP execution environment. Dependencies are currently specified as version ranges rather than a locked production environment, so record the installed versions in any reproduction report.
+为接近原始 MCP 运行环境，建议 Python 3.11。依赖按版本范围声明，未锁定生产环境；复算时记录实际安装版本。
 
 ```bash
 git clone https://github.com/JJoe0001/2d-agent-llm.git
@@ -13,7 +11,7 @@ python -m pip install --upgrade pip
 python -m pip install -e ./code/exfo_agent
 ```
 
-Alternatively, with `uv`:
+也可使用 `uv`：
 
 ```bash
 cd 2d-agent-llm
@@ -21,53 +19,25 @@ uv venv --python 3.11 .venv
 uv pip install --python .venv/bin/python -e ./code/exfo_agent
 ```
 
-## Main dependencies
+依赖元数据见 `code/exfo_agent/pyproject.toml`，主要为 `mcp`、`fastmcp`、`pymatgen`、`numpy`、`pandas`、`scipy`、`networkx`、`torch`、`chgnet`、`ase`、`matplotlib`、`seaborn`、`tqdm`、`joblib`、`pebble`。
 
-The package metadata is in:
+## MCP 配置
 
-```text
-code/exfo_agent/pyproject.toml
-```
+本地进程模板：`mcp_config/mcp_server_relative.json`。把 `${PACKAGE_ROOT}` 换为仓库绝对路径；模板使用 **stdio**。其中 `python` 应指向装有依赖的解释器，客户端不自动激活环境时须填绝对路径。
 
-Major dependencies are:
-
-- `mcp`, `fastmcp`
-- `pymatgen`
-- `numpy`, `pandas`, `scipy`
-- `networkx`
-- `torch`, `chgnet`, `ase`
-- `matplotlib`, `seaborn`
-- `tqdm`, `joblib`, `pebble`
-
-## MCP configuration
-
-A local-process MCP configuration template is provided in:
-
-```text
-mcp_config/mcp_server_relative.json
-```
-
-Replace `${PACKAGE_ROOT}` with the absolute path to the cloned repository. The template launches the server using **stdio**. The command must use the Python interpreter from the environment where the dependencies were installed; replace `"python"` with its absolute path if your client does not activate that environment.
-
-For a separately managed HTTP server, start it explicitly from the repository root:
+单独启动 HTTP 服务时，在仓库根目录运行：
 
 ```bash
 .venv/bin/python code/exfo_agent/server.py --transport http --port 8000
 ```
 
-Connect an HTTP-capable MCP client to that server's HTTP endpoint. A `command`/`args` stdio configuration cannot communicate with the HTTP process.
+HTTP 客户端连接相应端点；`command`／`args` 型 stdio 配置不能连接 HTTP 进程。
 
-## Package integrity and syntax checks
-
-From the package root:
+## 完整性和语法检查
 
 ```bash
 python scripts/verify_package.py
 python -m compileall -q code/exfo_agent
 ```
 
-The original packaging-time syntax-check record is stored in:
-
-```text
-checks/python_syntax_check.txt
-```
+原始打包时的语法检查记录见 `checks/python_syntax_check.txt`。

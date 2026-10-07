@@ -1,26 +1,24 @@
-# Orchestration and failure-mode audit
+# LLM 编排与故障审计
 
-The repository implements MCP tool endpoints in `code/exfo_agent/server.py`. Current evidence supports the following statements about the code, but does **not** quantify the behavior of the historical production LLM session. No production API model identifier or snapshot, prompt transcript, tool-call trace, token/context-window usage, or retry log is packaged.
+仓库在 `code/exfo_agent/server.py` 中暴露 MCP 工具。现有证据可核查代码行为，却无法量化历史生产运行中 GPT 的表现：没有保存原始 API 模型 ID／快照、完整提示词、逐次工具调用、token／上下文用量及 API 重试日志。各组件及证据边界见 [LLM 代码定位](LLM_CODE_MAP.md)。本地历史日志记录的是 Python 服务和工作进程事件，不是模型 API 遥测。
 
-See [the code-level LLM map](LLM_CODE_MAP.md) for each model-facing component and its evidence limits. Local historical logs contain Python server and worker events, not model API telemetry.
+## LLM 的实际作用
 
-## Actual role of the language model
+研究者预先写好筛选脚本，确定运行顺序和参数。作者回忆使用 GPT-5.4 通过 MCP 依次调用脚本，但没有原始 API 日志核验模型 ID 或快照。路线算法、晶面评分、断键阈值、去重、松弛与几何检查均由代码执行。模型是对话式工具调用入口，不是自主材料设计策略。脚本直接运行是可复现的基线；本研究没有受控比较证明 GPT 提高了产率、准确率、速度或稳健性。GPT-5.4 版本来自作者回忆，不能仅凭“当时最新版”倒推。
 
-The researchers prewrote the screening scripts, fixed their processing order, and specified numerical parameters. The authors recall using GPT-5.4 to invoke those scripts sequentially through MCP; no original API log survives to verify its model ID or snapshot. The route algorithms, plane scores, bond-deletion thresholds, deduplication, relaxation, and geometry checks are code operations. The model was a conversational tool-invocation interface, not an autonomous materials-design policy. Direct script execution is the reproducible baseline; this study contains no controlled evidence that GPT improved yield, accuracy, runtime, or robustness relative to it. The model-version statement is author recollection, not an inference from which GPT model was newest around the run date.
-
-| Layer | Failure condition | Implemented behavior | Evidence limit |
+| 层级 | 故障情形 | 代码已实现的处理 | 证据边界 |
 | --- | --- | --- | --- |
-| CIF parser | Missing input, disallowed file path, invalid volume, empty structure, parser exception | Returns a structured error and writes a debug trace | Cannot infer how many production calls failed. |
-| Per-candidate extraction | Layer extraction exception | Catches and logs that candidate; continues the other planes | A skipped layer may reduce yield. |
-| Whole smart workflow | Uncaught exception | Returns an error dictionary and records a debug artifact | No guarantee of automatic retry. |
-| Batch worker | Task exceeds 300 seconds | Records `TIMEOUT` summary row with source file | This is worker timeout, not an LLM API timeout. |
-| Batch worker | Process crash | Records `CRASH` summary row with source file | Historical summary rows are not packaged. |
-| Batch scheduling | Worker accumulation | Recreates the process pool every 1,000 parent rows | Does not imply failed jobs are retried. |
-| MCP serialization | Tool message or JSON malformed at LLM side | No explicit repair/retry mechanism found in this code | Must not claim prompt self-correction. |
-| Context window or API rate limit | Context overflow, request timeout, 429 | No explicit recovery mechanism found in this code | Must not claim autonomous completion through these failures. |
-| Long synchronous MCP call | A batch or ML task occupies a tool call until completion | Python workers continue and write CSVs; no asynchronous job handle is returned | No client-side timeout or LLM overhead metric is logged. |
-| Input or downstream failure status | A CSV read can fail or the ML input may be absent | Errors are logged or returned as text, but some outer wrappers still return `completed` | Verify output and summary files; a tool completion message is not proof of scientific success. |
+| CIF 解析 | 缺少输入、路径不允许、体积无效、空结构、解析异常 | 返回结构化错误并写调试记录 | 无法推算生产调用失败次数 |
+| 单个候选提取 | 某切割面提取异常 | 捕获并记录，继续尝试其他面 | 跳过的面可能降低产率 |
+| 单结构主流程 | 未捕获异常 | 返回错误字典并保存调试材料 | 不保证自动重试 |
+| Python 工作任务 | 超过 300 秒 | 在汇总表写 `TIMEOUT` 及来源文件 | 这是工作进程超时，不是 LLM API 超时 |
+| Python 工作任务 | 进程崩溃 | 写 `CRASH` 行 | 历史汇总表没有完整打包 |
+| 批次调度 | 长时间累积工作进程 | 每 1,000 个父体重建进程池 | 不代表失败任务自动重算 |
+| MCP／模型消息 | 模型端 JSON 或工具消息无效 | 未发现显式修复／重试机制 | 不能声称提示词自动纠错 |
+| 模型上下文／API 限流 | 上下文溢出、请求超时、429 | 未发现显式恢复机制 | 不能声称跨此类故障自主完成 |
+| 长时间同步 MCP 调用 | 批处理或 ML 任务一直占据工具调用 | Python 写 CSV；不返回异步任务 ID | 没有客户端超时或 LLM 开销记录 |
+| 输入或下游结果状态 | CSV 读取失败或 ML 输入不存在 | 内层记录／返回错误，但部分外层仍可能返回“已完成” | 须检查实际输出文件和汇总表 |
 
-The final candidate table contains 256 `Error/Explosion`, 169 `Skipped (Too Large)`, and 103 `Skipped (Unstable)` validation labels. These are **post-generation CHGNet screening labels**, not LLM tool-call failure counts. The two dimensionality tables additionally contain parse and fragmentation labels; these refer to structural analysis, not agent JSON parsing.
+最终候选表中的 256 个 `Error/Explosion`、169 个 `Skipped (Too Large)` 和 103 个 `Skipped (Unstable)` 属于**生成后的 CHGNet 筛选标签**，不是 LLM 工具调用失败次数。维度表中的解析和碎裂标签也属于结构分析，不是 agent JSON 解析错误。
 
-To complete a production-level agent evaluation, preserve the actual model name and version/date, system/user prompts, model parameters, MCP tool schemas, timestamps, request/response status, retry IDs, token counts, parent IDs, and per-stage success/failure. Remove API keys and personal information before release. If these logs no longer exist, describe the MCP layer as an interface and orchestration aid, and present the deterministic route code and batch status handling as the reproducible contribution.
+若今后要严格评估生产 agent，需要保存模型名称及版本／日期、系统与用户提示词、模型参数、MCP schema、时间戳、请求状态、重试 ID、token、父体 ID 及各阶段成功／失败状态；发布前移除密钥和个人信息。若历史记录不可恢复，论文应把 MCP 定位为接口与编排辅助，把确定性路线代码及 Python 批次状态处理作为可复现的计算基础。

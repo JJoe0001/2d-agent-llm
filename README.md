@@ -1,88 +1,50 @@
-# Route-aware high-throughput exfoliation workflow for 2D materials discovery
+# 二维材料发现的多路线高通量剥离工作流
 
-This repository contains the code and compact processed tables accompanying *A multi-route high-throughput workflow for 2D materials discovery*. It is being prepared for the revision of the manuscript submitted to *Digital Discovery*.
+本仓库包含论文《A multi-route high-throughput workflow for 2D materials discovery》配套的代码与精简处理表，正用于向 *Digital Discovery* 提交返修。包内有 MCP 服务、三条剥离路线、工具调用说明、处理标签及五母体示例。完整结构归档与部分绘图输入尚未公开；准确范围见[数据可用性说明](docs/DATA_AVAILABILITY.md)。
 
-The repository includes the MCP service, three exfoliation-route implementations, workflow instructions, processed labels, and a five-parent example. The full structure archives and figure-reproduction inputs are not yet published here; see [data availability](docs/DATA_AVAILABILITY.md) for the exact scope and outstanding deposits.
-
-## Package layout
+## 目录
 
 ```text
-code/
-  exfo_agent/                  MCP server and exfoliation-route source code
-  skills/exfo-batch-workflow/  Agent-facing workflow instructions
-data/
-  parents/                     Parent-structure metadata and parent-level MP quantities
-  final_2d_candidates/         Final deduplicated 2D candidate labels and CHGNet results
-  computed_results/            Parent exfoliability labels and dataset-level summary
-  dimensionality/               Post-CHGNet 2D morphology labels, with and without passivation
-  route_outputs/                Pre-deduplication filename and route manifest
-  external_large_files/        Notes for large CIF archives not included in the main package
-docs/
-  PROGRAM_SUMMARY.md           Program summary
-  INSTALL.md                   Environment and dependency instructions
-  RUN_EXAMPLE.md               Minimal example and expected outputs
-  DATA_AVAILABILITY.md         Data provenance and large-file policy
-  CODE_INVENTORY.md            Source-code inventory
-  exfoliation_parameters_summary.xlsx
-examples/
-  minimal_run/                 Small parent-structure CSV and expected label outputs
-checks/
-  python_syntax_check.txt      Syntax-check output generated for this archive
-scripts/
-  verify_package.py            Verify compact tables, checksums, and manifest
-  revision_audit.py             Recompute route, survival, and diversity counts
+code/exfo_agent/                  MCP 服务与剥离路线源码
+code/skills/exfo-batch-workflow/  面向工具调用的流程说明
+data/parents/                     母体元数据及 MP 物理量
+data/final_2d_candidates/         去重后候选与 CHGNet 结果
+data/computed_results/            母体标签、审计及敏感性结果
+data/dimensionality/              钝化与未钝化的形貌标签
+data/route_outputs/               去重前路线来源清单
+data/external_large_files/        未嵌入的大文件说明
+docs/                             安装、方法审计、VASP 等中文说明
+examples/minimal_run/             五母体样本与历史预期标签
+examples/dft_validation/          8 对结构与预备 VASP 输入
+scripts/                          包核验、审计与复算脚本
 ```
 
-## Main code entry point
+## 程序入口与路线
 
-The MCP server entry point is:
+MCP 服务入口：`code/exfo_agent/server.py`。拓扑路线见 `tools/literature_routes/aiida_exfo_test.py`；层状路线见 `tools/literature_routes/exfo_2dmatpedia.py`；混合路线见 `tools/workflow.py`、`planar_gap.py`、`bond_del.py` 与 `xcp_potential.py`。上述相对路径均位于 `code/exfo_agent/` 下。LLM 负责批次级工具调用；材料算法在 Python 中执行，详见 [LLM 代码定位](docs/LLM_CODE_MAP.md)。
 
-```bash
-code/exfo_agent/server.py
-```
+## 核心数据
 
-The three exfoliation routes are implemented as:
+- `data/parents/parent_level_metadata.csv.gz`：母体信息、路线标志、候选数与能量汇总。
+- `data/final_2d_candidates/final_2d_candidates.csv.gz`：73,105 条去重候选及松弛、CHGNet 结果。
+- `data/computed_results/parent_exfoliability_labels.csv.gz`：143,259 个 MP 母体的可剥离与路线标签。
+- `data/computed_results/dataset_summary.json`：总体数量汇总。
+- `data/route_outputs/merged_candidate_manifest.csv.gz`：76,852 条去重前候选与路线。
+- `data/dimensionality/*.csv.gz`：所有唯一候选的形貌判定。
+- `data/computed_results/revision_screening_summary.json`：可重算的返修审计，定义见[审计结果](docs/REVISION_FINDINGS.md)。
 
-- Topological route: `code/exfo_agent/tools/literature_routes/aiida_exfo_test.py`
-- Layered route: `code/exfo_agent/tools/literature_routes/exfo_2dmatpedia.py`
-- Hybrid route: `code/exfo_agent/tools/workflow.py`, `planar_gap.py`, `bond_del.py`, and `xcp_potential.py`
+中间绘图表、路线阶段临时输出、全量 CIF 与历史模型调用轨迹不在精简包中。`dataset_summary.json` 的 `candidate_cif_missing: 0` 是在原始本地库中计算，不能证明该 CIF 已上传；见[数据范围](docs/DATA_AVAILABILITY.md)。
 
-## Main data files
+## 示例与核验
 
-- `data/parents/parent_level_metadata.csv.gz`: parent-level metadata, MP formation/hull energies, route flags, candidate counts, and aggregated 2D-candidate energy statistics.
-- `data/final_2d_candidates/final_2d_candidates.csv.gz`: final deduplicated 2D candidate labels, parent mapping, route sources, relaxation status, and CHGNet formation-energy results.
-- `data/computed_results/parent_exfoliability_labels.csv.gz`: parent-level binary exfoliability labels and route labels for 143,259 MP parent structures.
-- `data/computed_results/dataset_summary.json`: summary of parent/candidate counts and route-label distributions.
-- `data/route_outputs/merged_candidate_manifest.csv.gz`: all 76,852 pre-deduplication candidate names and routes.
-- `data/dimensionality/*.csv.gz`: dimensionality assessments for every unique candidate.
-- `data/computed_results/revision_screening_summary.json`: reproducible revision audit. See [revision findings](docs/REVISION_FINDINGS.md).
+`examples/minimal_run/sample_parent_input.csv` 是示例输入，`expected_parent_labels.csv` 与 `expected_candidate_subset.csv` 是历史预期标签。环境与限制见[安装](docs/INSTALL.md)和[运行示例](docs/RUN_EXAMPLE.md)。运行 `python scripts/verify_package.py` 核查校验和与核心表行数。
 
-Intermediate plotting tables, route-stage temporary outputs, full CIF libraries, and production agent traces are not included in this compact repository. Do not use `candidate_cif_missing: 0` in `dataset_summary.json` as evidence that these CIFs are present here: that field was computed against the original local archive. See `docs/DATA_AVAILABILITY.md` and `data/external_large_files/README.md`.
+DFT 准备见[VASP 方案](docs/VASP_VALIDATION_PROTOCOL.md)、`examples/dft_validation/` 中的配对 CIF、POSCAR 与 KPOINTS；尚无 DFT 结果。其余返修资料：
 
-## Minimal example
+- [参数审计](docs/PARAMETER_AUDIT.md)、[平面间隙敏感性](docs/PLANAR_SENSITIVITY_RESULTS.md)、[混合路线实例](docs/HYBRID_WORKED_EXAMPLES.md)。
+- [编排故障审计](docs/AGENT_FAILURE_AUDIT.md)与[LLM 代码及证据](docs/LLM_CODE_MAP.md)。
+- [外部数据库基准方案](docs/DATABASE_BENCHMARK_PROTOCOL.md)。
 
-The example input is:
+## 许可
 
-```bash
-examples/minimal_run/sample_parent_input.csv
-```
-
-The expected parent/candidate labels for those structures are:
-
-```bash
-examples/minimal_run/expected_parent_labels.csv
-examples/minimal_run/expected_candidate_subset.csv
-```
-
-See `docs/INSTALL.md` and `docs/RUN_EXAMPLE.md` for setup and the limits of the current example. Run `python scripts/verify_package.py` to verify checksums and compact-table row counts.
-
-For first-principles validation, see the [VASP protocol](docs/VASP_VALIDATION_PROTOCOL.md), the selected paired CIFs, and prepared POSCAR/KPOINTS files in `examples/dft_validation/`. DFT results have not yet been added.
-For implemented thresholds and the sensitivity rerun design, see [parameter audit](docs/PARAMETER_AUDIT.md).
-For source-backed failure handling and the limits of the available agent logs, see [orchestration audit](docs/AGENT_FAILURE_AUDIT.md).
-For an exact map of model-facing code and context/latency limitations, see [LLM code map](docs/LLM_CODE_MAP.md).
-For the planned versioned 2DMatPedia, MC2D, and C2DB recovery benchmark, see [database benchmark protocol](docs/DATABASE_BENCHMARK_PROTOCOL.md).
-For an executed 48-parent planar-gap sensitivity check and two reproducible hybrid-route examples, see [sensitivity results](docs/PLANAR_SENSITIVITY_RESULTS.md) and [worked examples](docs/HYBRID_WORKED_EXAMPLES.md).
-
-## License
-
-See `LICENSE`. The included third-party concepts and scientific methods are cited in the manuscript; the implementation code in this archive is provided for academic review and reproducibility.
+软件许可见 `LICENSE`。第三方科学方法在论文中引用；数据来源及再分发许可须另行核查。
