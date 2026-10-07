@@ -3,7 +3,9 @@
     "exfoliation-agent": {
       "command": "python",
       "args": [
-        "${PACKAGE_ROOT}/code/exfo_agent/server.py"
+        "${PACKAGE_ROOT}/code/exfo_agent/server.py",
+        "--transport",
+        "stdio"
       ]
     }
   }

@@ -2,6 +2,7 @@
 """MCP server for exfoliation-agent"""
 from __future__ import annotations
 
+import argparse
 import os
 import sys
 from typing import Dict
@@ -484,4 +485,11 @@ def auto_passivate_surface(structure_id: str) -> Dict:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="http", port=8000)
+    parser = argparse.ArgumentParser(description="Run the exfoliation MCP server")
+    parser.add_argument("--transport", choices=("stdio", "http"), default="stdio")
+    parser.add_argument("--port", type=int, default=8000, help="HTTP port")
+    args = parser.parse_args()
+    if args.transport == "stdio":
+        mcp.run(transport="stdio")
+    else:
+        mcp.run(transport="http", port=args.port)

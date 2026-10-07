@@ -38,6 +38,7 @@ from __future__ import annotations
 from typing import Dict, List, Tuple, Any, Optional, Set
 import numpy as np
 import networkx as nx
+import sys
 import time
 from dataclasses import dataclass, field
 from collections import Counter, deque  # TURBO: Added deque for O(1) queue operations
@@ -347,7 +348,7 @@ class BondDelAlgorithm:
                     f"Skipping BONDDEL to prevent timeout."
                 )
                 if verbose:
-                    print(msg)
+                    print(msg, file=sys.stderr)
                 logger.warning(f"BONDDEL skipped: {msg}")
                 return BondDelResult(
                     success=False,
@@ -358,7 +359,7 @@ class BondDelAlgorithm:
                 )
 
             if verbose:
-                print(f"BONDDEL: Processing structure with {n_atoms} atoms")
+                print(f"BONDDEL: Processing structure with {n_atoms} atoms", file=sys.stderr)
 
             # 1. Build Graph
             # 如果 compute_bond_weights 内部出错（如 XCP 参数问题），直接抛出异常
@@ -412,7 +413,7 @@ class BondDelAlgorithm:
             ]
 
             if verbose:
-                print(f"BONDDEL: Found {len(energy_levels)} energy levels to scan.")
+                print(f"BONDDEL: Found {len(energy_levels)} energy levels to scan.", file=sys.stderr)
 
             # 3. Iterative Cutting
             initial_edges = self.graph.number_of_edges()
@@ -503,7 +504,7 @@ class BondDelAlgorithm:
             elapsed = time.time() - self.start_time
             msg = f"TIMEOUT after {elapsed:.1f}s: {str(e)}"
             if verbose:
-                print(msg)
+                print(msg, file=sys.stderr)
             logger.warning(f"BONDDEL timeout: {msg}")
             return BondDelResult(
                 success=False,
@@ -518,7 +519,7 @@ class BondDelAlgorithm:
             elapsed = time.time() - self.start_time
             msg = f"ERROR after {elapsed:.1f}s: {type(e).__name__}: {str(e)}"
             if verbose:
-                print(msg)
+                print(msg, file=sys.stderr)
             logger.error(f"BONDDEL error: {msg}")
             logger.debug("BONDDEL stack trace:", exc_info=True)
             return BondDelResult(

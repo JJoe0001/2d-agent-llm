@@ -7,3 +7,6 @@ __pycache__/
 *.log
 .venv/
 venv/
+data/raw_parent_cifs/
+data/processed_masks/
+data/final_2d_candidates/*.csv

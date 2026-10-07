@@ -1,14 +1,15 @@
 {
-  "package": "cpc_submission_package_20260604",
-  "n_files": 53,
-  "total_size_bytes": 8550518,
+  "package": "2d-agent-llm",
+  "n_files": 51,
+  "total_size_bytes": 8545474,
   "top_level_directories": [
     "checks",
     "code",
     "data",
     "docs",
     "examples",
-    "mcp_config"
+    "mcp_config",
+    "scripts"
   ],
   "main_entrypoint": "code/exfo_agent/server.py",
   "main_readme": "README.md",
@@ -17,5 +18,8 @@
     "final deduplicated 2D candidate labels and CHGNet results",
     "computed parent-level exfoliability labels and dataset summary"
   ],
+  "full_cif_archives_included": false,
+  "code_doi": null,
+  "data_doi": null,
   "repository": "https://github.com/JJoe0001/2d-agent-llm"
 }

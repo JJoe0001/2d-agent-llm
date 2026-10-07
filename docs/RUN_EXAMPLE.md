@@ -34,10 +34,10 @@ These files are extracted from the full processed dataset and are intended for s
 
 ## Running through the MCP service
 
-After installing dependencies, start the server from the package root:
+After installing dependencies, start the stdio server through an MCP client using the template in `mcp_config/mcp_server_relative.json`. Replace `${PACKAGE_ROOT}` and `python` as described in `docs/INSTALL.md`. For an HTTP client, run the server separately:
 
 ```bash
-python code/exfo_agent/server.py
+.venv/bin/python code/exfo_agent/server.py --transport http --port 8000
 ```
 
 In an MCP-enabled client, use the batch tools described in:
@@ -55,4 +55,4 @@ For a standard run, the intended call order is:
 
 ## Notes
 
-The example expected-label files are not meant to be a deterministic re-run benchmark for all three routes, because route-level outputs may depend on chosen thresholds, installed dependency versions, and whether optional CHGNet validation is enabled. They are provided to document the exact schema and representative labels used in the manuscript data.
+The expected-label files are historical outputs provided for schema inspection. They are not a validated end-to-end regression benchmark: route outputs depend on parameters and dependency versions, and CHGNet validation is optional. The repository currently has no recorded clean-environment run that reproduces these labels exactly. Run `python scripts/verify_package.py` to verify the published compact tables independently of the scientific dependencies.

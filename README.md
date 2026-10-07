@@ -1,8 +1,8 @@
 # Route-aware high-throughput exfoliation workflow for 2D materials discovery
 
-This archive contains the code and processed data accompanying the manuscript submitted to *Computer Physics Communications*.
+This repository contains the code and compact processed tables accompanying *A multi-route high-throughput workflow for 2D materials discovery*. It is being prepared for the revision of the manuscript submitted to *Digital Discovery*.
 
-The package is organized for review and reproducibility. It includes the MCP service used to expose the exfoliation workflow, the three exfoliation-route implementations, the workflow skill instructions, processed labels/results used in the manuscript, and a minimal example input with expected outputs.
+The repository includes the MCP service, three exfoliation-route implementations, workflow instructions, processed labels, and a five-parent example. The full structure archives and figure-reproduction inputs are not yet published here; see [data availability](docs/DATA_AVAILABILITY.md) for the exact scope and outstanding deposits.
 
 ## Package layout
 
@@ -16,7 +16,7 @@ data/
   computed_results/            Parent exfoliability labels and dataset-level summary
   external_large_files/        Notes for large CIF archives not included in the main package
 docs/
-  PROGRAM_SUMMARY.md           CPC-style program summary
+  PROGRAM_SUMMARY.md           Program summary
   INSTALL.md                   Environment and dependency instructions
   RUN_EXAMPLE.md               Minimal example and expected outputs
   DATA_AVAILABILITY.md         Data provenance and large-file policy
@@ -26,6 +26,8 @@ examples/
   minimal_run/                 Small parent-structure CSV and expected label outputs
 checks/
   python_syntax_check.txt      Syntax-check output generated for this archive
+scripts/
+  verify_package.py            Verify compact tables, checksums, and manifest
 ```
 
 ## Main code entry point
@@ -49,7 +51,7 @@ The three exfoliation routes are implemented as:
 - `data/computed_results/parent_exfoliability_labels.csv.gz`: parent-level binary exfoliability labels and route labels for 143,259 MP parent structures.
 - `data/computed_results/dataset_summary.json`: summary of parent/candidate counts and route-label distributions.
 
-Intermediate plotting tables and route-stage temporary outputs are intentionally not included. The full CIF libraries are not embedded in this small submission package because they are large generated artifacts. See `docs/DATA_AVAILABILITY.md` and `data/external_large_files/README.md`.
+Intermediate plotting tables, route-stage temporary outputs, full CIF libraries, and production agent traces are not included in this compact repository. Do not use `candidate_cif_missing: 0` in `dataset_summary.json` as evidence that these CIFs are present here: that field was computed against the original local archive. See `docs/DATA_AVAILABILITY.md` and `data/external_large_files/README.md`.
 
 ## Minimal example
 
@@ -66,7 +68,7 @@ examples/minimal_run/expected_parent_labels.csv
 examples/minimal_run/expected_candidate_subset.csv
 ```
 
-See `docs/RUN_EXAMPLE.md` for details.
+See `docs/INSTALL.md` and `docs/RUN_EXAMPLE.md` for setup and the limits of the current example. Run `python scripts/verify_package.py` to verify checksums and compact-table row counts.
 
 ## License
 

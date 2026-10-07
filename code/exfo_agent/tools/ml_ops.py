@@ -3,6 +3,7 @@ from __future__ import annotations
 import threading
 import gc
 from typing import Dict, Any
+from loguru import logger
 import numpy as np
 import torch
 from chgnet.model.dynamics import CHGNetCalculator
@@ -41,7 +42,7 @@ def _get_calculator():
     with _calc_lock:
         if _CALC_CACHE is not None: return _CALC_CACHE
         use_device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
-        print(f"初始化 CHGNet 引擎，使用硬件加速: {use_device}")
+        logger.info(f"Initializing CHGNet calculator on {use_device}")
         _CALC_CACHE = CHGNetCalculator(model=CHGNet.load(), use_device=use_device)
         return _CALC_CACHE
 

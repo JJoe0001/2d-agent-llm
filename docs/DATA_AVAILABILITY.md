@@ -33,16 +33,18 @@ These files provide the parent-level binary label, route-specific labels, candid
 
 ## Large files not embedded
 
-The complete parent CIF library, generated candidate CIF library, and relaxed CIF library are large generated artifacts and should be deposited in an external repository such as Zenodo, Figshare, institutional storage, or the journal-recommended data repository. The main package records their expected organization in:
+The complete parent CIF library, route-specific and deduplicated candidate CIF libraries, and relaxed CIF library are not available through this repository. No external archive URL or DOI has been assigned yet. The planned organization is documented in:
 
 ```text
 data/external_large_files/README.md
 ```
 
+The `candidate_cif_missing: 0` and `parent_cif_missing: 0` fields in `dataset_summary.json` refer to the original local processing environment. They do **not** mean the individual CIFs are included in this GitHub repository.
+
 ## Data included
 
-The data included in this archive are limited to parent records, final deduplicated 2D candidate records, and computed screening results. Intermediate route-stage temporary files and plotting-specific summary tables are intentionally excluded from the compact CPC submission package.
+The data included here are limited to parent records, deduplicated candidate records, and computed screening results. Intermediate route-stage outputs, figure-generation tables and scripts, and production LLM/tool-call traces are not included. These omissions prevent independent reproduction of all manuscript figures from the repository alone.
 
 ## Data citation
 
-Before final submission, replace this placeholder with the DOI or accession information for the external full-CIF archive, if deposited.
+Before submitting the revision, deposit the missing archives and figure inputs in a persistent repository, add versioned URLs and DOIs here, and put matching details in the manuscript Data Availability Statement. Do not cite this page as a substitute for a deposited dataset.

@@ -45,4 +45,4 @@ Optional metadata columns carried forward:
 ## Notes
 - The active tool surface should be MCP tools registered in `server.py`.
 - The skill is a usage guide for those MCP tools, not a replacement runtime.
-- `server.py` currently starts the MCP service with HTTP transport on port `8000`.
+- `server.py` defaults to stdio transport for process-based MCP clients. Use `--transport http --port 8000` when running a separately managed HTTP service.

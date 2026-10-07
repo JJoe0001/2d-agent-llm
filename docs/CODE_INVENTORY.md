@@ -2,6 +2,8 @@
 
 Generated: 2026-04-26
 
+This is a historical source-bundle snapshot; paths and sizes below are not the current repository inventory. Use `FILE_MANIFEST.tsv` and `SHA256SUMS` for current paths and checksums, and run `python scripts/verify_package.py` to validate them. The current MCP template is `mcp_config/mcp_server_relative.json`; the current server defaults to stdio and supports optional HTTP transport.
+
 | Bundle path | Source note | Note | Size |
 |---|---|---|---:|
 | `exfo_agent/__init__.py` | bundled package file | MCP service / package metadata | 0 bytes |

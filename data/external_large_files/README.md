@@ -1,6 +1,6 @@
 # External large files
 
-The following large generated artifacts are not included in the compact CPC submission package:
+The following generated artifacts are not included in this repository and do not yet have a public download location:
 
 - Full Materials Project parent CIF library used as workflow input.
 - Route-specific generated CIF folders.
@@ -23,4 +23,4 @@ external_archive/
   checksums/
 ```
 
-The compact data files in `../parents/`, `../final_2d_candidates/`, and `../computed_results/` preserve the mapping between parent IDs, candidate filenames, route labels, and energy-validation results.
+The compact tables in `../parents/`, `../final_2d_candidates/`, and `../computed_results/` preserve identifiers and labels, but they cannot reconstruct every structure. The archive should include a manifest mapping each published candidate to its parent, route, relaxation status, and checksum. Add verified archive URLs and DOIs here after deposit.
