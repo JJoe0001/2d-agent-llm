@@ -8,7 +8,7 @@
 | `relaxed_unpassivated_cifs.tar.gz` | 69,624 | 成功输出未钝化 CHGNet 松弛结构的记录 |
 | `relaxed_passivated_cifs.tar.gz` | 64,297 | 成功输出钝化 CHGNet 松弛结构的记录 |
 
-每个归档都有同名前缀的 `*_manifest.tsv`，逐条给出成员路径、大小和 SHA-256。归档成员已逐个核验；从 GitHub 下载后可先运行 `shasum -a 256 *.tar.gz *_manifest.tsv`，与摘要核对，再用 `tar -tzf unique_candidate_cifs.tar.gz | head` 查看成员。候选元数据、来源路线与形貌标签分别在 `../final_2d_candidates/`、`../route_outputs/` 和 `../dimensionality/`。69,624 是松弛成功数；其中同时保持未钝化二维形貌的记录数为 68,089，不能把两个口径混同。
+每个归档都有同名前缀的 `*_manifest.tsv`，逐条给出成员文件名、大小和 SHA-256。归档成员已逐个核验；从仓库根目录运行 `python scripts/verify_structure_archives.py` 可复核所有归档、清单及逐成员哈希，也可先用 `tar -tzf data/external_large_files/unique_candidate_cifs.tar.gz | head` 查看成员。候选元数据、来源路线与形貌标签分别在 `../final_2d_candidates/`、`../route_outputs/` 和 `../dimensionality/`。69,624 是松弛成功数；其中同时保持未钝化二维形貌的记录数为 68,089，不能把两个口径混同。
 
 完整母体 CIF **不在本归档**。可从 `../parents/parent_level_metadata.csv.gz` 读取 143,259 个 MP ID，用仓库根目录的 `scripts/download_parent_cifs.py` 和自己的 Materials Project API 密钥重新下载当前 API 可用的结构；运行方法见 [`docs/DATA_AVAILABILITY.md`](../../docs/DATA_AVAILABILITY.md)。MP 数据库会更新，下载的结构不保证与历史生产快照完全相同。对于旧 ID，可能需要按 MP 文档通过 tasks API 追溯。原始 LLM 客户端调用轨迹也未保存。
 
