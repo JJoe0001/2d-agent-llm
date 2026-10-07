@@ -79,6 +79,7 @@ See `docs/INSTALL.md` and `docs/RUN_EXAMPLE.md` for setup and the limits of the 
 For first-principles validation, see the [VASP protocol](docs/VASP_VALIDATION_PROTOCOL.md), the selected paired CIFs, and prepared POSCAR/KPOINTS files in `examples/dft_validation/`. DFT results have not yet been added.
 For implemented thresholds and the sensitivity rerun design, see [parameter audit](docs/PARAMETER_AUDIT.md).
 For source-backed failure handling and the limits of the available agent logs, see [orchestration audit](docs/AGENT_FAILURE_AUDIT.md).
+For an exact map of model-facing code and context/latency limitations, see [LLM code map](docs/LLM_CODE_MAP.md).
 For the planned versioned 2DMatPedia, MC2D, and C2DB recovery benchmark, see [database benchmark protocol](docs/DATABASE_BENCHMARK_PROTOCOL.md).
 For an executed 48-parent planar-gap sensitivity check and two reproducible hybrid-route examples, see [sensitivity results](docs/PLANAR_SENSITIVITY_RESULTS.md) and [worked examples](docs/HYBRID_WORKED_EXAMPLES.md).
 
