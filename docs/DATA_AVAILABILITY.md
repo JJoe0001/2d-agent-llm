@@ -15,7 +15,7 @@
 - `examples/dft_validation/`：8 对初始／松弛结构，共 16 个衍生 CIF；不是全库，不含 DFT 输出。
 - `data/computed_results/`：200 父体的初始判维与几何切片敏感性、48 父体高斯宽度复算、9 父体断键阳性富集检查、500 候选去重容差压力测试、500 原子上限审计及两个混合路线实例。母体 CIF 仅以 MP ID 和 SHA-256 引用，未在此再分发。
 - `data/external_large_files/`：73,105 个去重初始候选 CIF、69,624 个未钝化 CHGNet 松弛 CIF、64,297 个钝化 CHGNet 松弛 CIF 的三个压缩归档，分别附逐成员 SHA-256 清单和归档摘要。下载、核验和来源限制见同目录 `README.md`。
-- `data/figure_sources/`：8 份历史处理后绘图表、8 份历史绘图脚本、逐成员 SHA-256 清单及核验脚本。当前返修图 1 与目录图的矢量 PDF 在 `docs/figures/`，可由 `scripts/make_revision_schematics.py` 按已审计计数重新生成。部分历史脚本仍含旧工作站绝对路径，不代表原图已全部可一键重绘。
+- `data/figure_sources/`：8 份历史处理后绘图表、8 份历史绘图脚本、逐成员 SHA-256 清单及核验脚本。目录图的矢量 PDF 在 `docs/figures/toc_8x4cm.pdf`，可由 `scripts/make_toc_graphic.py` 按已审计计数重新生成。部分历史脚本仍含旧工作站绝对路径，不代表原图已全部可一键重绘。
 
 ## 尚缺数据与归档
 

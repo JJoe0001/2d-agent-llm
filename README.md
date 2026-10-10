@@ -34,7 +34,7 @@ MCP 服务入口：`code/exfo_agent/server.py`。拓扑路线见 `tools/literatu
 - `data/dimensionality/*.csv.gz`：所有唯一候选的形貌判定。
 - `data/computed_results/revision_screening_summary.json`：可重算的返修审计，定义见[审计结果](docs/REVISION_FINDINGS.md)。
 - `data/external_large_files/`：去重候选、未钝化及钝化 CHGNet 松弛 CIF 归档，附逐文件和整包 SHA-256；见[归档说明](data/external_large_files/README.md)。
-- `data/figure_sources/`：历史图源表、脚本与校验清单；返修图 1 和目录图见 `docs/figures/`，生成脚本是 `scripts/make_revision_schematics.py`。
+- `data/figure_sources/`：历史图源表、脚本与校验清单；目录图见 `docs/figures/toc_8x4cm.pdf`，生成脚本是 `scripts/make_toc_graphic.py`。
 
 完整母体、去重前分路线 CIF、部分原图的可运行绘图脚本及历史模型调用轨迹仍未提供。`dataset_summary.json` 的 `candidate_cif_missing: 0` 是在原始本地库中计算，不能代替仓库实际内容审计；见[数据范围](docs/DATA_AVAILABILITY.md)。
 
