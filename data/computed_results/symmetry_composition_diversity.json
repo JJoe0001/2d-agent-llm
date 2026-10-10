@@ -1,0 +1,30 @@
+{
+  "definition": "Candidate-level class = (pymatgen anonymous reduced stoichiometric formula, archived 2D layer-group number). Species identities and atomic coordinates within a symmetry class are ignored. It is a coarse composition-symmetry descriptor, not an established structural prototype identifier.",
+  "stage": "post-deduplication initial CIFs; archived layer-group labels, no new symmetry computation",
+  "candidate_rows": 73105,
+  "layer_group_label_rows": 73105,
+  "excluded": {
+    "formula": 2
+  },
+  "unique_classes_all_routes": 11818,
+  "route_counts": {
+    "topological": {
+      "anonymous_stoichiometries": 2836,
+      "layer_groups": 76,
+      "composition_symmetry_classes": 6272,
+      "classes_exclusive_to_route": 3838
+    },
+    "layered": {
+      "anonymous_stoichiometries": 347,
+      "layer_groups": 67,
+      "composition_symmetry_classes": 1302,
+      "classes_exclusive_to_route": 245
+    },
+    "hybrid": {
+      "anonymous_stoichiometries": 4418,
+      "layer_groups": 73,
+      "composition_symmetry_classes": 7512,
+      "classes_exclusive_to_route": 5203
+    }
+  }
+}
