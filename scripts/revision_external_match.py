@@ -1,4 +1,4 @@
-"""Match candidate slabs to a pinned 2DMatPedia JSONL or MC2D CIF ZIP release."""
+"""Match candidate slabs to pinned 2DMatPedia, MC2D, or C2DB structures."""
 
 from __future__ import annotations
 
@@ -89,6 +89,18 @@ def load_references(dataset: str, path: Path) -> tuple[list[Record], list[str]]:
                     records.append(make_record(Path(name).name, structure))
                 except Exception as exc:
                     errors.append(f"{name}: {type(exc).__name__}: {exc}")
+    elif dataset == "C2DB":
+        from ase.db import connect
+        from pymatgen.io.ase import AseAtomsAdaptor
+
+        database = connect(str(path))
+        for row in database.select():
+            identifier = str(row.get("uid", row.get("unique_id", row.id)))
+            try:
+                structure = AseAtomsAdaptor.get_structure(row.toatoms())
+                records.append(make_record(identifier, structure))
+            except Exception as exc:
+                errors.append(f"{identifier}: {type(exc).__name__}: {exc}")
     else:
         raise ValueError(dataset)
     return records, errors
@@ -183,7 +195,7 @@ def sha256(path: Path) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dataset", choices=("2DMatPedia", "MC2D"), required=True)
+    parser.add_argument("--dataset", choices=("2DMatPedia", "MC2D", "C2DB"), required=True)
     parser.add_argument("--reference", type=Path, required=True)
     parser.add_argument("--candidate-archive", type=Path, required=True)
     parser.add_argument("--candidate-table", type=Path, required=True)
