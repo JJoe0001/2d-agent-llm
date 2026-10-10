@@ -1,7 +1,7 @@
 {
   "package": "2d-agent-llm",
-  "n_files": 119,
-  "total_size_bytes": 13829344,
+  "n_files": 126,
+  "total_size_bytes": 18148641,
   "top_level_directories": [
     "checks",
     "code",
@@ -18,7 +18,8 @@
     "final deduplicated 2D candidate labels and CHGNet results",
     "pre-deduplication route manifest",
     "post-CHGNet dimensionality labels",
-    "computed screening audit and selected DFT CIF/POSCAR inputs"
+    "computed screening audit and selected DFT CIF/POSCAR inputs",
+    "archived historical figure-source tables and scripts with per-member checksums; current revision schematics are regenerated from audited counts"
   ],
   "full_cif_archives_included": false,
   "code_doi": null,

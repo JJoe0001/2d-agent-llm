@@ -1,0 +1,82 @@
+[
+  {
+    "path": "data/composition_overview_data.csv",
+    "size_bytes": 438,
+    "sha256": "a074af264768e1f37c6022d869f10d139fe7b24715bbd5d495f0739b78502934"
+  },
+  {
+    "path": "data/element_prevalence_heatmap_data.csv",
+    "size_bytes": 3996,
+    "sha256": "7773e46e7711df29aa3c358cd802ec2462a12f5d4072e2572d19879000e37234"
+  },
+  {
+    "path": "data/energy_analysis_dataset.csv",
+    "size_bytes": 13414901,
+    "sha256": "a9715bc426c42d99b7b952be3aa0088617acac1aafddfafc12fa3c85ce86c640"
+  },
+  {
+    "path": "data/method_complementarity_split_data.csv",
+    "size_bytes": 621,
+    "sha256": "7c111502beb92943dea3433312b9e3594e471e7407b000dbce6fa3f32f60c1f7"
+  },
+  {
+    "path": "data/method_element_heatmaps_data.csv",
+    "size_bytes": 26168,
+    "sha256": "bfe1f9cb696c94d55f413a1968deef43d93e2515df1bccf3fd171be9fed0a768"
+  },
+  {
+    "path": "data/parent_overlap_bar_data.csv",
+    "size_bytes": 297,
+    "sha256": "43e274dbd95c8448efb616035e4e3ca41aaf99ffb58757b7a4199be9d075e72b"
+  },
+  {
+    "path": "data/route_parent_composition_relation_plot_data.csv",
+    "size_bytes": 525,
+    "sha256": "7309c0848d4fc97df3a2cba9c0e69622bc469e47e40eb07793c924d947eee6af"
+  },
+  {
+    "path": "data/structural_dedup_waterfall_data.csv",
+    "size_bytes": 229,
+    "sha256": "4c42feab1b7fdadd41910e275e2de46e22d93adc5815c619bc8a94ba99663fc1"
+  },
+  {
+    "path": "scripts/plot_composition_overview.py",
+    "size_bytes": 6487,
+    "sha256": "56f8076514124887e4346f8369f0c0f27cdbc1f99cf9d58f9079ca75b9395d61"
+  },
+  {
+    "path": "scripts/plot_ehull_distribution.py",
+    "size_bytes": 3746,
+    "sha256": "81184bd2d5721b218459c6ea03f88fc24ac148cc190db3caf78eb856f40179a8"
+  },
+  {
+    "path": "scripts/plot_element_prevalence_heatmap.py",
+    "size_bytes": 5909,
+    "sha256": "1c09db16023e489fea2e08e39842d70e4bc214c6360292574958c7b78d1d935f"
+  },
+  {
+    "path": "scripts/plot_energy_analysis.py",
+    "size_bytes": 5575,
+    "sha256": "e924fc7556c105c65bdaf7b3fbe4adf2a9abce40c2c93dc0fd046ab9616dbd43"
+  },
+  {
+    "path": "scripts/plot_formation_energy_distribution.py",
+    "size_bytes": 3765,
+    "sha256": "45cfa16cd1431585afeef281096dedda090de58efec25a8a925328d1469b0f4f"
+  },
+  {
+    "path": "scripts/plot_method_element_heatmaps.py",
+    "size_bytes": 9195,
+    "sha256": "1c2d525e9ab5f4691bc35e1500265a7e9d2c207b0982c44f54d8889bc4703870"
+  },
+  {
+    "path": "scripts/plot_parent_overlap_venn.py",
+    "size_bytes": 3025,
+    "sha256": "325e7fc5b608a12431ade93aab84fb32dbe8333bff717f3e41324cfa5ad48a5e"
+  },
+  {
+    "path": "scripts/plot_route_parent_composition_relation.py",
+    "size_bytes": 4249,
+    "sha256": "45c18316d4f82659feeb5ff961a97f91f5860605ec75f159a12a1fbcdfed924c"
+  }
+]

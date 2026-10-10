@@ -15,9 +15,10 @@
 - `examples/dft_validation/`：8 对初始／松弛结构，共 16 个衍生 CIF；不是全库，不含 DFT 输出。
 - `data/computed_results/`：200 父体的初始判维与几何切片敏感性、48 父体高斯宽度复算、9 父体断键阳性富集检查、500 候选去重容差压力测试、500 原子上限审计及两个混合路线实例。母体 CIF 仅以 MP ID 和 SHA-256 引用，未在此再分发。
 - `data/external_large_files/`：73,105 个去重初始候选 CIF、69,624 个未钝化 CHGNet 松弛 CIF、64,297 个钝化 CHGNet 松弛 CIF 的三个压缩归档，分别附逐成员 SHA-256 清单和归档摘要。下载、核验和来源限制见同目录 `README.md`。
+- `data/figure_sources/`：8 份历史处理后绘图表、8 份历史绘图脚本、逐成员 SHA-256 清单及核验脚本。当前返修图 1 与目录图的矢量 PDF 在 `docs/figures/`，可由 `scripts/make_revision_schematics.py` 按已审计计数重新生成。部分历史脚本仍含旧工作站绝对路径，不代表原图已全部可一键重绘。
 
 ## 尚缺数据与归档
 
 完整母体 CIF、去重前全部 76,852 个候选的分路线原始 CIF 仍未随仓库发布。去重后候选和成功输出的两组 CHGNet 松弛 CIF 现在可通过 GitHub 分支下载；但尚无独立的长期数据仓库 DOI。`dataset_summary.json` 中 `candidate_cif_missing: 0` 和 `parent_cif_missing: 0` 是对原始本地环境计算，不能据此推断所有历史输入及中间结果均已公开。
 
-完整分路线结构、部分绘图输入表与脚本、历史 LLM 工具调用轨迹尚未开放，因此无法单靠本仓库重现论文全部图。返修提交前应将这些缺失数据和已发布的 CIF 归档存入持久数据仓库，在此加入有版本的 URL／DOI，并与论文 Data Availability Statement 一致。父体来自 MP，且部分 GNoME 来源记录有单独的非商业许可；请勿把软件 MIT 许可解释为结构数据的统一许可。
+完整分路线结构、部分未核对原图的绘图输入与可运行脚本、历史 LLM 工具调用轨迹尚未开放，因此无法单靠本仓库重现论文全部图。返修提交前应将这些缺失数据和已发布的 CIF 归档存入持久数据仓库，在此加入有版本的 URL／DOI，并与论文 Data Availability Statement 一致。父体来自 MP，且部分 GNoME 来源记录有单独的非商业许可；请勿把软件 MIT 许可解释为结构数据的统一许可。
